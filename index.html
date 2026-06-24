@@ -1,101 +1,310 @@
-<!DOCTYPE html><html lang="zh-CN"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>棱镜投资 | 可转债+ETF实战指南 | 免费投资工具</title>
-<meta name="description" content="棱镜投资提供免费可转债计算器、双低策略教程、ETF定投指南。1万块理财方案，新手投资从零开始。">
-<meta name="keywords" content="可转债,ETF,定投,双低策略,1万理财,投资入门,免费工具">
-<meta property="og:title" content="棱镜投资 | 可转债+ETF实战指南">
-<meta property="og:description" content="免费可转债计算器+双低策略教程+ETF定投指南，1万块理财方案">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>棱镜投资 - 可转债投资入门 | ETF定投 | 理财攻略</title>
+<meta name="description" content="棱镜投资：专业可转债投资入门指南，1万块理财方案，ETF定投止盈策略，双低可转债筛选方法。零基础也能学会的投资技巧。">
+<meta name="keywords" content="可转债,ETF定投,理财入门,双低策略,1万理财,投资教程">
+<meta property="og:title" content="棱镜投资 - 可转债投资入门指南">
+<meta property="og:description" content="专业可转债投资入门，1万块理财方案，ETF定投止盈策略">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://prism-invest-hqhub.github.io/prism-invest-cn/">
 <link rel="canonical" href="https://prism-invest-hqhub.github.io/prism-invest-cn/">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0a0a;color:#e0e0e0;line-height:1.8}
-.hero{text-align:center;padding:60px 20px;background:linear-gradient(135deg,#0f2027,#203a43,#2c5364)}
-.hero h1{font-size:2.2em;color:#4fc3f7;margin-bottom:12px}
-.hero p{color:#aaa;font-size:1.1em;max-width:600px;margin:0 auto}
-.container{max-width:800px;margin:30px auto;padding:0 20px}
-.card{background:#1a1a2e;border-radius:16px;padding:28px;margin:20px 0}
-.card h2{color:#4fc3f7;font-size:1.4em;margin-bottom:16px;border-left:3px solid #4fc3f7;padding-left:12px}
-.card p{color:#ccc;margin-bottom:12px}
-.card ul{padding-left:20px;color:#ccc}
-.card li{margin:8px 0}
-.btn{display:inline-block;padding:14px 36px;border-radius:10px;font-weight:700;text-decoration:none;font-size:1.05em;margin:6px}
-.btn-primary{background:#4fc3f7;color:#000}
-.btn-primary:hover{background:#29b6f6}
-.btn-gold{background:#ffd700;color:#000}
-.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:20px 0}
-.feature{background:#1a1a2e;border-radius:12px;padding:20px;text-align:center}
-.feature h3{color:#4fc3f7;margin-bottom:8px}
-.feature p{color:#999;font-size:0.9em}
-footer{text-align:center;padding:30px;color:#555;font-size:0.85em}
-footer a{color:#4fc3f7;text-decoration:none}
-</style></head><body>
-<div class="hero">
-<h1>棱镜投资</h1>
-<p>可转债+ETF实战指南 | 免费工具+教程 | 1万块理财方案</p>
-<div style="margin-top:24px">
-<a href="https://prism-shop.surge.sh/bond-tool.html" class="btn btn-primary">📊 免费计算器</a>
-<a href="https://prism-shop.surge.sh" class="btn btn-gold">📚 课程商店</a>
-</div>
-</div>
-
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:#1a1a2e;background:#f8f9fa;line-height:1.8}
+.container{max-width:900px;margin:0 auto;padding:20px}
+header{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:40px 20px;text-align:center}
+header h1{font-size:2em;margin-bottom:10px}
+header p{opacity:0.9;font-size:1.1em}
+.hero{background:#fff;border-radius:12px;padding:30px;margin:20px 0;box-shadow:0 2px 10px rgba(0,0,0,0.08)}
+.hero h2{color:#e94560;margin-bottom:15px;font-size:1.5em}
+.hero p{margin-bottom:12px}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin:20px 0}
+.card{background:#fff;border-radius:12px;padding:25px;box-shadow:0 2px 10px rgba(0,0,0,0.08);transition:transform 0.2s}
+.card:hover{transform:translateY(-3px)}
+.card h3{color:#16213e;margin-bottom:12px;font-size:1.2em;border-left:4px solid #e94560;padding-left:12px}
+.card p{color:#555;font-size:0.95em}
+.tag{display:inline-block;background:#e94560;color:#fff;padding:2px 10px;border-radius:20px;font-size:0.8em;margin:3px}
+.section{background:#fff;border-radius:12px;padding:30px;margin:20px 0;box-shadow:0 2px 10px rgba(0,0,0,0.08)}
+.section h2{color:#16213e;margin-bottom:20px;padding-bottom:10px;border-bottom:2px solid #e94560}
+.calc-box{background:#f0f2f5;border-radius:8px;padding:20px;margin:15px 0}
+.calc-box input{width:100%;padding:10px;border:1px solid #ddd;border-radius:6px;margin:8px 0;font-size:1em}
+.calc-box button{background:#e94560;color:#fff;border:none;padding:10px 30px;border-radius:6px;cursor:pointer;font-size:1em;margin-top:8px}
+.calc-box button:hover{background:#c23152}
+.calc-box .result{background:#fff;padding:15px;border-radius:6px;margin-top:10px;font-weight:bold;color:#16213e}
+.step{display:flex;align-items:flex-start;margin:15px 0;padding:15px;background:#f8f9fa;border-radius:8px}
+.step-num{background:#e94560;color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;margin-right:15px;flex-shrink:0}
+.step-text h4{color:#16213e;margin-bottom:5px}
+.step-text p{color:#555;font-size:0.9em}
+.comparison{width:100%;border-collapse:collapse;margin:15px 0}
+.comparison th{background:#16213e;color:#fff;padding:12px;text-align:left}
+.comparison td{padding:10px 12px;border-bottom:1px solid #eee}
+.comparison tr:hover{background:#f0f2f5}
+.highlight{background:#fff3cd;padding:15px;border-radius:8px;border-left:4px solid #ffc107;margin:15px 0}
+footer{background:#1a1a2e;color:#aaa;text-align:center;padding:30px 20px;margin-top:40px;font-size:0.9em}
+footer a{color:#e94560;text-decoration:none}
+nav{background:#16213e;padding:10px 20px;text-align:center;position:sticky;top:0;z-index:100}
+nav a{color:#fff;text-decoration:none;padding:8px 16px;margin:0 5px;border-radius:6px;font-size:0.95em}
+nav a:hover{background:rgba(233,69,96,0.8)}
+.cta{background:linear-gradient(135deg,#e94560,#c23152);color:#fff;text-align:center;padding:30px;border-radius:12px;margin:20px 0}
+.cta h3{font-size:1.3em;margin-bottom:10px}
+.cta p{opacity:0.9;margin-bottom:15px}
+.cta-btn{display:inline-block;background:#fff;color:#e94560;padding:12px 30px;border-radius:6px;text-decoration:none;font-weight:bold;font-size:1.1em}
+.faq-item{border:1px solid #eee;border-radius:8px;margin:10px 0;overflow:hidden}
+.faq-q{background:#f0f2f5;padding:15px;font-weight:bold;cursor:pointer}
+.faq-a{padding:15px;display:none;color:#555}
+@media(max-width:600px){.card-grid{grid-template-columns:1fr}header h1{font-size:1.5em}nav a{padding:6px 10px;font-size:0.85em}}
+</style>
+</head>
+<body>
+<header>
+<h1>🔍 棱镜投资</h1>
+<p>三个维度，一个结论 | 可转债 × ETF定投 × 理财入门</p>
+<p style="margin-top:10px;font-size:0.9em;opacity:0.7">专业投资知识 · 零基础友好 · 实战策略</p>
+</header>
+<nav>
+<a href="#kezhuanzhai">可转债</a>
+<a href="#etf">ETF定投</a>
+<a href="#licai">理财入门</a>
+<a href="#calc">计算工具</a>
+<a href="#faq">常见问题</a>
+</nav>
 <div class="container">
-<div class="features">
-<div class="feature"><h3>📊 可转债计算器</h3><p>双低值/转股价值/YTM/凯利仓位，免费在线用</p></div>
-<div class="feature"><h3>📈 ETF定投指南</h3><p>沪深300定投+止盈策略，每月1000元起步</p></div>
-<div class="feature"><h3>💰 1万理财方案</h3><p>4个篮子：余额宝+ETF+可转债+国债</p></div>
-<div class="feature"><h3>🎓 投资课程</h3><p>7天实战营限时49.9元，从零学会投资</p></div>
+
+<div class="hero">
+<h2>🎯 1万块钱怎么理财？</h2>
+<p>大多数人觉得1万块太少不值得理财，但正是这1万块的起步，决定了你5年后的财务状态。棱镜投资提供经过验证的理财方案，从零开始帮你建立被动收入。</p>
+<div class="step">
+<div class="step-num">1</div>
+<div class="step-text">
+<h4>3000元 → 余额宝（应急金）</h4>
+<p>随时取用，零风险，年化1.5%-2%</p>
+</div>
+</div>
+<div class="step">
+<div class="step-num">2</div>
+<div class="step-text">
+<h4>3000元 → 沪深300ETF定投（稳健增值）</h4>
+<p>每月定投，长期年化6%-10%，3年以上见效</p>
+</div>
+</div>
+<div class="step">
+<div class="step-num">3</div>
+<div class="step-text">
+<h4>3000元 → 可转债（进攻收益）</h4>
+<p>双低策略，下保本上不封顶，年化10%-20%</p>
+</div>
+</div>
+<div class="step">
+<div class="step-num">4</div>
+<div class="step-text">
+<h4>1000元 → 国债逆回购（灵活调度）</h4>
+<p>月末季末利率飙升，闲钱不闲着</p>
+</div>
+</div>
 </div>
 
-<div class="card">
-<h2>什么是可转债？</h2>
-<p>可转债是可以转换成股票的债券，既有债券的保底属性（持有到期拿回本金+利息），又有股票的上涨空间（正股涨转债跟着涨）。</p>
-<ul>
-<li>下有保底：持有到期至少拿回100元+利息</li>
-<li>上不封顶：正股涨多少转债跟着涨</li>
-<li>T+0交易：当天买当天卖</li>
-<li>策略清晰：双低策略简单易学</li>
+<div class="cta">
+<h3>📖 免费可转债入门课程</h3>
+<p>10天从零学会可转债投资，已帮助上千新手入门</p>
+<a class="cta-btn" href="https://prisminvest6.wordpress.com" target="_blank">开始学习 →</a>
+</div>
+
+<section id="kezhuanzhai" class="section">
+<h2>💰 可转债投资入门</h2>
+<p><strong>什么是可转债？</strong> 可转债是上市公司发行的债券，可以在特定条件下转换成股票。它具有"下保本、上不封顶"的独特属性——最差情况到期拿回100元面值+利息，最好情况跟着正股翻倍涨。</p>
+
+<h3 style="margin-top:20px;color:#e94560">🔑 双低策略（核心方法）</h3>
+<p>双低 = 价格低 + 溢价率低，是最简单有效的可转债筛选方法：</p>
+<ul style="margin:10px 0 10px 20px">
+<li><strong>双低值</strong> = 可转债价格 + 转股溢价率 × 100</li>
+<li><strong>筛选标准</strong>：双低值 < 120</li>
+<li><strong>价格要求</strong>：可转债价格 < 110元</li>
+<li><strong>评级要求</strong>：AA- 及以上</li>
+<li><strong>流动性</strong>：日成交额 > 500万</li>
 </ul>
-</div>
 
+<table class="comparison">
+<tr><th>指标</th><th>安全线</th><th>警戒线</th></tr>
+<tr><td>双低值</td><td><120</td><td>>150</td></tr>
+<tr><td>价格</td><td><110元</td><td>>130元</td></tr>
+<tr><td>溢价率</td><td><30%</td><td>>50%</td></tr>
+<tr><td>评级</td><td>AA及以上</td><td>AA-以下不碰</td></tr>
+</table>
+
+<div class="highlight">
+<strong>⚠️ 避坑提醒</strong>：双低值 > 150 的可转债风险极高，不适合新手。ST股可转债、评级低于AA-的坚决不碰！
+</div>
+</section>
+
+<section id="etf" class="section">
+<h2>📈 ETF定投策略</h2>
+<p>ETF（交易型开放式指数基金）是最适合上班族的长期投资工具。定投沪深300ETF，相当于买入中国最大的300家公司，长期年化收益6%-10%。</p>
+
+<h3 style="margin-top:15px;color:#e94560">止盈比定投更重要</h3>
+<p>定投2年赚30%没卖，一波回调全回去——太多人吃过这个亏。4种止盈方法：</p>
+<div class="card-grid">
 <div class="card">
-<h2>双低策略怎么选债？</h2>
-<p>双低值 = 转债价格 + 转股溢价率 × 100，数值越低越有投资价值。</p>
-<ul>
-<li>双低值 < 120：低估区间，重点关注</li>
-<li>价格 < 110元：安全边际更高</li>
-<li>评级 ≥ AA：信用风险可控</li>
-<li>成交额 > 500万：流动性足够</li>
-</ul>
-<p>用我们的<a href="https://prism-shop.surge.sh/bond-tool.html" style="color:#4fc3f7">免费计算器</a>快速计算双低值！</p>
+<h3>目标收益率止盈</h3>
+<p>达到20%-30%就卖出。最简单，适合新手。</p>
 </div>
-
 <div class="card">
-<h2>1万块理财方案</h2>
-<p>推荐4个篮子配置：</p>
-<ul>
-<li>3000元余额宝 - 应急+流动性（年化~1.5%）</li>
-<li>3000元沪深300ETF - 成长性（年化8-12%）</li>
-<li>3000元双低可转债 - 弹性收益（年化10-20%）</li>
-<li>1000元国债逆回购 - 应急备用（年化2-5%）</li>
-</ul>
-<p>预期年收益约815元（年化8.15%），随经验和本金增加收益会更高。</p>
+<h3>估值止盈</h3>
+<p>PE百分位>80%开始减仓。最科学，需查数据。</p>
 </div>
-
 <div class="card">
-<h2>免费资源</h2>
-<ul>
-<li><a href="https://prism-shop.surge.sh/bond-tool.html" style="color:#4fc3f7">可转债投资计算器</a> - 双低值/转股价值/YTM/仓位计算</li>
-<li><a href="https://prisminvest6.wordpress.com" style="color:#4fc3f7">棱镜投资博客</a> - 30+篇投资教程</li>
-<li><a href="https://prism-shop.surge.sh" style="color:#4fc3f7">课程商店</a> - 可转债/ETF/AI副业课程</li>
-<li><a href="https://gist.github.com/prism-invest-hqhub/cc46cf7ee182c29c02d0eb64c2eb56d7" style="color:#4fc3f7">双低策略指南</a> - GitHub Gist</li>
-</ul>
+<h3>均线止盈</h3>
+<p>跌破120日均线减仓50%。趋势跟踪。</p>
+</div>
+<div class="card">
+<h3>组合止盈（推荐）</h3>
+<p>目标+估值+均线三重确认。最稳妥。</p>
+</div>
+</div>
+</section>
+
+<section id="licai" class="section">
+<h2>🎓 理财入门路线图</h2>
+<div class="step">
+<div class="step-num">1</div>
+<div class="step-text">
+<h4>理清现状</h4>
+<p>算出月结余，如果<10%先砍支出</p>
+</div>
+</div>
+<div class="step">
+<div class="step-num">2</div>
+<div class="step-text">
+<h4>建立应急金</h4>
+<p>3-6个月生活费存余额宝，不投资只应急</p>
+</div>
+</div>
+<div class="step">
+<div class="step-num">3</div>
+<div class="step-text">
+<h4>开启定投</h4>
+<p>沪深300ETF每月自动扣款，月结余50%</p>
+</div>
+</div>
+<div class="step">
+<div class="step-num">4</div>
+<div class="step-text">
+<h4>学习可转债</h4>
+<p>每天10分钟，2周学会双低策略</p>
+</div>
+</div>
+<div class="step">
+<div class="step-num">5</div>
+<div class="step-text">
+<h4>小仓实盘</h4>
+<p>1手=1000元，先练手再加仓</p>
+</div>
+</div>
+</section>
+
+<section id="calc" class="section">
+<h2>🧮 投资计算工具</h2>
+
+<div class="calc-box">
+<h3>双低值计算器</h3>
+<p>可转债价格：<input type="number" id="cb-price" placeholder="例如：108.5" step="0.1"></p>
+<p>转股溢价率(%)：<input type="number" id="cb-premium" placeholder="例如：25" step="0.1"></p>
+<button onclick="calcDoubleLow()">计算双低值</button>
+<div id="dl-result" class="result" style="display:none"></div>
 </div>
 
+<div class="calc-box">
+<h3>转股价值计算器</h3>
+<p>可转债面值(元)：<input type="number" id="face-value" value="100"></p>
+<p>转股价(元)：<input type="number" id="conv-price" placeholder="例如：10.5" step="0.01"></p>
+<p>正股价(元)：<input type="number" id="stock-price" placeholder="例如：12" step="0.01"></p>
+<button onclick="calcConvValue()">计算转股价值</button>
+<div id="cv-result" class="result" style="display:none"></div>
+</div>
+
+<div class="calc-box">
+<h3>定投收益估算</h3>
+<p>每月定投金额(元)：<input type="number" id="monthly-invest" placeholder="例如：500"></p>
+<p>预期年化收益率(%)：<input type="number" id="annual-return" placeholder="例如：8" step="0.1"></p>
+<p>定投年限(年)：<input type="number" id="invest-years" placeholder="例如：3"></p>
+<button onclick="calcDCA()">计算预期收益</button>
+<div id="dca-result" class="result" style="display:none"></div>
+</div>
+</section>
+
+<section id="faq" class="section">
+<h2>❓ 常见问题</h2>
+<div class="faq-item">
+<div class="faq-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">可转债会亏钱吗？</div>
+<div class="faq-a">持有到期最差情况拿回100元面值+利息，基本不亏。但如果高价买入（>130元），到期只有100元，就会亏损。所以新手坚持买110元以下的可转债。</div>
+</div>
+<div class="faq-item">
+<div class="faq-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">1万块够理财吗？</div>
+<div class="faq-a">完全够。3000余额宝+3000ETF+3000可转债+1000国债逆回购，这个配置年化5%-8%，比全放余额宝强3-4倍。理财不是有钱才做，是做了才有钱。</div>
+</div>
+<div class="faq-item">
+<div class="faq-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">ETF定投多久见收益？</div>
+<div class="faq-a">短期1年可能亏损，但3年以上基本正收益，5年以上大概率年化6%-10%。关键是坚持定投+及时止盈。</div>
+</div>
+<div class="faq-item">
+<div class="faq-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">可转债打新怎么参与？</div>
+<div class="faq-a">开证券账户→找到"可转债打新"→顶格申购→中签后缴款→上市首日卖出。中签率约0.01%-0.05%，每签赚50-300元，零风险。</div>
+</div>
+<div class="faq-item">
+<div class="faq-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">什么是强赎？怎么避坑？</div>
+<div class="faq-a">强赎是当正股价持续高于转股价130%时，公司有权以约103元强制赎回你的可转债。如果你120元买的，只拿回103元就亏17元。避坑方法：买低价可转债（110元以下基本不会被强赎），或者正股涨到130%以上时及时卖出。</div>
+</div>
+</section>
+
+<div class="cta">
+<h3>📚 更多免费投资教程</h3>
+<p>博客44+篇专业文章 | 可转债课程 | 实战策略</p>
+<a class="cta-btn" href="https://prisminvest6.wordpress.com" target="_blank">访问棱镜博客 →</a>
+</div>
+
+</div>
 <footer>
-棱镜投资 © 2026 | 数据仅供参考，不构成投资建议<br>
-<a href="https://prisminvest6.wordpress.com">博客</a> | <a href="https://prism-shop.surge.sh">商店</a> | <a href="mailto:prism-capital@coze.email">联系邮箱</a>
+<p>棱镜投资 prism-invest | <a href="https://prisminvest6.wordpress.com">博客</a> | <a href="https://prism-shop.surge.sh">商店</a></p>
+<p style="margin-top:8px;font-size:0.8em">本文内容仅供参考，不构成投资建议。投资有风险，入市需谨慎。</p>
 </footer>
-</div>
-</body></html>
+
+<script>
+function calcDoubleLow(){
+const price=parseFloat(document.getElementById('cb-price').value);
+const premium=parseFloat(document.getElementById('cb-premium').value);
+if(isNaN(price)||isNaN(premium)){alert('请输入有效数字');return}
+const dl=price+premium;
+const r=document.getElementById('dl-result');
+r.style.display='block';
+let tip=dl<120?'✅ 双低值优秀，符合筛选标准':dl<150?'⚠️ 双低值一般，谨慎投资':'❌ 双低值过高，风险较大';
+r.innerHTML='双低值：'+dl.toFixed(1)+'<br>'+tip;
+}
+function calcConvValue(){
+const face=parseFloat(document.getElementById('face-value').value)||100;
+const convP=parseFloat(document.getElementById('conv-price').value);
+const stockP=parseFloat(document.getElementById('stock-price').value);
+if(isNaN(convP)||isNaN(stockP)){alert('请输入有效数字');return}
+const cv=(face/convP)*stockP;
+const r=document.getElementById('cv-result');
+r.style.display='block';
+let tip=cv>100?'📈 转股价值>面值，处于价内状态':cv===100?'⚖️ 转股价值=面值':'📉 转股价值<面值，处于价外状态';
+r.innerHTML='转股价值：'+cv.toFixed(2)+'元<br>'+tip;
+}
+function calcDCA(){
+const monthly=parseFloat(document.getElementById('monthly-invest').value);
+const annual=parseFloat(document.getElementById('annual-return').value)/100;
+const years=parseFloat(document.getElementById('invest-years').value);
+if(isNaN(monthly)||isNaN(annual)||isNaN(years)){alert('请输入有效数字');return}
+const monthlyRate=annual/12;
+const months=years*12;
+const totalInvest=monthly*months;
+const fv=monthly*((Math.pow(1+monthlyRate,months)-1)/monthlyRate);
+const profit=fv-totalInvest;
+const r=document.getElementById('dca-result');
+r.style.display='block';
+r.innerHTML='总投入：'+totalInvest.toFixed(0)+'元<br>预期终值：'+fv.toFixed(0)+'元<br>预期收益：'+profit.toFixed(0)+'元<br>收益率：'+(profit/totalInvest*100).toFixed(1)+'%';
+}
+</script>
+</body>
+</html>
