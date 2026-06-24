@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://prism-invest-hqhub.github.io/prism-invest-cn/sitemap.xml
