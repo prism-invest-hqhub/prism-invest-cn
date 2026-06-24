@@ -1,3 +1,17 @@
 User-agent: *
 Allow: /
 Sitemap: https://prism-invest-hqhub.github.io/prism-invest-cn/sitemap.xml
+
+# Chinese search engines
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+User-agent: Sogou
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+User-agent: YisouSpider
+Allow: /
