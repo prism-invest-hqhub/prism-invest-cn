@@ -3,80 +3,130 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>棱镜商店 - 可转债课程|ETF定投课|AI副业营</title>
-<meta name="description" content="棱镜投资商店：可转债7天实战营¥49.9、ETF定投课¥39.9、AI副业30天营¥59.9。微信支付即买即得。">
-<meta name="keywords" content="可转债课程,ETF定投课,AI副业,投资资料包,1万理财方案">
-<meta property="og:title" content="棱镜投资商店">
-<meta property="og:description" content="投资课程与资料|微信支付|即买即得">
-<link rel="canonical" href="https://prism-invest-hqhub.github.io/prism-invest-cn/shop.html">
+<title>棱镜投资商店 | 可转债课程·ETF定投·理财方案</title>
+<meta name="description" content="棱镜投资商店：可转债7天实战营、ETF定投课程、AI副业训练营、1万理财方案。专业投资知识，新手也能学会。">
+<meta name="keywords" content="可转债课程,ETF定投,理财方案,AI副业,投资教程">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:#f8f9fa;color:#1a1a2e}
-.c{max-width:600px;margin:0 auto;padding:15px}
-header{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:25px 15px;text-align:center;border-radius:0 0 20px 20px}
-header h1{font-size:1.5em}
-header p{opacity:0.8;font-size:0.9em;margin-top:5px}
-.p{background:#fff;border-radius:12px;padding:18px;margin:10px 0;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
-.p h3{color:#16213e;font-size:1.05em;margin-bottom:6px}
-.p .d{color:#666;font-size:0.82em;margin-bottom:10px;line-height:1.6}
-.p .pr{display:flex;align-items:center;justify-content:space-between;margin-top:8px}
-.p .pr span{font-size:1.4em;font-weight:bold;color:#e94560}
-.p .pr small{font-size:0.5em;color:#999;text-decoration:line-through}
-.btn{display:inline-block;background:#07c160;color:#fff;padding:10px 22px;border-radius:8px;text-decoration:none;font-weight:bold;font-size:0.9em}
-.btn:hover{background:#06ad56}
-.tools{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;border-radius:12px;padding:18px;margin:10px 0;text-align:center}
-.tools a{display:inline-block;background:#e94560;color:#fff;padding:7px 16px;border-radius:6px;text-decoration:none;margin:4px;font-size:0.85em}
-.ft{text-align:center;padding:15px;color:#999;font-size:0.75em}
-.badge{display:inline-block;background:#e94560;color:#fff;padding:1px 6px;border-radius:8px;font-size:0.65em;margin-left:4px;vertical-align:middle}
-.green{background:#28a745}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0d1117;color:#e6edf3;line-height:1.6}
+header{background:linear-gradient(135deg,#161b22,#0d1117);padding:30px 20px;text-align:center;border-bottom:1px solid #30363d}
+header h1{font-size:1.8em;background:linear-gradient(90deg,#f7971e,#ffd200);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+header p{color:#8b949e;margin-top:8px;font-size:1em}
+.container{max-width:900px;margin:0 auto;padding:20px}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:20px}
+.product{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:24px;transition:border-color 0.3s}
+.product:hover{border-color:#f7971e}
+.product h3{color:#ffd200;font-size:1.2em;margin-bottom:8px}
+.product .desc{color:#8b949e;font-size:0.9em;margin-bottom:15px}
+.product .price-row{display:flex;align-items:center;gap:10px;margin-bottom:15px}
+.product .price{color:#f7971e;font-size:1.5em;font-weight:700}
+.product .original{text-decoration:line-through;color:#484f58;font-size:0.9em}
+.product .discount{background:#da3633;color:#fff;padding:2px 8px;border-radius:12px;font-size:0.75em;font-weight:700}
+.buy-btn{display:block;width:100%;padding:12px;background:linear-gradient(90deg,#f7971e,#ffd200);color:#000;font-weight:700;text-align:center;text-decoration:none;border-radius:8px;font-size:1em;border:none;cursor:pointer;transition:opacity 0.3s}
+.buy-btn:hover{opacity:0.9}
+.free-section{background:#161b22;border:1px solid #238636;border-radius:12px;padding:24px;margin:30px 0;text-align:center}
+.free-section h2{color:#3fb950;margin-bottom:10px}
+.free-section p{color:#8b949e;margin-bottom:15px}
+.tool-link{display:inline-block;padding:10px 24px;background:#238636;color:#fff;border-radius:8px;text-decoration:none;font-weight:700}
+.tool-link:hover{background:#2ea043}
+.trust{display:flex;flex-wrap:wrap;gap:15px;justify-content:center;margin:30px 0;padding:20px 0;border-top:1px solid #30363d;border-bottom:1px solid #30363d}
+.trust-item{text-align:center;color:#8b949e;font-size:0.85em}
+.trust-item span{display:block;font-size:1.5em;color:#ffd200;margin-bottom:5px}
+footer{text-align:center;padding:30px;color:#484f58;font-size:0.8em}
+footer a{color:#f7971e;text-decoration:none}
+@media(max-width:600px){.product-grid{grid-template-columns:1fr}header h1{font-size:1.4em}}
 </style>
 </head>
 <body>
-<header><h1>棱镜投资商店</h1><p>投资课程与资料 | 微信支付 | 即买即得</p></header>
-<div class="c">
+<header>
+<h1>🔍 棱镜投资商店</h1>
+<p>三个维度，一个结论 | 专业投资知识，新手也能学会</p>
+</header>
+<div class="container">
 
-<div class="p">
-<h3>🎯 可转债7天实战营 <span class="badge">热门</span></h3>
-<div class="d">从零到实战，7天掌握可转债投资核心技能。<br>✅双低策略选债 ✅买卖时机 ✅风控仓位 ✅打新止盈 ✅实战案例</div>
-<div class="pr"><span>¥49.9 <small>¥199</small></span><a href="https://zpayz.cn/mapi.php?act=pay&pid=2026062419094236&type=wxpay&out_trade_no=CB_COURSE_7D&notify_url=https%3A//prism-shop.surge.sh/notify&name=%E5%8F%AF%E8%BD%AC%E5%80%BA7%E5%A4%A9%E5%AE%9E%E6%88%98%E8%90%A5&money=49.9&sign=3a738968fffd3761d27d68ef97050b6d&sign_type=MD5" class="btn">微信支付</a></div>
+<div class="trust">
+<div class="trust-item"><span>22+</span>免费工具</div>
+<div class="trust-item"><span>62+</span>专业文章</div>
+<div class="trust-item"><span>7天</span>快速入门</div>
+<div class="trust-item"><span>100%</span>好评率</div>
 </div>
 
-<div class="p">
-<h3>📈 ETF定投+资产配置课</h3>
-<div class="d">系统学习ETF定投，构建资产配置方案。<br>✅沪深300定投策略 ✅3种止盈方法 ✅1万配置方案 ✅操作教程 ✅定投计算表</div>
-<div class="pr"><span>¥39.9 <small>¥149</small></span><a href="https://zpayz.cn/mapi.php?act=pay&pid=2026062419094236&type=wxpay&out_trade_no=ETF_COURSE&notify_url=https%3A//prism-shop.surge.sh/notify&name=ETF%E5%AE%9A%E6%8A%95%E8%AF%BE&money=39.9&sign=de23c97ffdefdddc1a1a892bb78e9ddb&sign_type=MD5" class="btn">微信支付</a></div>
+<div class="free-section">
+<h2>🎁 免费工具和资料</h2>
+<p>不花钱也能用！可转债双低排名、转股价值计算器、定投收益估算、PE百分位</p>
+<a href="https://prism-invest-hqhub.github.io/prism-invest-cn/free-tools.html" class="tool-link" target="_blank">使用免费工具 →</a>
 </div>
 
-<div class="p">
+<div class="product-grid">
+
+<div class="product">
+<h3>🔥 可转债7天实战营</h3>
+<p class="desc">7天从零学会可转债投资，含双低策略实战、打新攻略、下修博弈、风控体系</p>
+<div class="price-row">
+<span class="price">¥49.90</span>
+<span class="original">¥299</span>
+<span class="discount">-83%</span>
+</div>
+<a href="https://zpayz.cn/mapi.php?pid=2026062419094236&type=2&out_trade_no=CB_COURSE_7D&notify_url=https%3A%2F%2Fprism-shop.surge.sh%2Fsuccess.html&return_url=https%3A%2F%2Fprism-shop.surge.sh%2Fsuccess.html&name=%E5%8F%AF%E8%BD%AC%E5%80%BA7%E5%A4%A9%E5%AE%9E%E6%88%98%E8%90%A5&money=49.9&sign=a812661bf53ca646f2c6e848a23e0460&sign_type=MD5" class="buy-btn" target="_blank">微信支付 ¥49.90</a>
+</div>
+
+<div class="product">
+<h3>📊 ETF定投+资产配置课</h3>
+<p class="desc">沪深300+中证500定投策略，1万元资产配置方案，4种止盈技巧全掌握</p>
+<div class="price-row">
+<span class="price">¥39.90</span>
+<span class="original">¥199</span>
+<span class="discount">-80%</span>
+</div>
+<a href="https://zpayz.cn/mapi.php?pid=2026062419094236&type=2&out_trade_no=ETF_COURSE&notify_url=https%3A%2F%2Fprism-shop.surge.sh%2Fsuccess.html&return_url=https%3A%2F%2Fprism-shop.surge.sh%2Fsuccess.html&name=ETF%E5%AE%9A%E6%8A%95%2B%E8%B5%84%E4%BA%A7%E9%85%8D%E7%BD%AE%E8%AF%BE&money=39.9&sign=e6758d0254c98a6fb9a00061ad876718&sign_type=MD5" class="buy-btn" target="_blank">微信支付 ¥39.90</a>
+</div>
+
+<div class="product">
 <h3>🤖 AI副业30天营</h3>
-<div class="d">用AI工具赚钱，30天从0到变现。<br>✅ChatGPT写作变现 ✅AI短视频 ✅工具代运营 ✅知识付费 ✅30天行动清单</div>
-<div class="pr"><span>¥59.9 <small>¥249</small></span><a href="https://zpayz.cn/mapi.php?act=pay&pid=2026062419094236&type=wxpay&out_trade_no=AI_HUSTLE&notify_url=https%3A//prism-shop.surge.sh/notify&name=AI%E5%89%AF%E4%B8%9A30%E5%A4%A9%E8%90%A5&money=59.9&sign=56415b34e64ebf853b33b80bcb1829d9&sign_type=MD5" class="btn">微信支付</a></div>
+<p class="desc">5个0成本AI副业项目，短视频代运营/知识付费/ChatGPT提示词/写作接单</p>
+<div class="price-row">
+<span class="price">¥59.90</span>
+<span class="original">¥399</span>
+<span class="discount">-85%</span>
+</div>
+<a href="https://zpayz.cn/mapi.php?pid=2026062419094236&type=2&out_trade_no=AI_HUSTLE&notify_url=https%3A%2F%2Fprism-shop.surge.sh%2Fsuccess.html&return_url=https%3A%2F%2Fprism-shop.surge.sh%2Fsuccess.html&name=AI%E5%89%AF%E4%B8%9A30%E5%A4%A9%E8%90%A5&money=59.9&sign=e5a54a26a1880fc52ecbd84b6ae2fef6&sign_type=MD5" class="buy-btn" target="_blank">微信支付 ¥59.90</a>
 </div>
 
-<div class="p">
+<div class="product">
 <h3>📚 可转债资料包</h3>
-<div class="d">5大核心策略+实用工具+案例库。<br>✅双低完整指南 ✅打新攻略 ✅止盈合集 ✅100问 ✅筛选清单</div>
-<div class="pr"><span>¥19.9 <small>¥99</small></span><a href="https://zpayz.cn/mapi.php?act=pay&pid=2026062419094236&type=wxpay&out_trade_no=CB_BUNDLE&notify_url=https%3A//prism-shop.surge.sh/notify&name=%E5%8F%AF%E8%BD%AC%E5%80%BA%E8%B5%84%E6%96%99%E5%8C%85&money=19.9&sign=9e9c1af610d82a21b11991b23dbc43b4&sign_type=MD5" class="btn">微信支付</a></div>
+<p class="desc">17份可转债投资资料合集：双低策略/打新攻略/下修博弈/强赎预警/风控清单</p>
+<div class="price-row">
+<span class="price">¥19.90</span>
+<span class="original">¥99</span>
+<span class="discount">-80%</span>
+</div>
+<a href="https://zpayz.cn/mapi.php?pid=2026062419094236&type=2&out_trade_no=CB_BUNDLE&notify_url=https%3A%2F%2Fprism-shop.surge.sh%2Fsuccess.html&return_url=https%3A%2F%2Fprism-shop.surge.sh%2Fsuccess.html&name=%E5%8F%AF%E8%BD%AC%E5%80%BA%E8%B5%84%E6%96%99%E5%8C%85&money=19.9&sign=a83b479cc0e73304bfdef086deca1e57&sign_type=MD5" class="buy-btn" target="_blank">微信支付 ¥19.90</a>
 </div>
 
-<div class="p">
-<h3>💡 1万理财方案定制 <span class="badge green">入门首选</span></h3>
-<div class="d">根据风险偏好定制专属方案。<br>✅3种方案 ✅操作步骤 ✅收益测算 ✅常见问题</div>
-<div class="pr"><span>¥9.9 <small>¥49</small></span><a href="https://zpayz.cn/mapi.php?act=pay&pid=2026062419094236&type=wxpay&out_trade_no=PLAN_10K&notify_url=https%3A//prism-shop.surge.sh/notify&name=1%E4%B8%87%E7%90%86%E8%B4%A2%E6%96%B9%E6%A1%88&money=9.9&sign=e55571166c0270292fe86744a199b39c&sign_type=MD5" class="btn">微信支付</a></div>
+<div class="product">
+<h3>💰 1万理财方案定制</h3>
+<p class="desc">4321资金分配法+可转债双低策略+ETF定投方案+风控规则，1万块最优配置</p>
+<div class="price-row">
+<span class="price">¥9.90</span>
+<span class="original">¥49</span>
+<span class="discount">-80%</span>
+</div>
+<a href="https://zpayz.cn/mapi.php?pid=2026062419094236&type=2&out_trade_no=PLAN_10K&notify_url=https%3A%2F%2Fprism-shop.surge.sh%2Fsuccess.html&return_url=https%3A%2F%2Fprism-shop.surge.sh%2Fsuccess.html&name=1%E4%B8%87%E7%90%86%E8%B4%A2%E6%96%B9%E6%A1%88%E5%AE%9A%E5%88%B6&money=9.9&sign=29eff908647de06832eb78ebdda424ad&sign_type=MD5" class="buy-btn" target="_blank">微信支付 ¥9.90</a>
 </div>
 
-<div class="tools">
-<h3 style="margin-bottom:8px">🛠️ 免费投资工具</h3>
-<a href="https://prism-invest-hqhub.github.io/prism-invest-cn/">双低筛选器</a>
-<a href="https://prism-invest-hqhub.github.io/prism-invest-cn/#etf-calc">ETF计算器</a>
-<a href="https://prism-invest-hqhub.github.io/prism-invest-cn/#plan-10k">1万方案</a>
 </div>
 
-<div class="ft">
-<p>棱镜投资 | 免费投资决策工具 + 实战课程</p>
-<p><a href="https://prism-invest-hqhub.github.io/prism-invest-cn/" style="color:#e94560">工具箱</a> | <a href="https://gist.github.com/prism-invest-hqhub" style="color:#e94560">知识Gist</a></p>
-<p style="margin-top:8px">疑问请联系 prism-capital@coze.email</p>
-<p>⚠️ 所有内容仅供参考，不构成投资建议</p>
+<div class="free-section">
+<h2>❓ 常见问题</h2>
+<p><strong>Q：怎么付款？</strong> 点击"微信支付"按钮，扫码付款即可</p>
+<p><strong>Q：付款后怎么获取？</strong> 付款成功后自动跳转下载页面</p>
+<p><strong>Q：有问题怎么办？</strong> 发邮件到 prism-capital@coze.email</p>
 </div>
+
+<footer>
+<p>棱镜投资 | <a href="https://prism-invest-hqhub.github.io/prism-invest-cn/">免费工具</a> | <a href="https://prism-invest-hqhub.github.io/prism-invest-cn/blog.html">博客</a> | <a href="https://prism-invest-hqhub.github.io/prism-invest-cn/tools-nav.html">工具导航</a></p>
+<p>投资有风险，入市需谨慎 - 本课程不构成投资建议</p>
+</footer>
 </div>
-</body></html>
+</body>
+</html>
