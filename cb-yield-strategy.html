@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>可转债到期收益率YTM怎么算？手把手教你算真实收益 | 棱镜投资</title>
+<meta name="description" content="可转债到期收益率YTM计算方法详解，手把手教你算真实收益。附免费在线YTM计算器，输入价格和票息即可秒出结果。">
+<meta name="keywords" content="可转债YTM,到期收益率,可转债收益计算,YTM计算器,可转债真实收益,可转债持有到期">
+<meta property="og:title" content="可转债到期收益率YTM怎么算？附免费计算器">
+<meta property="og:description" content="手把手教算可转债真实收益，附免费YTM计算器">
+<link rel="canonical" href="https://prism-invest-hqhub.github.io/prism-invest-cn/cb-yield-strategy.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"可转债到期收益率YTM计算方法","description":"手把手教你计算可转债持有到期的真实收益率"}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;color:#1a1a2e;background:#f8f9fa;line-height:1.8}
+.container{max-width:800px;margin:0 auto;padding:15px}
+header{background:linear-gradient(135deg,#0f3460,#16213e);color:#fff;padding:35px 20px;text-align:center}
+header h1{font-size:1.6em;margin-bottom:8px}
+.section{background:#fff;border-radius:12px;padding:25px;margin:15px 0;box-shadow:0 2px 10px rgba(0,0,0,0.06)}
+.section h2{color:#0f3460;margin-bottom:15px;font-size:1.2em;border-left:4px solid #e94560;padding-left:12px}
+.section p{color:#333;margin-bottom:10px;font-size:0.95em}
+.section ul{padding-left:20px;margin:10px 0}
+.section li{margin-bottom:8px;color:#333;font-size:0.93em}
+.highlight{background:#fff3cd;padding:12px;border-radius:8px;border-left:4px solid #ffc107;margin:15px 0;font-size:0.93em}
+.calc-box{background:#f0f2f5;border-radius:8px;padding:18px;margin:12px 0}
+.calc-box label{display:block;font-weight:600;margin:8px 0 4px;color:#16213e;font-size:0.95em}
+.calc-box input{width:100%;padding:10px;border:1px solid #ddd;border-radius:6px;font-size:1em;background:#fff}
+.calc-box button{background:#e94560;color:#fff;border:none;padding:10px 30px;border-radius:6px;cursor:pointer;font-size:1em;margin-top:10px}
+.result-box{background:#fff;border:2px solid #e94560;padding:15px;border-radius:8px;margin-top:12px;font-weight:bold;color:#16213e;display:none}
+.result-box.show{display:block}
+.cta{background:linear-gradient(135deg,#e94560,#c23152);color:#fff;text-align:center;padding:25px;border-radius:12px;margin:15px 0}
+.cta h3{font-size:1.2em;margin-bottom:8px}
+.cta a{display:inline-block;background:#fff;color:#e94560;padding:10px 25px;border-radius:6px;text-decoration:none;font-weight:bold;margin-top:10px}
+footer{background:#1a1a2e;color:#aaa;text-align:center;padding:20px 15px;margin-top:30px;font-size:0.85em}
+footer a{color:#e94560;text-decoration:none}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:0.9em}
+th{background:#16213e;color:#fff;padding:10px;text-align:left}
+td{padding:8px 10px;border-bottom:1px solid #eee}
+</style>
+</head>
+<body>
+<header>
+<h1>📊 可转债到期收益率(YTM)怎么算？</h1>
+<p style="opacity:0.9">手把手教你算真实收益 + 免费YTM计算器</p>
+</header>
+<div class="container">
+<div class="section">
+<h2>什么是到期收益率(YTM)？</h2>
+<p>YTM（Yield to Maturity）就是你买入可转债后，一直持有到期赎回，每年能赚多少百分比。它是衡量可转债"纯债价值"最核心的指标。</p>
+<div class="highlight">💡 简单说：YTM越高，说明你买得越便宜，持有到期越划算。YTM > 0 说明你持有到期不会亏钱。</div>
+</div>
+<div class="section">
+<h2>🧮 免费YTM计算器</h2>
+<div class="calc-box">
+<label>买入价格（元）</label>
+<input type="number" id="price" placeholder="例如：95.5" step="0.01">
+<label>到期赎回价（元）</label>
+<input type="number" id="redemption" placeholder="例如：110" step="0.01">
+<label>剩余年限（年）</label>
+<input type="number" id="years" placeholder="例如：3.5" step="0.1">
+<label>每年票息（元）</label>
+<input type="number" id="coupon" placeholder="例如：1.0" step="0.01">
+<button onclick="calcYTM()">计算YTM</button>
+</div>
+<div id="result" class="result-box"></div>
+<script>
+function calcYTM(){
+  const P=parseFloat(document.getElementById('price').value);
+  const F=parseFloat(document.getElementById('redemption').value);
+  const n=parseFloat(document.getElementById('years').value);
+  const C=parseFloat(document.getElementById('coupon').value);
+  if(isNaN(P)||isNaN(F)||isNaN(n)||isNaN(C)){alert('请填写所有字段');return}
+  // 简化YTM近似计算
+  let ytm=(C+(F-P)/n)/((F+P)/2)*100;
+  document.getElementById('result').innerHTML=`到期收益率(YTM) ≈ <span style="color:#e94560;font-size:1.5em">${ytm.toFixed(2)}%</span><br><br>这意味着：按${P}元买入，持有${n}年到期，每年平均收益约${ytm.toFixed(2)}%<br>${ytm>0?'✅ YTM为正，持有到期不亏钱':'⚠️ YTM为负，到期会亏损，需谨慎'}`;
+  document.getElementById('result').classList.add('show');
+}
+</script>
+</div>
+<div class="section">
+<h2>📖 YTM计算公式详解</h2>
+<p>YTM的近似计算公式：</p>
+<div class="highlight">YTM ≈ [C + (F - P) / n] / [(F + P) / 2]</p><p>C = 每年票息，F = 到期赎回价，P = 买入价格，n = 剩余年限</div>
+<p><strong>举例：</strong>某转债价格95.5元，到期赎回价110元，剩余3.5年，每年票息1元：</p>
+<ul>
+<li>YTM = [1 + (110-95.5)/3.5] / [(110+95.5)/2]</li>
+<li>= [1 + 4.14] / 102.75</li>
+<li>= 5.14 / 102.75 = <strong>5.0%</strong></li>
+</ul>
+<p>YTM 5%意味着：就算正股不涨、不下修，你持有到期也能每年赚5%，比银行存款还高！</p>
+</div>
+<div class="section">
+<h2>🎯 YTM实战筛选标准</h2>
+<table>
+<tr><th>YTM范围</th><th>含义</th><th>操作建议</th></tr>
+<tr><td>YTM > 3%</td><td>纯债价值高</td><td>✅ 积极买入，安全垫厚</td></tr>
+<tr><td>1% < YTM < 3%</td><td>有一定保护</td><td>🟡 可以持有，关注下修</td></tr>
+<tr><td>0% < YTM < 1%</td><td>保护较弱</td><td>⚠️ 需正股上涨配合</td></tr>
+<tr><td>YTM < 0%</td><td>到期亏损</td><td>❌ 不建议纯债持有</td></tr>
+</table>
+</div>
+<div class="section">
+<h2>⚠️ YTM的3个常见误区</h2>
+<ul>
+<li><strong>误区1：YTM高就一定好</strong> → 不一定。YTM高可能是因为价格跌了很多，要结合信用风险看</li>
+<li><strong>误区2：YTM是保证收益</strong> → YTM假设持有到期且公司不违约。如果公司违约，什么收益都是零</li>
+<li><strong>误区3：所有转债都要看YTM</strong> → 偏股型转债（价格>130）YTM通常是负的，这很正常，它的价值在转股</li>
+</ul>
+</div>
+<div class="cta">
+<h3>🔥 想要更精准的YTM筛选？</h3>
+<p>每日精选5只双低转债，包含YTM数据</p>
+<a href="shop.html">查看每日精选 ¥9.9/月 →</a>
+</div>
+</div>
+<footer>
+<p>棱镜投资工具箱 | <a href="index.html">首页</a> | <a href="cb-calculator.html">收益计算器</a> | <a href="bond-ranking.html">双低排名</a></p>
+<p>联系邮箱：prism-capital@coze.email</p>
+</footer>
+</body>
+</html>
