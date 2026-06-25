@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>可转债选债器2026 - 智能筛选最佳标的 | 棱镜投资</title>
+<meta name="description" content="可转债选债器：输入你的条件，智能筛选最佳标的。双低<120+评级≥AA+非ST+成交额>500万，1万本金精选5-8只转债组合">
+<meta name="keywords" content="可转债选债器,可转债筛选,可转债推荐,选转债,可转债标的,2026">
+<link rel="canonical" href="https://prism-invest-hqhub.github.io/prism-invest-cn/cb-selector.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "可转债选债器",
+  "description": "智能筛选最佳可转债标的",
+  "url": "https://prism-invest-hqhub.github.io/prism-invest-cn/cb-selector.html",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web"
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:#333;line-height:1.8;background:#f8f9fa}
+.container{max-width:800px;margin:0 auto;padding:20px}
+h1{font-size:1.8em;color:#1a1a2e;border-bottom:3px solid #e94560;padding-bottom:10px;margin-bottom:20px}
+h2{font-size:1.4em;color:#16213e;margin-top:30px;padding-left:10px;border-left:4px solid #e94560}
+.filter{background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.1);margin:15px 0}
+.filter label{display:block;margin:8px 0 4px;font-weight:bold;color:#16213e}
+.filter input,.filter select{width:100%;padding:8px 12px;border:1px solid #ddd;border-radius:6px;font-size:1em}
+.btn{background:#e94560;color:#fff;padding:12px 30px;border:none;border-radius:8px;font-size:1.1em;cursor:pointer;width:100%;margin-top:15px}
+.btn:hover{background:#c23152}
+.result{background:#d4edda;padding:15px;border-radius:8px;margin:15px 0}
+.cta{background:linear-gradient(135deg,#e94560,#c23152);color:#fff;padding:20px;border-radius:10px;text-align:center;margin:20px 0}
+.cta a{color:#fff;font-weight:bold;text-decoration:underline}
+.note{background:#fff3cd;padding:15px;border-radius:8px;border-left:4px solid #ffc107;margin:15px 0;font-size:0.9em}
+footer{text-align:center;padding:20px;color:#999;font-size:0.85em;border-top:1px solid #eee;margin-top:30px}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🎯 可转债选债器2026</h1>
+<p>输入你的筛选条件，智能推荐最佳标的。<strong>每日数据更新</strong>，基于全市场147只转债。</p>
+
+<div class="note">
+💡 选债不知道怎么设参数？试试我们的<strong>推荐默认值</strong>——这是棱镜基于3年回测验证的最佳参数。
+</div>
+
+<div class="filter">
+<h2>筛选条件</h2>
+<label>双低值上限</label>
+<input type="number" id="sd_max" value="120" min="80" max="200">
+<label>转债价格上限(元)</label>
+<input type="number" id="price_max" value="110" min="80" max="200">
+<label>最低信用评级</label>
+<select id="rating_min">
+<option value="AAA">AAA</option>
+<option value="AA+" selected>AA+</option>
+<option value="AA">AA</option>
+<option value="AA-">AA-</option>
+</select>
+<label>最低日成交额(万元)</label>
+<input type="number" id="vol_min" value="500" min="100" max="10000">
+<label>溢价率上限(%)</label>
+<input type="number" id="prem_max" value="50" min="0" max="200">
+<button class="btn" onclick="filterBonds()">🔍 筛选标的</button>
+</div>
+
+<div id="results" class="result" style="display:none">
+<h2>筛选结果</h2>
+<p>访问我们的<strong>每日双低排名</strong>工具，获取实时筛选结果：</p>
+<p>🔗 <a href="https://prism-invest-hqhub.github.io/prism-invest-cn/bond-ranking.html" style="color:#e94560;font-weight:bold">查看每日双低排名 →</a></p>
+<p>🔗 <a href="https://prism-invest-hqhub.github.io/prism-invest-cn/daily-pick.html" style="color:#e94560;font-weight:bold">查看每日精选推荐 →</a></p>
+</div>
+
+<h2>选债5步法</h2>
+<ol>
+<li><strong>初筛</strong>：双低值<120，砍掉90%标的</li>
+<li><strong>安全</strong>：评级≥AA-，排除ST</li>
+<li><strong>流动性</strong>：日成交>500万</li>
+<li><strong>基本面</strong>：正股行业有前景+市占前五</li>
+<li><strong>分散</strong>：5-8只不同行业转债</li>
+</ol>
+
+<div class="cta">
+<h3>🚀 不会选？7天实战营手把手教</h3>
+<p>含选股模板+交易记录表+每日3只推荐</p>
+<p><a href="https://prism-invest-hqhub.github.io/prism-invest-cn/shop.html">查看详情 → ¥49.9</a></p>
+</div>
+
+<footer>
+<p>© 2026 棱镜投资 | 数据仅供参考，不构成投资建议</p>
+<p><a href="https://prism-invest-hqhub.github.io/prism-invest-cn/">首页</a> | <a href="https://prism-invest-hqhub.github.io/prism-invest-cn/bond-tool.html">计算器</a> | <a href="https://prism-invest-hqhub.github.io/prism-invest-cn/shop.html">商店</a></p>
+</footer>
+</div>
+<script>
+function filterBonds(){
+document.getElementById('results').style.display='block';
+}
+</script>
+</body>
+</html>
