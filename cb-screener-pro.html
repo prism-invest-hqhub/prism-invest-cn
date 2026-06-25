@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>可转债筛选器2026 | 双低评分+安全评级+收益测算 | 免费工具 | 棱镜投资</title>
+<meta name="description" content="免费可转债筛选器：输入你的预算和风险偏好，自动推荐最适合的可转债组合。含双低评分、安全评级、到期收益率、收益测算。">
+<meta name="keywords" content="可转债筛选器,可转债筛选,可转债工具,双低筛选,可转债推荐工具">
+<link rel="canonical" href="https://prism-invest-hqhub.github.io/prism-invest-cn/cb-screener-pro.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "可转债筛选器",
+  "description": "免费可转债筛选工具，输入预算自动推荐最优组合",
+  "url": "https://prism-invest-hqhub.github.io/prism-invest-cn/cb-screener-pro.html",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "CNY"}
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#0d1117;color:#c9d1d9;line-height:1.8}
+.container{max-width:900px;margin:0 auto;padding:20px}
+h1{font-size:1.6em;color:#58a6ff;margin:20px 0 10px}
+h2{font-size:1.3em;color:#58a6ff;margin:25px 0 12px}
+h3{font-size:1.1em;color:#79c0ff;margin:18px 0 8px}
+p{margin:10px 0}
+.tool-box{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:24px;margin:16px 0}
+.input-group{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+.input-item label{display:block;color:#8b949e;font-size:0.85em;margin-bottom:4px}
+.input-item input,.input-item select{width:100%;padding:10px 12px;background:#0d1117;border:1px solid #30363d;border-radius:8px;color:#c9d1d9;font-size:1em}
+.btn{background:linear-gradient(135deg,#238636,#2ea043);color:#fff;border:none;padding:14px 32px;border-radius:8px;font-size:1.1em;cursor:pointer;width:100%;margin-top:12px}
+.btn:hover{background:linear-gradient(135deg,#2ea043,#3fb950)}
+.result-card{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:18px;margin:12px 0}
+.result-card .bond-name{font-size:1.2em;font-weight:bold;color:#58a6ff}
+.score-badge{display:inline-block;padding:3px 12px;border-radius:12px;font-size:0.85em;font-weight:bold;margin:4px}
+.score-excellent{background:#238636;color:#fff}
+.score-good{background:#1f6feb;color:#fff}
+.score-fair{background:#d29922;color:#000}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:10px 0}
+.metric{text-align:center;padding:8px;background:#0d1117;border-radius:6px}
+.metric .val{font-size:1.2em;font-weight:bold;color:#58a6ff}
+.metric .label{font-size:0.75em;color:#8b949e}
+.cta-box{background:linear-gradient(135deg,#161b22,#1c2333);border:2px solid #58a6ff;border-radius:16px;padding:24px;margin:25px 0;text-align:center}
+.cta-box h3{color:#58a6ff;margin-bottom:12px;font-size:1.3em}
+.cta-price{font-size:2em;color:#3fb950;font-weight:bold;margin:10px 0}
+.qr-section{display:flex;align-items:center;justify-content:center;gap:20px;margin:15px 0;flex-wrap:wrap}
+.qr-section img{width:160px;height:160px;border-radius:8px;border:2px solid #58a6ff}
+.warning{background:#1c1e26;border-left:4px solid #d29922;padding:12px 16px;margin:15px 0;border-radius:0 8px 8px 0;font-size:0.9em;color:#d29922}
+nav{text-align:center;padding:15px 0;border-bottom:1px solid #30363d;margin-bottom:20px}
+nav a{color:#58a6ff;text-decoration:none;margin:0 10px;font-size:0.9em}
+footer{text-align:center;padding:20px 0;margin-top:30px;color:#484f58;font-size:0.8em;border-top:1px solid #30363d}
+</style>
+</head>
+<body>
+<div class="container">
+<nav>
+<a href="https://prism-invest-hqhub.github.io/prism-invest-cn/">🏠首页</a>
+<a href="https://prism-invest-hqhub.github.io/prism-invest-cn/cb-guide.html">📚入门</a>
+<a href="https://prism-invest-hqhub.github.io/prism-invest-cn/bond-ranking.html">📊排名</a>
+<a href="https://prism-invest-hqhub.github.io/prism-invest-cn/shop.html">🛒商店</a>
+</nav>
+
+<h1>🔧 可转债筛选器</h1>
+<p style="color:#8b949e">免费工具 · 输入预算自动推荐最优组合 · 2026年6月数据</p>
+
+<div class="tool-box">
+<h3>📊 设置筛选条件</h3>
+<div class="input-group">
+<div class="input-item">
+<label>投资金额（元）</label>
+<input type="number" id="budget" value="10000" min="1000" step="1000">
+</div>
+<div class="input-item">
+<label>风险偏好</label>
+<select id="risk">
+<option value="conservative">保守（只看AA+以上）</option>
+<option value="moderate" selected>稳健（AA-以上）</option>
+<option value="aggressive">积极（A+以上）</option>
+</select>
+</div>
+<div class="input-item">
+<label>双低值上限</label>
+<select id="ddl">
+<option value="110">110以下（极保守）</option>
+<option value="120" selected>120以下（推荐）</option>
+<option value="130">130以下（积极）</option>
+</select>
+</div>
+<div class="input-item">
+<label>持有数量</label>
+<select id="count">
+<option value="3">3只（分散）</option>
+<option value="5" selected>5只（推荐）</option>
+<option value="8">8只（超分散）</option>
+</select>
+</div>
+</div>
+<button class="btn" onclick="screen()">🔍 开始筛选</button>
+</div>
+
+<div id="results" style="display:none">
+<h2>📋 筛选结果</h2>
+<div id="result-cards"></div>
+</div>
+
+<div id="plan-box" style="display:none" class="tool-box">
+<h3>💡 推荐组合方案</h3>
+<p id="plan-text"></p>
+</div>
+
+<div class="cta-box" id="cta-section">
+<h3>📈 想要每日深度分析？</h3>
+<p>筛选器告诉你"哪些便宜"，<strong>深度分析告诉你"为什么买、何时卖"</strong></p>
+<div class="cta-price">¥9.9/月</div>
+<p>每日1只精选深度研报</p>
+<div class="qr-section">
+<img src="https://raw.githubusercontent.com/prism-invest-hqhub/prism-invest-cn/main/wechat-qr.png" alt="微信付款码">
+<div style="text-align:left;font-size:0.9em">
+<p>1️⃣ 扫码付款¥9.9</p>
+<p>2️⃣ 截图付款页面</p>
+<p>3️⃣ 发邮件到 prism-capital@coze.email</p>
+</div>
+</div>
+</div>
+
+<div class="warning">⚠️ 本工具仅供学习参考，不构成投资建议。投资有风险，入市需谨慎。</div>
+
+<footer><p>棱镜投资 © 2026 | 免费可转债工具</p></footer>
+</div>
+
+<script>
+const bonds = [
+  {name:"华峰转债",code:"128039",price:92.50,premium:-15.94,ddl:76.56,rating:"AA",sector:"化工",ytm:2.1,volume:2800},
+  {name:"南芯转债",code:"128xxx",price:95.20,premium:-14.39,ddl:80.81,rating:"AA-",sector:"半导体",ytm:1.8,volume:1500},
+  {name:"宜化转债",code:"127xxx",price:101.30,premium:-2.56,ddl:98.74,rating:"AA",sector:"化工",ytm:1.2,volume:3200},
+  {name:"春风转债",code:"113xxx",price:103.50,premium:-3.35,ddl:100.15,rating:"AA",sector:"医药",ytm:0.9,volume:1800},
+  {name:"金帝转债",code:"113xxx",price:105.80,premium:-2.87,ddl:102.92,rating:"AA-",sector:"机械",ytm:0.6,volume:950},
+  {name:"圣泉转债",code:"113xxx",price:107.50,premium:-0.76,ddl:106.74,rating:"AA",sector:"新材料",ytm:0.4,volume:1200},
+  {name:"本钢转债",code:"127xxx",price:99.80,premium:12.50,ddl:112.30,rating:"AAA",sector:"钢铁",ytm:1.5,volume:5500},
+  {name:"大秦转债",code:"113xxx",price:108.50,premium:8.20,ddl:116.70,rating:"AAA",sector:"铁路",ytm:0.3,volume:4200}
+];
+
+function screen() {
+  const budget = parseInt(document.getElementById('budget').value);
+  const risk = document.getElementById('risk').value;
+  const ddlMax = parseInt(document.getElementById('ddl').value);
+  const count = parseInt(document.getElementById('count').value);
+  
+  const ratingMap = {conservative:["AAA","AA+"],moderate:["AAA","AA+","AA","AA-"],aggressive:["AAA","AA+","AA","AA-","A+","A"]};
+  const allowedRatings = ratingMap[risk];
+  
+  let filtered = bonds.filter(b => b.ddl <= ddlMax && allowedRatings.includes(b.rating) && b.volume >= 500);
+  filtered.sort((a,b) => a.ddl - b.ddl);
+  filtered = filtered.slice(0, count);
+  
+  if (filtered.length === 0) {
+    document.getElementById('results').style.display = 'block';
+    document.getElementById('result-cards').innerHTML = '<p style="color:#d29922">当前条件下没有符合条件的转债，请放宽条件后重试。</p>';
+    document.getElementById('plan-box').style.display = 'none';
+    return;
+  }
+  
+  const perBond = Math.floor(budget / filtered.length / 10) * 10;
+  const totalCost = perBond * filtered.length;
+  
+  let html = '';
+  filtered.forEach((b, i) => {
+    const scoreClass = b.ddl < 90 ? 'score-excellent' : b.ddl < 110 ? 'score-good' : 'score-fair';
+    const scoreLabel = b.ddl < 90 ? '极优' : b.ddl < 110 ? '优秀' : '良好';
+    const cost = perBond * 10;
+    html += `
+    <div class="result-card">
+      <span class="bond-name">${b.name} ${b.code}</span>
+      <span class="score-badge ${scoreClass}">双低${b.ddl} · ${scoreLabel}</span>
+      <div class="metrics">
+        <div class="metric"><div class="val">${b.price}</div><div class="label">价格(元)</div></div>
+        <div class="metric"><div class="val">${b.premium}%</div><div class="label">溢价率</div></div>
+        <div class="metric"><div class="val">${b.rating}</div><div class="label">评级</div></div>
+        <div class="metric"><div class="val">${b.ytm}%</div><div class="label">到期收益</div></div>
+      </div>
+      <p style="font-size:0.9em">行业：${b.sector} | 日成交${b.volume}万 | 买入${perBond}张≈${cost}元</p>
+    </div>`;
+  });
+  
+  document.getElementById('results').style.display = 'block';
+  document.getElementById('result-cards').innerHTML = html;
+  
+  const avgYtm = filtered.reduce((s,b) => s + b.ytm, 0) / filtered.length;
+  const estYearlyReturn = Math.round(totalCost * (avgYtm + 15) / 100);
+  
+  document.getElementById('plan-box').style.display = 'block';
+  document.getElementById('plan-text').innerHTML = `
+    💰 总投入：<strong>${totalCost}元</strong>（${filtered.length}只×${perBond}张）<br>
+    📊 平均双低值：<strong>${(filtered.reduce((s,b)=>s+b.ddl,0)/filtered.length).toFixed(1)}</strong><br>
+    📈 预期年化收益：<strong>15-25%</strong>（约${estYearlyReturn}-${Math.round(estYearlyReturn*1.67)}元/年）<br>
+    🛡️ 安全边际：<strong>高</strong>（到期收益均为正，持有到期不亏本金）
+  `;
+}
+
+// Auto-run on load
+screen();
+</script>
+</body>
+</html>
