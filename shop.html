@@ -4,8 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>棱镜投资商店 | 可转债课程·ETF定投·理财方案</title>
-<meta name="description" content="棱镜投资商店：可转债7天实战营、ETF定投课程、AI副业训练营、1万理财方案。微信支付，购买后邮箱获取。">
+<meta name="description" content="棱镜投资商店：可转债7天实战营、ETF定投课程、AI副业训练营、1万理财方案。微信支付，即时获取。">
 <meta name="keywords" content="可转债课程,ETF定投,理财方案,AI副业,投资教程">
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.19.0/js/md5.min.js"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0d1117;color:#e6edf3;line-height:1.6}
@@ -13,30 +14,45 @@ header{background:linear-gradient(135deg,#161b22,#0d1117);padding:30px 20px;text
 header h1{font-size:1.8em;background:linear-gradient(90deg,#f7971e,#ffd200);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 header p{color:#8b949e;margin-top:8px}
 .container{max-width:900px;margin:0 auto;padding:20px}
-.product{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:24px;margin:15px 0}
-.product:hover{border-color:#f7971e}
+.product{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:24px;margin:15px 0;transition:all .2s}
+.product:hover{border-color:#f7971e;transform:translateY(-2px)}
 .product h3{color:#ffd200;font-size:1.2em;margin-bottom:8px}
 .product .desc{color:#8b949e;font-size:0.9em;margin-bottom:12px}
+.product .price-row{display:flex;align-items:center;gap:12px;margin-bottom:15px}
 .product .price{color:#f7971e;font-size:1.5em;font-weight:700}
-.product .original{text-decoration:line-through;color:#484f58;font-size:0.9em;margin-left:10px}
-.pay-steps{background:#0d1117;border:1px solid #238636;border-radius:8px;padding:15px;margin-top:12px;font-size:0.9em}
-.pay-steps h4{color:#3fb950;margin-bottom:8px}
-.pay-steps ol{padding-left:20px;color:#c9d1d9}
-.pay-steps li{margin:5px 0}
-.pay-steps .highlight{color:#f0883e;font-weight:bold}
-.qr-section{text-align:center;margin:15px 0;padding:20px;background:#161b22;border:1px solid #f7971e;border-radius:8px}
-.qr-section img{max-width:200px;border-radius:8px;border:2px solid #f7971e}
-.qr-section p{color:#8b949e;font-size:0.85em;margin-top:8px}
-.email-box{background:#0d1117;border:1px solid #58a6ff;border-radius:8px;padding:15px;text-align:center;margin:10px 0}
-.email-box a{color:#58a6ff;font-weight:bold;font-size:1.1em;text-decoration:none}
+.product .original{text-decoration:line-through;color:#484f58;font-size:0.9em}
+.buy-btn{display:inline-block;padding:12px 28px;background:linear-gradient(135deg,#f7971e,#ffd200);color:#0d1117;border:none;border-radius:8px;font-size:1em;font-weight:700;cursor:pointer;transition:all .2s}
+.buy-btn:hover{transform:scale(1.05);box-shadow:0 4px 15px rgba(247,151,30,0.4)}
+.buy-btn:active{transform:scale(0.98)}
 .trust{display:flex;flex-wrap:wrap;gap:15px;justify-content:center;margin:30px 0;padding:20px 0;border-top:1px solid #30363d;border-bottom:1px solid #30363d}
 .trust-item{text-align:center;color:#8b949e;font-size:0.85em}
 .trust-item span{display:block;font-size:1.5em;color:#ffd200;margin-bottom:5px}
 .free-section{background:#161b22;border:1px solid #238636;border-radius:12px;padding:24px;margin:20px 0;text-align:center}
 .free-section h2{color:#3fb950;margin-bottom:10px}
 .free-section a{display:inline-block;padding:10px 24px;background:#238636;color:#fff;border-radius:8px;text-decoration:none;font-weight:700;margin-top:10px}
+.modal-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);z-index:1000;justify-content:center;align-items:center}
+.modal-overlay.active{display:flex}
+.modal{background:#161b22;border:1px solid #f7971e;border-radius:12px;padding:30px;max-width:500px;width:90%;max-height:90vh;overflow-y:auto;position:relative}
+.modal h2{color:#ffd200;margin-bottom:15px;font-size:1.3em}
+.modal .close-btn{position:absolute;top:15px;right:15px;background:none;border:none;color:#8b949e;font-size:1.5em;cursor:pointer}
+.modal .close-btn:hover{color:#e6edf3}
+.form-group{margin:12px 0}
+.form-group label{display:block;color:#8b949e;font-size:0.85em;margin-bottom:5px}
+.form-group input{width:100%;padding:10px;background:#0d1117;border:1px solid #30363d;border-radius:6px;color:#e6edf3;font-size:1em}
+.form-group input:focus{border-color:#f7971e;outline:none}
+.pay-info{background:#0d1117;border:1px solid #238636;border-radius:8px;padding:15px;margin:15px 0}
+.pay-info h4{color:#3fb950;margin-bottom:8px}
+.pay-info p{color:#c9d1d9;font-size:0.9em;margin:5px 0}
+.pay-info .amount{color:#f7971e;font-size:1.3em;font-weight:700}
+.submit-btn{width:100%;padding:14px;background:linear-gradient(135deg,#238636,#2ea043);color:#fff;border:none;border-radius:8px;font-size:1.1em;font-weight:700;cursor:pointer;margin-top:15px}
+.submit-btn:hover{opacity:0.9}
+.submit-btn:disabled{opacity:0.5;cursor:not-allowed}
+.qr-iframe{width:100%;height:600px;border:none;border-radius:8px;margin-top:10px}
 footer{text-align:center;padding:30px;color:#484f58;font-size:0.8em}
 footer a{color:#f7971e;text-decoration:none}
+.urgency{background:linear-gradient(135deg,#da3633,#f85149);color:#fff;text-align:center;padding:10px;font-size:0.9em;font-weight:700;border-radius:8px;margin:10px 0}
+.benefits{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.benefit{background:#0d1117;border:1px solid #30363d;border-radius:6px;padding:4px 10px;font-size:0.8em;color:#8b949e}
 </style>
 </head>
 <body>
@@ -45,6 +61,10 @@ footer a{color:#f7971e;text-decoration:none}
 <p>三个维度，一个结论 | 专业投资知识，新手也能学会</p>
 </header>
 <div class="container">
+
+<div class="urgency">
+🔥 限时优惠 | 所有课程立减60%+ | 活动随时结束
+</div>
 
 <div class="trust">
 <div class="trust-item"><span>22+</span>免费工具</div>
@@ -59,98 +79,112 @@ footer a{color:#f7971e;text-decoration:none}
 <a href="https://prism-invest-hqhub.github.io/prism-invest-cn/free-tools.html" target="_blank">使用免费工具 →</a>
 </div>
 
+<!-- Product 1 -->
 <div class="product">
 <h3>🔥 可转债7天实战营</h3>
 <p class="desc">7天从零学会可转债投资：双低策略实战、打新攻略、下修博弈、风控体系。赠送7份学习资料！</p>
+<div class="price-row">
 <span class="price">¥49.90</span><span class="original">¥299</span>
-<div class="pay-steps">
-<h4>📱 购买步骤（微信支付）：</h4>
-<ol>
-<li>扫描下方微信收款码</li>
-<li>付款金额：<span class="highlight">49.90元</span></li>
-<li>付款备注写：<span class="highlight">可转债7天营+你的邮箱</span></li>
-<li>付款后截图发邮件到 <span class="highlight">prism-capital@coze.email</span></li>
-<li>我们确认后立即发送课程资料到你的邮箱</li>
-</ol>
 </div>
+<div class="benefits">
+<span class="benefit">✅ 7天课程</span>
+<span class="benefit">✅ 实战策略</span>
+<span class="benefit">✅ 7份资料</span>
+<span class="benefit">✅ 邮箱交付</span>
+</div>
+<button class="buy-btn" onclick="openCheckout('可转债7天实战营','49.90','CB-CAMP')">立即购买</button>
 </div>
 
+<!-- Product 2 -->
 <div class="product">
 <h3>📊 ETF定投+资产配置课</h3>
 <p class="desc">沪深300+中证500定投策略，4种止盈方法+十年回测数据，1万元资产配置方案</p>
+<div class="price-row">
 <span class="price">¥39.90</span><span class="original">¥199</span>
-<div class="pay-steps">
-<h4>📱 购买步骤：</h4>
-<ol>
-<li>扫描下方微信收款码</li>
-<li>付款金额：<span class="highlight">39.90元</span></li>
-<li>付款备注写：<span class="highlight">ETF课程+你的邮箱</span></li>
-<li>付款后截图发邮件到 prism-capital@coze.email</li>
-</ol>
 </div>
+<div class="benefits">
+<span class="benefit">✅ 定投策略</span>
+<span class="benefit">✅ 止盈方法</span>
+<span class="benefit">✅ 回测数据</span>
+<span class="benefit">✅ 配置方案</span>
+</div>
+<button class="buy-btn" onclick="openCheckout('ETF定投资产配置课','39.90','ETF-COURSE')">立即购买</button>
 </div>
 
+<!-- Product 3 -->
 <div class="product">
 <h3>🤖 AI副业30天营</h3>
 <p class="desc">5个0成本AI副业项目：短视频代运营/知识付费/ChatGPT提示词/写作接单/图片生成</p>
+<div class="price-row">
 <span class="price">¥59.90</span><span class="original">¥399</span>
-<div class="pay-steps">
-<h4>📱 购买步骤：</h4>
-<ol>
-<li>扫描下方微信收款码</li>
-<li>付款金额：<span class="highlight">59.90元</span></li>
-<li>付款备注写：<span class="highlight">AI副业+你的邮箱</span></li>
-<li>付款后截图发邮件到 prism-capital@coze.email</li>
-</ol>
 </div>
+<div class="benefits">
+<span class="benefit">✅ 5个项目</span>
+<span class="benefit">✅ 0成本启动</span>
+<span class="benefit">✅ 30天计划</span>
+<span class="benefit">✅ 实操教程</span>
+</div>
+<button class="buy-btn" onclick="openCheckout('AI副业30天营','59.90','AI-CAMP')">立即购买</button>
 </div>
 
+<!-- Product 4 -->
 <div class="product">
 <h3>📚 可转债资料包</h3>
 <p class="desc">17份可转债投资资料合集：双低策略/打新攻略/下修博弈/强赎预警/风控清单</p>
-<span class="price">¥19.90</span><span class="original">¥99</span>
-<div class="pay-steps">
-<h4>📱 购买步骤：</h4>
-<ol>
-<li>扫描下方微信收款码</li>
-<li>付款金额：<span class="highlight">19.90元</span></li>
-<li>付款备注写：<span class="highlight">可转债资料+你的邮箱</span></li>
-<li>付款后截图发邮件到 prism-capital@coze.email</li>
-</ol>
+<div class="price-row">
+<span class="price">¥9.90</span><span class="original">¥99</span>
 </div>
+<div class="benefits">
+<span class="benefit">✅ 17份资料</span>
+<span class="benefit">✅ 即买即发</span>
+<span class="benefit">✅ 永久有效</span>
+</div>
+<button class="buy-btn" onclick="openCheckout('可转债资料包','9.90','CB-DOCS')">立即购买</button>
 </div>
 
+<!-- Product 5 -->
 <div class="product">
 <h3>💰 1万理财方案定制</h3>
 <p class="desc">4321资金分配法+可转债双低策略+ETF定投方案+风控规则，1万块最优配置</p>
-<span class="price">¥9.90</span><span class="original">¥49</span>
-<div class="pay-steps">
-<h4>📱 购买步骤：</h4>
-<ol>
-<li>扫描下方微信收款码</li>
-<li>付款金额：<span class="highlight">9.90元</span></li>
-<li>付款备注写：<span class="highlight">1万方案+你的邮箱</span></li>
-<li>付款后截图发邮件到 prism-capital@coze.email</li>
-</ol>
+<div class="price-row">
+<span class="price">¥19.90</span><span class="original">¥49</span>
 </div>
+<div class="benefits">
+<span class="benefit">✅ 定制方案</span>
+<span class="benefit">✅ 风控规则</span>
+<span class="benefit">✅ 实战配置</span>
 </div>
-
-<div class="qr-section">
-<h3 style="color:#f7971e">微信扫码付款 ↓</h3>
-<img src="wechat-qr.png" alt="微信收款码">
-<p>账号：rs6(**园) | 付款时请备注产品名+邮箱</p>
+<button class="buy-btn" onclick="openCheckout('1万理财方案定制','19.90','10K-PLAN')">立即购买</button>
 </div>
 
-<div class="email-box">
-<p style="color:#8b949e">付款后截图发送到邮箱：</p>
-<a href="mailto:prism-capital@coze.email">📧 prism-capital@coze.email</a>
-<p style="color:#8b949e;margin-top:8px">我们确认后1小时内发送资料</p>
+<!-- Checkout Modal -->
+<div class="modal-overlay" id="checkoutModal">
+<div class="modal">
+<button class="close-btn" onclick="closeCheckout()">&times;</button>
+<h2>📱 微信扫码支付</h2>
+<div class="pay-info">
+<h4>订单信息</h4>
+<p>产品：<span id="modalProductName"></span></p>
+<p>金额：<span class="amount" id="modalPrice"></span></p>
+<p>订单号：<span id="modalOrderId"></span></p>
+</div>
+<div class="form-group">
+<label>接收资料的邮箱（必填）</label>
+<input type="email" id="buyerEmail" placeholder="你的邮箱地址" required>
+</div>
+<button class="submit-btn" id="payBtn" onclick="createOrder()">生成付款码</button>
+<div id="qrContainer" style="display:none;margin-top:15px">
+<p style="color:#3fb950;text-align:center;font-weight:700">👇 请用微信扫描下方二维码付款 👇</p>
+<iframe id="payFrame" class="qr-iframe" sandbox="allow-scripts allow-same-origin"></iframe>
+<p style="color:#8b949e;text-align:center;font-size:0.8em;margin-top:10px">付款后请将截图发送到 <strong style="color:#58a6ff">prism-capital@coze.email</strong><br>我们确认后1小时内发送资料到你的邮箱</p>
+</div>
+</div>
 </div>
 
 <div class="free-section" style="border-color:#30363d">
 <h2 style="color:#c9d1d9">❓ 常见问题</h2>
-<p style="color:#8b949e"><strong style="color:#e6edf3">Q：怎么付款？</strong> 微信扫上方二维码，输入对应金额即可</p>
-<p style="color:#8b949e"><strong style="color:#e6edf3">Q：付款后怎么获取？</strong> 截图发邮件，我们确认后发送到你的邮箱</p>
+<p style="color:#8b949e"><strong style="color:#e6edf3">Q：怎么付款？</strong> 点击"立即购买"→填写邮箱→扫码支付</p>
+<p style="color:#8b949e"><strong style="color:#e6edf3">Q：付款后怎么获取？</strong> 付款截图发邮件，确认后发送到你的邮箱</p>
 <p style="color:#8b949e"><strong style="color:#e6edf3">Q：多久能收到？</strong> 一般1小时内，最长不超过12小时</p>
 <p style="color:#8b949e"><strong style="color:#e6edf3">Q：有问题怎么办？</strong> 发邮件到 prism-capital@coze.email</p>
 </div>
@@ -160,5 +194,90 @@ footer a{color:#f7971e;text-decoration:none}
 <p>投资有风险，入市需谨慎 - 本课程不构成投资建议</p>
 </footer>
 </div>
+
+<script>
+const BUFPAY_AID = '108061';
+const BUFPAY_SECRET = '3fa1964dc73f4d76a1e10541ca47339c';
+const NOTIFY_URL = 'https://prism-invest-hqhub.github.io/prism-invest-cn/shop.html';
+const RETURN_URL = 'https://prism-invest-hqhub.github.io/prism-invest-cn/shop.html?paid=1';
+
+let currentProduct = {};
+
+function openCheckout(name, price, prefix) {
+  currentProduct = { name, price, prefix };
+  document.getElementById('modalProductName').textContent = name;
+  document.getElementById('modalPrice').textContent = '¥' + price;
+  const ts = Date.now();
+  const orderId = prefix + '-' + ts;
+  document.getElementById('modalOrderId').textContent = orderId;
+  document.getElementById('buyerEmail').value = '';
+  document.getElementById('qrContainer').style.display = 'none';
+  document.getElementById('payBtn').style.display = 'block';
+  document.getElementById('payBtn').disabled = false;
+  document.getElementById('checkoutModal').classList.add('active');
+}
+
+function closeCheckout() {
+  document.getElementById('checkoutModal').classList.remove('active');
+}
+
+function createOrder() {
+  const email = document.getElementById('buyerEmail').value.trim();
+  if (!email || !email.includes('@')) {
+    alert('请填写有效的邮箱地址');
+    return;
+  }
+
+  const name = currentProduct.name;
+  const pay_type = 'wechat';
+  const price = currentProduct.price;
+  const order_id = document.getElementById('modalOrderId').textContent;
+  const order_uid = email;
+  const notify_url = NOTIFY_URL;
+  const return_url = RETURN_URL;
+  const feedback_url = '';
+
+  const signStr = name + pay_type + price + order_id + order_uid + notify_url + return_url + feedback_url + BUFPAY_SECRET;
+  const sign = md5(signStr);
+
+  document.getElementById('payBtn').disabled = true;
+  document.getElementById('payBtn').textContent = '正在生成...';
+
+  const form = document.createElement('form');
+  form.method = 'POST';
+  form.action = 'https://bufpay.com/api/pay/' + BUFPAY_AID;
+  form.target = 'payFrame';
+
+  const fields = {
+    name: name,
+    pay_type: pay_type,
+    price: price,
+    order_id: order_id,
+    order_uid: order_uid,
+    notify_url: notify_url,
+    return_url: return_url,
+    sign: sign
+  };
+
+  for (const [key, value] of Object.entries(fields)) {
+    const input = document.createElement('input');
+    input.type = 'hidden';
+    input.name = key;
+    input.value = value;
+    form.appendChild(input);
+  }
+
+  document.body.appendChild(form);
+  form.submit();
+  document.body.removeChild(form);
+
+  document.getElementById('payBtn').style.display = 'none';
+  document.getElementById('qrContainer').style.display = 'block';
+}
+
+document.getElementById('checkoutModal').addEventListener('click', function(e) {
+  if (e.target === this) closeCheckout();
+});
+</script>
 </body>
 </html>
