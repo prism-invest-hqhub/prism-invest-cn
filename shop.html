@@ -279,5 +279,5 @@ document.getElementById('checkoutModal').addEventListener('click', function(e) {
   if (e.target === this) closeCheckout();
 });
 </script>
-</body>
+<div style="text-align:center; margin:15px 0; font-size:0.75em; color:#555;"><span id="visitor-count">👁️ 加载中...</span></div><script>fetch("https://api.countapi.xyz/hit/prism-invest/shop").then(r=>r.json()).then(d=>{document.getElementById("visitor-count").textContent="👁️ 累计访问 "+d.count+" 次"}).catch(()=>{document.getElementById("visitor-count").textContent="👁️ 访问统计"});</script></body>
 </html>
