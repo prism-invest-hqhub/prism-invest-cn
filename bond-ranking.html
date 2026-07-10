@@ -55,23 +55,23 @@ tr:hover { background: #2d3748; }
 <body>
 <div class="container">
 <h1>📊 可转债双低排名</h1>
-<p class="subtitle">数据更新时间：2026-07-08 14:20:11 | 数据来源：腾讯财经 + 东方财富</p>
+<p class="subtitle">数据更新时间：2026-07-10 14:17:33 | 数据来源：腾讯财经 + 东方财富</p>
 
 <div class="stats">
   <div class="stat-card">
-    <div class="stat-value">312</div>
+    <div class="stat-value">249</div>
     <div class="stat-label">在市转债</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">161.49</div>
+    <div class="stat-value">164.51</div>
     <div class="stat-label">平均价格</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">158.63%</div>
+    <div class="stat-value">164.85%</div>
     <div class="stat-label">平均溢价率</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">320.12</div>
+    <div class="stat-value">329.36</div>
     <div class="stat-label">平均双低值</div>
   </div>
   <div class="stat-card">
@@ -79,643 +79,3814 @@ tr:hover { background: #2d3748; }
     <div class="stat-label">双低≤120</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value">16</div>
+    <div class="stat-value warning">9</div>
     <div class="stat-label">价格≤110</div>
   </div>
 </div>
 
 <div class="filter-section">
-  <h3>🎯 棱镜严格筛选（双低≤120 + 价格≤110 + 评级≥AA- + 非ST）</h3>
-  <p style="color:#94a3b8;font-size:0.85em;margin-bottom:8px;">符合条件: <strong style="color:#38bdf8">0 只</strong></p>
-  <p style="color:#ef4444;font-size:0.9em;">⚠️ 当前无符合严格筛选条件的标的，市场整体偏贵，继续持币观望。</p>
-
+  <h3>💡 筛选说明</h3>
+  <p style="color:#94a3b8;font-size:0.85em;line-height:1.6">
+  双低值 = 转债价格 + 溢价率（越低越好）| 
+  <span style="color:#22c55e">■</span> 双低≤120为优质标的 | 
+  <span style="color:#22c55e">■</span> 价格≤110 安全边际高 | 
+  <span style="color:#f59e0b">■</span> 负溢价为折价状态
+  </p>
 </div>
 
-<h2 style="color:#f1f5f9;margin:20px 0 12px;font-size:1.2em;">📈 双低排名 TOP50</h2>
 <table>
 <thead>
 <tr>
-<th>#</th>
-<th>转债名称</th>
-<th>价格</th>
-<th>溢价率</th>
-<th>转股价值</th>
-<th>转股价</th>
-<th>正股</th>
-<th>正股涨跌</th>
-<th>双低值</th>
-<th>评级</th>
+<th onclick="sortTable(0)">排名</th>
+<th onclick="sortTable(1)">代码</th>
+<th onclick="sortTable(2)">转债名称</th>
+<th onclick="sortTable(3)">价格</th>
+<th onclick="sortTable(4)">溢价率</th>
+<th onclick="sortTable(5)">双低值</th>
+<th onclick="sortTable(6)">正股</th>
+<th onclick="sortTable(7)">正股价</th>
+<th onclick="sortTable(8)">转股价</th>
+<th onclick="sortTable(9)">转股价值</th>
+<th onclick="sortTable(10)">评级</th>
+<th onclick="sortTable(11)">成交量</th>
+<th onclick="sortTable(12)">涨跌</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="rank">1</td>
-<td>三房转债<br><small style="color:#64748b">110092</small></td>
-<td>76.145</td>
-<td class="premium positive">27.04%</td>
-<td>59.94</td>
+<td>110092</td>
+<td style="text-align:left;font-weight:500">三房转债</td>
+<td style="color:#22c55e;font-weight:600">73.545</td>
+<td class="premium positive">30.98%</td>
+<td class="dual-low green">104.53</td>
+<td style="text-align:left;color:#94a3b8">*ST三房</td>
+<td>1.78</td>
 <td>3.17</td>
-<td>*ST三房<br><small style="color:#64748b">1.90</small></td>
-<td class="positive">7.95%</td>
-<td class="dual-low green">103.19</td>
+<td>56.15</td>
 <td><span class="rating rating-A">A-</span></td>
+<td>65,568,100</td>
+<td style="color:#22c55e">+2.96%</td>
 </tr>
 <tr>
 <td class="rank">2</td>
-<td>南航转债<br><small style="color:#64748b">110075</small></td>
-<td>110.794</td>
-<td class="premium positive">36.36%</td>
-<td>81.25</td>
+<td>110075</td>
+<td style="text-align:left;font-weight:500">南航转债</td>
+<td style="color:#f59e0b">110.391</td>
+<td class="premium positive">35.33%</td>
+<td class="dual-low yellow">145.72</td>
+<td style="text-align:left;color:#94a3b8">南方航空</td>
+<td>5.09</td>
 <td>6.24</td>
-<td>南方航空<br><small style="color:#64748b">5.07</small></td>
-<td class="positive">-0.98%</td>
-<td class="dual-low red">147.16</td>
+<td>81.57</td>
 <td><span class="rating rating-AAA">AAA</span></td>
+<td>7,951,100</td>
+<td style="color:#22c55e">+0.17%</td>
 </tr>
 <tr>
 <td class="rank">3</td>
-<td>水羊转债<br><small style="color:#64748b">123188</small></td>
-<td>147.840</td>
-<td class="premium positive">1.80%</td>
-<td>145.22</td>
-<td>13.71</td>
-<td>水羊股份<br><small style="color:#64748b">19.91</small></td>
-<td class="positive">-2.26%</td>
-<td class="dual-low red">149.64</td>
-<td><span class="rating rating-A">A+</span></td>
+<td>113681</td>
+<td style="text-align:left;font-weight:500">镇洋转债</td>
+<td>136.081</td>
+<td class="premium positive">10.56%</td>
+<td class="dual-low yellow">146.64</td>
+<td style="text-align:left;color:#94a3b8">镇洋发展</td>
+<td>14.45</td>
+<td>11.74</td>
+<td>123.08</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>6,312,800</td>
+<td style="color:#ef4444">-1.48%</td>
 </tr>
 <tr>
 <td class="rank">4</td>
-<td>盛虹转债<br><small style="color:#64748b">127030</small></td>
-<td>119.939</td>
-<td class="premium positive">32.54%</td>
-<td>90.49</td>
-<td>14.20</td>
-<td>东方盛虹<br><small style="color:#64748b">12.85</small></td>
-<td class="positive">3.38%</td>
-<td class="dual-low red">152.48</td>
-<td><span class="rating rating-AA">AA+</span></td>
+<td>123188</td>
+<td style="text-align:left;font-weight:500">水羊转债</td>
+<td>147.970</td>
+<td class="premium positive">1.89%</td>
+<td class="dual-low yellow">149.86</td>
+<td style="text-align:left;color:#94a3b8">水羊股份</td>
+<td>19.91</td>
+<td>13.71</td>
+<td>145.22</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>49,015,200</td>
+<td style="color:#22c55e">+1.21%</td>
 </tr>
 <tr>
 <td class="rank">5</td>
-<td>恒逸转2<br><small style="color:#64748b">127067</small></td>
-<td>144.700</td>
-<td class="premium positive">9.15%</td>
-<td>132.57</td>
-<td>10.50</td>
-<td>恒逸石化<br><small style="color:#64748b">13.92</small></td>
-<td class="positive">-1.28%</td>
-<td class="dual-low red">153.85</td>
-<td><span class="rating rating-AA">AA+</span></td>
+<td>118070</td>
+<td style="text-align:left;font-weight:500">N南芯转</td>
+<td style="color:#f59e0b">130.000</td>
+<td class="premium positive">26.37%</td>
+<td class="dual-low red">156.37</td>
+<td style="text-align:left;color:#94a3b8">南芯科技</td>
+<td>45.10</td>
+<td>43.84</td>
+<td>102.87</td>
+<td><span class="rating rating-AA">AA+sti</span></td>
+<td>1,237,000</td>
+<td style="color:#22c55e">+30.00%</td>
 </tr>
 <tr>
 <td class="rank">6</td>
-<td>镇洋转债<br><small style="color:#64748b">113681</small></td>
-<td>138.518</td>
-<td class="premium positive">15.42%</td>
-<td>120.02</td>
-<td>11.74</td>
-<td>镇洋发展<br><small style="color:#64748b">14.09</small></td>
-<td class="positive">1.66%</td>
-<td class="dual-low red">153.93</td>
-<td><span class="rating rating-AA-minus">AA-</span></td>
+<td>113706</td>
+<td style="text-align:left;font-weight:500">N金帝转</td>
+<td style="color:#f59e0b">130.000</td>
+<td class="premium positive">28.24%</td>
+<td class="dual-low red">158.24</td>
+<td style="text-align:left;color:#94a3b8">金帝股份</td>
+<td>31.04</td>
+<td>30.62</td>
+<td>101.37</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>494,200</td>
+<td style="color:#22c55e">+30.00%</td>
 </tr>
 <tr>
 <td class="rank">7</td>
-<td>花园转债<br><small style="color:#64748b">123178</small></td>
-<td>137.309</td>
-<td class="premium positive">20.01%</td>
-<td>114.42</td>
+<td>123178</td>
+<td style="text-align:left;font-weight:500">花园转债</td>
+<td>135.416</td>
+<td class="premium positive">23.32%</td>
+<td class="dual-low red">158.74</td>
+<td style="text-align:left;color:#94a3b8">花园生物</td>
+<td>16.68</td>
 <td>15.19</td>
-<td>花园生物<br><small style="color:#64748b">17.38</small></td>
-<td class="positive">-2.96%</td>
-<td class="dual-low red">157.32</td>
-<td><span class="rating rating-AA-minus">AA-</span></td>
+<td>109.81</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>18,313,800</td>
+<td style="color:#ef4444">-0.31%</td>
 </tr>
 <tr>
 <td class="rank">8</td>
-<td>上银转债<br><small style="color:#64748b">113042</small></td>
-<td>116.793</td>
-<td class="premium positive">42.35%</td>
-<td>82.05</td>
+<td>113042</td>
+<td style="text-align:left;font-weight:500">上银转债</td>
+<td style="color:#f59e0b">115.555</td>
+<td class="premium positive">43.53%</td>
+<td class="dual-low red">159.09</td>
+<td style="text-align:left;color:#94a3b8">上海银行</td>
+<td>8.88</td>
 <td>11.03</td>
-<td>上海银行<br><small style="color:#64748b">9.05</small></td>
-<td class="positive">1.00%</td>
-<td class="dual-low red">159.14</td>
+<td>80.51</td>
 <td><span class="rating rating-AAA">AAA</span></td>
+<td>20,274,700</td>
+<td style="color:#ef4444">-0.48%</td>
 </tr>
 <tr>
 <td class="rank">9</td>
-<td>广核转债<br><small style="color:#64748b">127110</small></td>
-<td>133.495</td>
-<td class="premium positive">26.27%</td>
-<td>105.72</td>
-<td>3.67</td>
-<td>中国广核<br><small style="color:#64748b">3.88</small></td>
-<td class="positive">1.57%</td>
-<td class="dual-low red">159.76</td>
-<td><span class="rating rating-AAA">AAA</span></td>
+<td>123092</td>
+<td style="text-align:left;font-weight:500">天壕转债</td>
+<td style="color:#f59e0b">119.678</td>
+<td class="premium positive">39.53%</td>
+<td class="dual-low red">159.21</td>
+<td style="text-align:left;color:#94a3b8">天壕能源</td>
+<td>4.46</td>
+<td>5.20</td>
+<td>85.77</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>22,295,200</td>
+<td style="color:#ef4444">-1.13%</td>
 </tr>
 <tr>
 <td class="rank">10</td>
-<td>天壕转债<br><small style="color:#64748b">123092</small></td>
-<td>117.914</td>
-<td class="premium positive">42.59%</td>
-<td>82.69</td>
-<td>5.20</td>
-<td>天壕能源<br><small style="color:#64748b">4.30</small></td>
-<td class="positive">0.00%</td>
-<td class="dual-low red">160.51</td>
-<td><span class="rating rating-A">A+</span></td>
+<td>123171</td>
+<td style="text-align:left;font-weight:500">共同转债</td>
+<td>138.914</td>
+<td class="premium positive">25.34%</td>
+<td class="dual-low red">164.25</td>
+<td style="text-align:left;color:#94a3b8">共同药业</td>
+<td>30.08</td>
+<td>27.14</td>
+<td>110.83</td>
+<td><span class="rating rating-A">A-</span></td>
+<td>7,893,400</td>
+<td style="color:#22c55e">+2.30%</td>
 </tr>
 <tr>
 <td class="rank">11</td>
-<td>共同转债<br><small style="color:#64748b">123171</small></td>
-<td>136.965</td>
-<td class="premium positive">24.78%</td>
-<td>109.76</td>
-<td>27.14</td>
-<td>共同药业<br><small style="color:#64748b">29.79</small></td>
-<td class="positive">-0.80%</td>
-<td class="dual-low red">161.75</td>
-<td><span class="rating rating-A">A-</span></td>
+<td>123107</td>
+<td style="text-align:left;font-weight:500">温氏转债</td>
+<td style="color:#f59e0b">113.806</td>
+<td class="premium positive">52.25%</td>
+<td class="dual-low red">166.06</td>
+<td style="text-align:left;color:#94a3b8">温氏股份</td>
+<td>13.32</td>
+<td>17.82</td>
+<td>74.75</td>
+<td><span class="rating rating-AAA">AAA</span></td>
+<td>9,263,400</td>
+<td style="color:#22c55e">+0.43%</td>
 </tr>
 <tr>
 <td class="rank">12</td>
-<td>立讯转债<br><small style="color:#64748b">128136</small></td>
-<td>135.747</td>
-<td class="premium positive">26.47%</td>
-<td>107.34</td>
-<td>58.62</td>
-<td>立讯精密<br><small style="color:#64748b">62.92</small></td>
-<td class="positive">-0.57%</td>
-<td class="dual-low red">162.22</td>
-<td><span class="rating rating-AA">AA+</span></td>
+<td>123059</td>
+<td style="text-align:left;font-weight:500">银信转债</td>
+<td style="color:#f59e0b">117.903</td>
+<td class="premium positive">48.46%</td>
+<td class="dual-low red">166.36</td>
+<td style="text-align:left;color:#94a3b8">银信科技</td>
+<td>7.87</td>
+<td>9.91</td>
+<td>79.41</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>0</td>
+<td style="color:#22c55e">+0.00%</td>
 </tr>
 <tr>
 <td class="rank">13</td>
-<td>新乳转债<br><small style="color:#64748b">128142</small></td>
-<td>115.759</td>
-<td class="premium positive">47.98%</td>
-<td>78.22</td>
-<td>18.69</td>
-<td>新乳业<br><small style="color:#64748b">14.62</small></td>
-<td class="positive">0.48%</td>
-<td class="dual-low red">163.74</td>
-<td><span class="rating rating-AA">AA</span></td>
+<td>113056</td>
+<td style="text-align:left;font-weight:500">重银转债</td>
+<td style="color:#f59e0b">125.049</td>
+<td class="premium positive">44.38%</td>
+<td class="dual-low red">169.43</td>
+<td style="text-align:left;color:#94a3b8">重庆银行</td>
+<td>9.77</td>
+<td>11.28</td>
+<td>86.61</td>
+<td><span class="rating rating-AAA">AAA</span></td>
+<td>9,245,800</td>
+<td style="color:#ef4444">-0.09%</td>
 </tr>
 <tr>
 <td class="rank">14</td>
-<td>温氏转债<br><small style="color:#64748b">123107</small></td>
-<td>113.113</td>
-<td class="premium positive">53.28%</td>
-<td>73.79</td>
-<td>17.82</td>
-<td>温氏股份<br><small style="color:#64748b">13.15</small></td>
-<td class="positive">-3.66%</td>
-<td class="dual-low red">166.40</td>
-<td><span class="rating rating-AAA">AAA</span></td>
+<td>123149</td>
+<td style="text-align:left;font-weight:500">通裕转债</td>
+<td>133.953</td>
+<td class="premium positive">35.92%</td>
+<td class="dual-low red">169.87</td>
+<td style="text-align:left;color:#94a3b8">通裕重工</td>
+<td>2.73</td>
+<td>2.77</td>
+<td>98.56</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>3,787,500</td>
+<td style="color:#22c55e">+0.13%</td>
 </tr>
 <tr>
 <td class="rank">15</td>
-<td>国力转债<br><small style="color:#64748b">118035</small></td>
-<td>155.882</td>
-<td class="premium positive">10.87%</td>
-<td>140.60</td>
-<td>63.00</td>
-<td>国力电子<br><small style="color:#64748b">88.58</small></td>
-<td class="positive">-0.42%</td>
-<td class="dual-low red">166.75</td>
-<td><span class="rating rating-A">A+</span></td>
+<td>113691</td>
+<td style="text-align:left;font-weight:500">和邦转债</td>
+<td>140.950</td>
+<td class="premium positive">29.91%</td>
+<td class="dual-low red">170.86</td>
+<td style="text-align:left;color:#94a3b8">和邦生物</td>
+<td>2.17</td>
+<td>2.00</td>
+<td>108.50</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>10,948,000</td>
+<td style="color:#22c55e">+0.62%</td>
 </tr>
 <tr>
 <td class="rank">16</td>
-<td>银信转债<br><small style="color:#64748b">123059</small></td>
-<td>117.895</td>
-<td class="premium positive">49.98%</td>
-<td>78.61</td>
-<td>9.91</td>
-<td>银信科技<br><small style="color:#64748b">7.79</small></td>
-<td class="positive">2.91%</td>
-<td class="dual-low red">167.87</td>
-<td><span class="rating rating-AA-minus">AA-</span></td>
+<td>113046</td>
+<td style="text-align:left;font-weight:500">金田转债</td>
+<td>134.737</td>
+<td class="premium positive">36.48%</td>
+<td class="dual-low red">171.22</td>
+<td style="text-align:left;color:#94a3b8">金田股份</td>
+<td>10.81</td>
+<td>10.95</td>
+<td>98.72</td>
+<td><span class="rating rating-AA">AA+</span></td>
+<td>8,043,500</td>
+<td style="color:#ef4444">-1.56%</td>
 </tr>
 <tr>
 <td class="rank">17</td>
-<td>重银转债<br><small style="color:#64748b">113056</small></td>
-<td>125.944</td>
-<td class="premium positive">42.35%</td>
-<td>88.48</td>
-<td>11.28</td>
-<td>重庆银行<br><small style="color:#64748b">9.98</small></td>
-<td class="positive">-0.40%</td>
-<td class="dual-low red">168.29</td>
-<td><span class="rating rating-AAA">AAA</span></td>
+<td>110099</td>
+<td style="text-align:left;font-weight:500">福能转债</td>
+<td>142.000</td>
+<td class="premium positive">35.53%</td>
+<td class="dual-low red">177.53</td>
+<td style="text-align:left;color:#94a3b8">福能股份</td>
+<td>10.31</td>
+<td>9.84</td>
+<td>104.78</td>
+<td><span class="rating rating-AA">AA+</span></td>
+<td>9,092,300</td>
+<td style="color:#ef4444">-1.46%</td>
 </tr>
 <tr>
 <td class="rank">18</td>
-<td>金田转债<br><small style="color:#64748b">113046</small></td>
-<td>131.474</td>
-<td class="premium positive">39.10%</td>
-<td>94.52</td>
-<td>10.95</td>
-<td>金田股份<br><small style="color:#64748b">10.35</small></td>
-<td class="positive">-5.48%</td>
-<td class="dual-low red">170.57</td>
+<td>110098</td>
+<td style="text-align:left;font-weight:500">南药转债</td>
+<td>136.878</td>
+<td class="premium positive">42.54%</td>
+<td class="dual-low red">179.42</td>
+<td style="text-align:left;color:#94a3b8">南京医药</td>
+<td>5.08</td>
+<td>5.29</td>
+<td>96.03</td>
 <td><span class="rating rating-AA">AA+</span></td>
+<td>3,821,100</td>
+<td style="color:#22c55e">+0.97%</td>
 </tr>
 <tr>
 <td class="rank">19</td>
-<td>中装转2<br><small style="color:#64748b">127033</small></td>
-<td>89.726</td>
-<td class="premium positive">80.88%</td>
-<td>49.61</td>
-<td>6.33</td>
-<td>ST中装<br><small style="color:#64748b">3.14</small></td>
-<td class="positive">-2.48%</td>
-<td class="dual-low red">170.61</td>
-<td><span class="rating rating-B">CC</span></td>
+<td>113051</td>
+<td style="text-align:left;font-weight:500">节能转债</td>
+<td style="color:#f59e0b">128.700</td>
+<td class="premium positive">51.96%</td>
+<td class="dual-low red">180.66</td>
+<td style="text-align:left;color:#94a3b8">节能风电</td>
+<td>3.43</td>
+<td>4.05</td>
+<td>84.69</td>
+<td><span class="rating rating-AAA">AAA</span></td>
+<td>11,003,600</td>
+<td style="color:#22c55e">+0.18%</td>
 </tr>
 <tr>
 <td class="rank">20</td>
-<td>通裕转债<br><small style="color:#64748b">123149</small></td>
-<td>134.001</td>
-<td class="premium positive">36.97%</td>
-<td>97.83</td>
-<td>2.77</td>
-<td>通裕重工<br><small style="color:#64748b">2.71</small></td>
-<td class="positive">-1.09%</td>
-<td class="dual-low red">170.97</td>
-<td><span class="rating rating-AA">AA</span></td>
+<td>123142</td>
+<td style="text-align:left;font-weight:500">申昊转债</td>
+<td style="color:#f59e0b">126.372</td>
+<td class="premium positive">54.53%</td>
+<td class="dual-low red">180.90</td>
+<td style="text-align:left;color:#94a3b8">申昊科技</td>
+<td>28.14</td>
+<td>34.41</td>
+<td>81.78</td>
+<td><span class="rating rating-B">BBB+</span></td>
+<td>2,938,600</td>
+<td style="color:#22c55e">+0.94%</td>
 </tr>
 <tr>
 <td class="rank">21</td>
-<td>能化转债<br><small style="color:#64748b">127027</small></td>
-<td>113.783</td>
-<td class="premium positive">58.53%</td>
-<td>71.77</td>
-<td>3.33</td>
-<td>甘肃能化<br><small style="color:#64748b">2.39</small></td>
-<td class="positive">0.00%</td>
-<td class="dual-low red">172.32</td>
+<td>113070</td>
+<td style="text-align:left;font-weight:500">渝水转债</td>
+<td style="color:#f59e0b">126.427</td>
+<td class="premium positive">55.46%</td>
+<td class="dual-low red">181.89</td>
+<td style="text-align:left;color:#94a3b8">重庆水务</td>
+<td>4.05</td>
+<td>4.98</td>
+<td>81.33</td>
 <td><span class="rating rating-AAA">AAA</span></td>
+<td>3,604,900</td>
+<td style="color:#22c55e">+0.19%</td>
 </tr>
 <tr>
 <td class="rank">22</td>
-<td>和邦转债<br><small style="color:#64748b">113691</small></td>
-<td>142.553</td>
-<td class="premium positive">31.39%</td>
-<td>108.50</td>
-<td>2.00</td>
-<td>和邦生物<br><small style="color:#64748b">2.17</small></td>
-<td class="positive">-2.69%</td>
-<td class="dual-low red">173.94</td>
-<td><span class="rating rating-AA">AA</span></td>
+<td>110072</td>
+<td style="text-align:left;font-weight:500">广汇转债</td>
+<td style="color:#22c55e;font-weight:600">45.767</td>
+<td class="premium positive">136.46%</td>
+<td class="dual-low red">182.23</td>
+<td style="text-align:left;color:#94a3b8">广汇汽车</td>
+<td>0.78</td>
+<td>4.03</td>
+<td>19.35</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>0</td>
+<td style="color:#22c55e">+0.00%</td>
 </tr>
 <tr>
 <td class="rank">23</td>
-<td>东南转债<br><small style="color:#64748b">127103</small></td>
-<td>142.882</td>
-<td class="premium positive">31.20%</td>
-<td>108.90</td>
-<td>5.73</td>
-<td>东南网架<br><small style="color:#64748b">6.24</small></td>
-<td class="positive">-2.19%</td>
-<td class="dual-low red">174.09</td>
+<td>110097</td>
+<td style="text-align:left;font-weight:500">天润转债</td>
+<td>135.967</td>
+<td class="premium positive">46.75%</td>
+<td class="dual-low red">182.72</td>
+<td style="text-align:left;color:#94a3b8">天润乳业</td>
+<td>7.69</td>
+<td>8.30</td>
+<td>92.65</td>
 <td><span class="rating rating-AA">AA</span></td>
+<td>2,567,300</td>
+<td style="color:#22c55e">+0.72%</td>
 </tr>
 <tr>
 <td class="rank">24</td>
-<td>国泰转债<br><small style="color:#64748b">127040</small></td>
-<td>123.369</td>
-<td class="premium positive">51.19%</td>
-<td>81.60</td>
-<td>9.02</td>
-<td>江苏国泰<br><small style="color:#64748b">7.36</small></td>
-<td class="positive">-2.52%</td>
-<td class="dual-low red">174.56</td>
-<td><span class="rating rating-AA">AA+</span></td>
+<td>113705</td>
+<td style="text-align:left;font-weight:500">N豪26转</td>
+<td style="color:#f59e0b">130.000</td>
+<td class="premium positive">53.26%</td>
+<td class="dual-low red">183.26</td>
+<td style="text-align:left;color:#94a3b8">豪能股份</td>
+<td>9.11</td>
+<td>10.74</td>
+<td>84.82</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>2,266,900</td>
+<td style="color:#22c55e">+30.00%</td>
 </tr>
 <tr>
 <td class="rank">25</td>
-<td>南药转债<br><small style="color:#64748b">110098</small></td>
-<td>135.377</td>
-<td class="premium positive">39.60%</td>
-<td>96.98</td>
-<td>5.29</td>
-<td>南京医药<br><small style="color:#64748b">5.13</small></td>
-<td class="positive">3.01%</td>
-<td class="dual-low red">174.98</td>
-<td><span class="rating rating-AA">AA+</span></td>
+<td>113052</td>
+<td style="text-align:left;font-weight:500">兴业转债</td>
+<td style="color:#f59e0b">115.615</td>
+<td class="premium positive">70.58%</td>
+<td class="dual-low red">186.19</td>
+<td style="text-align:left;color:#94a3b8">兴业银行</td>
+<td>17.29</td>
+<td>25.51</td>
+<td>67.78</td>
+<td><span class="rating rating-AAA">AAA</span></td>
+<td>29,739,800</td>
+<td style="color:#ef4444">-0.21%</td>
 </tr>
 <tr>
 <td class="rank">26</td>
-<td>绿茵转债<br><small style="color:#64748b">127034</small></td>
-<td>126.229</td>
-<td class="premium positive">49.54%</td>
-<td>84.41</td>
-<td>12.38</td>
-<td>绿茵生态<br><small style="color:#64748b">10.45</small></td>
-<td class="positive">-1.32%</td>
-<td class="dual-low red">175.77</td>
-<td><span class="rating rating-AA-minus">AA-</span></td>
+<td>113039</td>
+<td style="text-align:left;font-weight:500">嘉泽转债</td>
+<td>154.800</td>
+<td class="premium positive">31.89%</td>
+<td class="dual-low red">186.69</td>
+<td style="text-align:left;color:#94a3b8">嘉泽新能</td>
+<td>4.19</td>
+<td>3.57</td>
+<td>117.37</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>19,532,600</td>
+<td style="color:#22c55e">+2.48%</td>
 </tr>
 <tr>
 <td class="rank">27</td>
-<td>申昊转债<br><small style="color:#64748b">123142</small></td>
-<td>123.122</td>
-<td class="premium positive">53.50%</td>
-<td>80.21</td>
-<td>34.41</td>
-<td>申昊科技<br><small style="color:#64748b">27.60</small></td>
-<td class="positive">-4.76%</td>
-<td class="dual-low red">176.62</td>
-<td><span class="rating rating-B">BBB+</span></td>
+<td>123274</td>
+<td style="text-align:left;font-weight:500">维科转债</td>
+<td style="color:#f59e0b">130.000</td>
+<td class="premium positive">59.90%</td>
+<td class="dual-low red">189.90</td>
+<td style="text-align:left;color:#94a3b8">维科精密</td>
+<td>28.96</td>
+<td>35.62</td>
+<td>81.30</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>259,600</td>
+<td style="color:#22c55e">+30.00%</td>
 </tr>
 <tr>
 <td class="rank">28</td>
-<td>福能转债<br><small style="color:#64748b">110099</small></td>
-<td>144.100</td>
-<td class="premium positive">34.91%</td>
-<td>106.81</td>
-<td>9.84</td>
-<td>福能股份<br><small style="color:#64748b">10.51</small></td>
-<td class="positive">1.06%</td>
-<td class="dual-low red">179.01</td>
-<td><span class="rating rating-AA">AA+</span></td>
+<td>118035</td>
+<td style="text-align:left;font-weight:500">国力转债</td>
+<td>181.511</td>
+<td class="premium positive">8.57%</td>
+<td class="dual-low red">190.08</td>
+<td style="text-align:left;color:#94a3b8">国力电子</td>
+<td>105.33</td>
+<td>63.00</td>
+<td>167.19</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>106,439,900</td>
+<td style="color:#22c55e">+2.72%</td>
 </tr>
 <tr>
 <td class="rank">29</td>
-<td>牧原转债<br><small style="color:#64748b">127045</small></td>
-<td>121.851</td>
-<td class="premium positive">57.57%</td>
-<td>77.33</td>
-<td>47.91</td>
-<td>牧原股份<br><small style="color:#64748b">37.05</small></td>
-<td class="positive">-3.74%</td>
-<td class="dual-low red">179.42</td>
-<td><span class="rating rating-AAA">AAA</span></td>
+<td>113680</td>
+<td style="text-align:left;font-weight:500">丽岛转债</td>
+<td>135.137</td>
+<td class="premium positive">56.28%</td>
+<td class="dual-low red">191.42</td>
+<td style="text-align:left;color:#94a3b8">丽岛新材</td>
+<td>11.25</td>
+<td>13.01</td>
+<td>86.47</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>9,598,700</td>
+<td style="color:#ef4444">-2.53%</td>
 </tr>
 <tr>
 <td class="rank">30</td>
-<td>丽岛转债<br><small style="color:#64748b">113680</small></td>
-<td>143.428</td>
-<td class="premium positive">36.10%</td>
-<td>105.38</td>
-<td>13.01</td>
-<td>丽岛新材<br><small style="color:#64748b">13.71</small></td>
-<td class="positive">-9.98%</td>
-<td class="dual-low red">179.53</td>
-<td><span class="rating rating-A">A+</span></td>
+<td>110093</td>
+<td style="text-align:left;font-weight:500">神马转债</td>
+<td style="color:#f59e0b">120.100</td>
+<td class="premium positive">72.04%</td>
+<td class="dual-low red">192.14</td>
+<td style="text-align:left;color:#94a3b8">神马股份</td>
+<td>5.85</td>
+<td>8.38</td>
+<td>69.81</td>
+<td><span class="rating rating-AAA">AAA</span></td>
+<td>5,986,400</td>
+<td style="color:#22c55e">+1.56%</td>
 </tr>
 <tr>
 <td class="rank">31</td>
-<td>渝水转债<br><small style="color:#64748b">113070</small></td>
-<td>126.400</td>
-<td class="premium positive">54.66%</td>
-<td>81.73</td>
-<td>4.98</td>
-<td>重庆水务<br><small style="color:#64748b">4.07</small></td>
-<td class="positive">1.24%</td>
-<td class="dual-low red">181.06</td>
-<td><span class="rating rating-AAA">AAA</span></td>
+<td>123189</td>
+<td style="text-align:left;font-weight:500">晓鸣转债</td>
+<td>131.450</td>
+<td class="premium positive">60.94%</td>
+<td class="dual-low red">192.39</td>
+<td style="text-align:left;color:#94a3b8">晓鸣股份</td>
+<td>15.87</td>
+<td>19.43</td>
+<td>81.68</td>
+<td><span class="rating rating-A">A</span></td>
+<td>4,191,700</td>
+<td style="color:#22c55e">+1.54%</td>
 </tr>
 <tr>
 <td class="rank">32</td>
-<td>柳工转2<br><small style="color:#64748b">127084</small></td>
-<td>142.820</td>
-<td class="premium positive">38.42%</td>
-<td>103.18</td>
-<td>7.87</td>
-<td>柳工<br><small style="color:#64748b">8.12</small></td>
-<td class="positive">-0.49%</td>
-<td class="dual-low red">181.24</td>
-<td><span class="rating rating-AAA">AAA</span></td>
+<td>113610</td>
+<td style="text-align:left;font-weight:500">灵康转债</td>
+<td style="color:#f59e0b">120.819</td>
+<td class="premium positive">71.68%</td>
+<td class="dual-low red">192.50</td>
+<td style="text-align:left;color:#94a3b8">灵康药业</td>
+<td>6.20</td>
+<td>8.81</td>
+<td>70.37</td>
+<td><span class="rating rating-A">A-</span></td>
+<td>2,879,500</td>
+<td style="color:#22c55e">+0.76%</td>
 </tr>
 <tr>
 <td class="rank">33</td>
-<td>节能转债<br><small style="color:#64748b">113051</small></td>
-<td>126.999</td>
-<td class="premium positive">54.46%</td>
-<td>82.22</td>
-<td>4.05</td>
-<td>节能风电<br><small style="color:#64748b">3.33</small></td>
-<td class="positive">-2.35%</td>
-<td class="dual-low red">181.46</td>
+<td>113067</td>
+<td style="text-align:left;font-weight:500">燃23转债</td>
+<td style="color:#f59e0b">126.112</td>
+<td class="premium positive">66.42%</td>
+<td class="dual-low red">192.53</td>
+<td style="text-align:left;color:#94a3b8">深圳燃气</td>
+<td>5.85</td>
+<td>7.72</td>
+<td>75.78</td>
 <td><span class="rating rating-AAA">AAA</span></td>
+<td>2,976,600</td>
+<td style="color:#ef4444">-0.15%</td>
 </tr>
 <tr>
 <td class="rank">34</td>
-<td>天润转债<br><small style="color:#64748b">110097</small></td>
-<td>136.139</td>
-<td class="premium positive">45.99%</td>
-<td>93.25</td>
-<td>8.30</td>
-<td>天润乳业<br><small style="color:#64748b">7.74</small></td>
-<td class="positive">-0.51%</td>
-<td class="dual-low red">182.13</td>
-<td><span class="rating rating-AA">AA</span></td>
+<td>113649</td>
+<td style="text-align:left;font-weight:500">丰山转债</td>
+<td>132.198</td>
+<td class="premium positive">61.59%</td>
+<td class="dual-low red">193.79</td>
+<td style="text-align:left;color:#94a3b8">丰山集团</td>
+<td>11.29</td>
+<td>13.80</td>
+<td>81.81</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>3,431,000</td>
+<td style="color:#22c55e">+1.21%</td>
 </tr>
 <tr>
 <td class="rank">35</td>
-<td>嘉泽转债<br><small style="color:#64748b">113039</small></td>
-<td>151.380</td>
-<td class="premium positive">30.85%</td>
-<td>115.69</td>
-<td>3.57</td>
-<td>嘉泽新能<br><small style="color:#64748b">4.13</small></td>
-<td class="positive">-0.72%</td>
-<td class="dual-low red">182.23</td>
+<td>113659</td>
+<td style="text-align:left;font-weight:500">莱克转债</td>
+<td>131.355</td>
+<td class="premium positive">63.10%</td>
+<td class="dual-low red">194.45</td>
+<td style="text-align:left;color:#94a3b8">莱克电气</td>
+<td>27.52</td>
+<td>34.17</td>
+<td>80.54</td>
 <td><span class="rating rating-AA">AA</span></td>
+<td>4,355,800</td>
+<td style="color:#22c55e">+1.74%</td>
 </tr>
 <tr>
 <td class="rank">36</td>
-<td>广汇转债<br><small style="color:#64748b">110072</small></td>
-<td>45.767</td>
-<td class="premium positive">136.46%</td>
-<td>19.35</td>
-<td>4.03</td>
-<td>广汇汽车<br><small style="color:#64748b">0.78</small></td>
-<td class="positive">0.00%</td>
-<td class="dual-low red">182.23</td>
-<td><span class="rating rating-AA-minus">AA-</span></td>
+<td>123214</td>
+<td style="text-align:left;font-weight:500">东宝转债</td>
+<td>130.624</td>
+<td class="premium positive">65.32%</td>
+<td class="dual-low red">195.94</td>
+<td style="text-align:left;color:#94a3b8">东宝生物</td>
+<td>5.27</td>
+<td>6.67</td>
+<td>79.01</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>1,864,400</td>
+<td style="color:#22c55e">+1.78%</td>
 </tr>
 <tr>
 <td class="rank">37</td>
-<td>龙星转债<br><small style="color:#64748b">127105</small></td>
-<td>129.066</td>
-<td class="premium positive">58.23%</td>
-<td>81.57</td>
-<td>6.13</td>
-<td>龙星科技<br><small style="color:#64748b">5.00</small></td>
-<td class="positive">-1.57%</td>
-<td class="dual-low red">187.30</td>
-<td><span class="rating rating-AA-minus">AA-</span></td>
+<td>113054</td>
+<td style="text-align:left;font-weight:500">绿动转债</td>
+<td style="color:#f59e0b">122.828</td>
+<td class="premium positive">73.80%</td>
+<td class="dual-low red">196.63</td>
+<td style="text-align:left;color:#94a3b8">绿色动力</td>
+<td>6.94</td>
+<td>9.82</td>
+<td>70.67</td>
+<td><span class="rating rating-AA">AA+</span></td>
+<td>6,125,000</td>
+<td style="color:#22c55e">+0.81%</td>
 </tr>
 <tr>
 <td class="rank">38</td>
-<td>兴业转债<br><small style="color:#64748b">113052</small></td>
-<td>116.208</td>
-<td class="premium positive">72.25%</td>
-<td>67.46</td>
-<td>25.51</td>
-<td>兴业银行<br><small style="color:#64748b">17.21</small></td>
-<td class="positive">0.82%</td>
-<td class="dual-low red">188.46</td>
-<td><span class="rating rating-AAA">AAA</span></td>
+<td>118024</td>
+<td style="text-align:left;font-weight:500">冠宇转债</td>
+<td style="color:#f59e0b">128.767</td>
+<td class="premium positive">68.09%</td>
+<td class="dual-low red">196.86</td>
+<td style="text-align:left;color:#94a3b8">珠海冠宇</td>
+<td>18.14</td>
+<td>23.68</td>
+<td>76.60</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>8,200,100</td>
+<td style="color:#22c55e">+0.80%</td>
 </tr>
 <tr>
 <td class="rank">39</td>
-<td>太能转债<br><small style="color:#64748b">127108</small></td>
-<td>124.270</td>
-<td class="premium positive">65.01%</td>
-<td>75.31</td>
-<td>5.67</td>
-<td>太阳能<br><small style="color:#64748b">4.27</small></td>
-<td class="positive">-1.16%</td>
-<td class="dual-low red">189.28</td>
-<td><span class="rating rating-AA">AA+</span></td>
+<td>113686</td>
+<td style="text-align:left;font-weight:500">泰瑞转债</td>
+<td>150.351</td>
+<td class="premium positive">47.85%</td>
+<td class="dual-low red">198.20</td>
+<td style="text-align:left;color:#94a3b8">泰瑞机器</td>
+<td>8.43</td>
+<td>8.29</td>
+<td>101.69</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>2,960,800</td>
+<td style="color:#22c55e">+0.89%</td>
 </tr>
 <tr>
 <td class="rank">40</td>
-<td>神马转债<br><small style="color:#64748b">110093</small></td>
-<td>118.930</td>
-<td class="premium positive">71.54%</td>
-<td>69.33</td>
-<td>8.38</td>
-<td>神马股份<br><small style="color:#64748b">5.81</small></td>
-<td class="positive">-2.19%</td>
-<td class="dual-low red">190.47</td>
-<td><span class="rating rating-AAA">AAA</span></td>
+<td>113688</td>
+<td style="text-align:left;font-weight:500">国检转债</td>
+<td>135.506</td>
+<td class="premium positive">64.54%</td>
+<td class="dual-low red">200.05</td>
+<td style="text-align:left;color:#94a3b8">国检集团</td>
+<td>5.46</td>
+<td>6.63</td>
+<td>82.35</td>
+<td><span class="rating rating-AA">AA+</span></td>
+<td>2,063,900</td>
+<td style="color:#22c55e">+0.89%</td>
 </tr>
 <tr>
 <td class="rank">41</td>
-<td>燃23转债<br><small style="color:#64748b">113067</small></td>
-<td>126.410</td>
-<td class="premium positive">64.29%</td>
-<td>76.94</td>
-<td>7.72</td>
-<td>深圳燃气<br><small style="color:#64748b">5.94</small></td>
-<td class="positive">1.19%</td>
-<td class="dual-low red">190.70</td>
-<td><span class="rating rating-AAA">AAA</span></td>
+<td>113694</td>
+<td style="text-align:left;font-weight:500">清源转债</td>
+<td style="color:#f59e0b">125.492</td>
+<td class="premium positive">74.85%</td>
+<td class="dual-low red">200.34</td>
+<td style="text-align:left;color:#94a3b8">清源股份</td>
+<td>9.28</td>
+<td>12.93</td>
+<td>71.77</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>1,419,500</td>
+<td style="color:#22c55e">+0.18%</td>
 </tr>
 <tr>
 <td class="rank">42</td>
-<td>广泰转债<br><small style="color:#64748b">127095</small></td>
-<td>142.778</td>
-<td class="premium positive">48.31%</td>
-<td>96.27</td>
-<td>9.38</td>
-<td>威海广泰<br><small style="color:#64748b">9.03</small></td>
-<td class="positive">-1.20%</td>
-<td class="dual-low red">191.09</td>
-<td><span class="rating rating-AA-minus">AA-</span></td>
+<td>123194</td>
+<td style="text-align:left;font-weight:500">百洋转债</td>
+<td>135.640</td>
+<td class="premium positive">65.38%</td>
+<td class="dual-low red">201.02</td>
+<td style="text-align:left;color:#94a3b8">百洋医药</td>
+<td>22.67</td>
+<td>27.64</td>
+<td>82.02</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>5,398,600</td>
+<td style="color:#22c55e">+0.63%</td>
 </tr>
 <tr>
 <td class="rank">43</td>
-<td>微芯转债<br><small style="color:#64748b">118012</small></td>
-<td>149.384</td>
-<td class="premium positive">42.10%</td>
-<td>105.13</td>
-<td>25.36</td>
-<td>微芯生物<br><small style="color:#64748b">26.66</small></td>
-<td class="positive">-3.20%</td>
-<td class="dual-low red">191.48</td>
-<td><span class="rating rating-A">A+</span></td>
+<td>118053</td>
+<td style="text-align:left;font-weight:500">正帆转债</td>
+<td>194.929</td>
+<td class="premium positive">6.17%</td>
+<td class="dual-low red">201.10</td>
+<td style="text-align:left;color:#94a3b8">正帆科技</td>
+<td>71.33</td>
+<td>38.85</td>
+<td>183.60</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>98,321,300</td>
+<td style="color:#ef4444">-15.06%</td>
 </tr>
 <tr>
 <td class="rank">44</td>
-<td>晓鸣转债<br><small style="color:#64748b">123189</small></td>
-<td>129.509</td>
-<td class="premium positive">62.77%</td>
-<td>79.57</td>
-<td>19.43</td>
-<td>晓鸣股份<br><small style="color:#64748b">15.46</small></td>
-<td class="positive">-2.71%</td>
-<td class="dual-low red">192.27</td>
-<td><span class="rating rating-A">A</span></td>
+<td>118012</td>
+<td style="text-align:left;font-weight:500">微芯转债</td>
+<td>157.651</td>
+<td class="premium positive">43.66%</td>
+<td class="dual-low red">201.31</td>
+<td style="text-align:left;color:#94a3b8">微芯生物</td>
+<td>27.83</td>
+<td>25.36</td>
+<td>109.74</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>12,756,500</td>
+<td style="color:#22c55e">+2.72%</td>
 </tr>
 <tr>
 <td class="rank">45</td>
-<td>长海转债<br><small style="color:#64748b">123091</small></td>
-<td>165.206</td>
-<td class="premium positive">27.70%</td>
-<td>129.37</td>
-<td>16.24</td>
-<td>长海股份<br><small style="color:#64748b">21.01</small></td>
-<td class="positive">-2.73%</td>
-<td class="dual-low red">192.90</td>
-<td><span class="rating rating-AA">AA</span></td>
+<td>123155</td>
+<td style="text-align:left;font-weight:500">中陆转债</td>
+<td>130.578</td>
+<td class="premium positive">70.74%</td>
+<td class="dual-low red">201.32</td>
+<td style="text-align:left;color:#94a3b8">中环海陆</td>
+<td>24.32</td>
+<td>31.80</td>
+<td>76.48</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>2,428,300</td>
+<td style="color:#22c55e">+1.23%</td>
 </tr>
 <tr>
 <td class="rank">46</td>
-<td>灵康转债<br><small style="color:#64748b">113610</small></td>
-<td>119.944</td>
-<td class="premium positive">74.66%</td>
-<td>68.67</td>
-<td>8.81</td>
-<td>灵康药业<br><small style="color:#64748b">6.05</small></td>
-<td class="positive">-0.17%</td>
-<td class="dual-low red">194.61</td>
-<td><span class="rating rating-A">A-</span></td>
+<td>113062</td>
+<td style="text-align:left;font-weight:500">常银转债</td>
+<td style="color:#f59e0b">129.051</td>
+<td class="premium positive">72.35%</td>
+<td class="dual-low red">201.40</td>
+<td style="text-align:left;color:#94a3b8">常熟银行</td>
+<td>6.05</td>
+<td>8.08</td>
+<td>74.88</td>
+<td><span class="rating rating-AAA">AAA</span></td>
+<td>5,420,400</td>
+<td style="color:#22c55e">+0.22%</td>
 </tr>
 <tr>
 <td class="rank">47</td>
-<td>丰山转债<br><small style="color:#64748b">113649</small></td>
-<td>131.445</td>
-<td class="premium positive">63.27%</td>
-<td>80.51</td>
-<td>13.80</td>
-<td>丰山集团<br><small style="color:#64748b">11.11</small></td>
-<td class="positive">-0.80%</td>
-<td class="dual-low red">194.72</td>
-<td><span class="rating rating-AA-minus">AA-</span></td>
+<td>111020</td>
+<td style="text-align:left;font-weight:500">合顺转债</td>
+<td>133.451</td>
+<td class="premium positive">68.66%</td>
+<td class="dual-low red">202.11</td>
+<td style="text-align:left;color:#94a3b8">聚合顺</td>
+<td>8.49</td>
+<td>10.73</td>
+<td>79.12</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>1,580,600</td>
+<td style="color:#22c55e">+0.24%</td>
 </tr>
 <tr>
 <td class="rank">48</td>
-<td>艾迪转债<br><small style="color:#64748b">113644</small></td>
-<td>147.219</td>
-<td class="premium positive">47.90%</td>
-<td>99.54</td>
-<td>23.96</td>
-<td>艾迪精密<br><small style="color:#64748b">23.85</small></td>
-<td class="positive">-10.00%</td>
-<td class="dual-low red">195.12</td>
-<td><span class="rating rating-AA-minus">AA-</span></td>
+<td>123252</td>
+<td style="text-align:left;font-weight:500">银邦转债</td>
+<td>144.419</td>
+<td class="premium positive">58.19%</td>
+<td class="dual-low red">202.61</td>
+<td style="text-align:left;color:#94a3b8">银邦股份</td>
+<td>11.43</td>
+<td>12.52</td>
+<td>91.29</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>13,739,700</td>
+<td style="color:#22c55e">+4.08%</td>
 </tr>
 <tr>
 <td class="rank">49</td>
-<td>绿动转债<br><small style="color:#64748b">113054</small></td>
-<td>122.612</td>
-<td class="premium positive">73.49%</td>
-<td>70.67</td>
-<td>9.82</td>
-<td>绿色动力<br><small style="color:#64748b">6.94</small></td>
-<td class="positive">1.76%</td>
-<td class="dual-low red">196.11</td>
-<td><span class="rating rating-AA">AA+</span></td>
+<td>110100</td>
+<td style="text-align:left;font-weight:500">龙建转债</td>
+<td style="color:#f59e0b">122.485</td>
+<td class="premium positive">81.18%</td>
+<td class="dual-low red">203.67</td>
+<td style="text-align:left;color:#94a3b8">龙建股份</td>
+<td>3.13</td>
+<td>4.63</td>
+<td>67.60</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>1,791,500</td>
+<td style="color:#22c55e">+0.84%</td>
 </tr>
 <tr>
 <td class="rank">50</td>
-<td>东宝转债<br><small style="color:#64748b">123214</small></td>
-<td>127.948</td>
-<td class="premium positive">68.99%</td>
-<td>75.71</td>
-<td>6.67</td>
-<td>东宝生物<br><small style="color:#64748b">5.05</small></td>
-<td class="positive">0.60%</td>
-<td class="dual-low red">196.94</td>
-<td><span class="rating rating-A">A+</span></td>
+<td>123211</td>
+<td style="text-align:left;font-weight:500">阳谷转债</td>
+<td>165.036</td>
+<td class="premium positive">39.19%</td>
+<td class="dual-low red">204.23</td>
+<td style="text-align:left;color:#94a3b8">阳谷华泰</td>
+<td>11.75</td>
+<td>9.91</td>
+<td>118.57</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>11,658,300</td>
+<td style="color:#ef4444">-6.79%</td>
 </tr>
-
+<tr>
+<td class="rank">51</td>
+<td>123109</td>
+<td style="text-align:left;font-weight:500">昌红转债</td>
+<td>133.756</td>
+<td class="premium positive">71.43%</td>
+<td class="dual-low red">205.19</td>
+<td style="text-align:left;color:#94a3b8">昌红科技</td>
+<td>22.05</td>
+<td>28.26</td>
+<td>78.03</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>3,194,800</td>
+<td style="color:#ef4444">-1.29%</td>
+</tr>
+<tr>
+<td class="rank">52</td>
+<td>113646</td>
+<td style="text-align:left;font-weight:500">永吉转债</td>
+<td>155.143</td>
+<td class="premium positive">51.01%</td>
+<td class="dual-low red">206.15</td>
+<td style="text-align:left;color:#94a3b8">永吉股份</td>
+<td>9.00</td>
+<td>8.76</td>
+<td>102.74</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>5,991,000</td>
+<td style="color:#22c55e">+2.01%</td>
+</tr>
+<tr>
+<td class="rank">53</td>
+<td>123076</td>
+<td style="text-align:left;font-weight:500">强力转债</td>
+<td>136.280</td>
+<td class="premium positive">70.62%</td>
+<td class="dual-low red">206.90</td>
+<td style="text-align:left;color:#94a3b8">强力新材</td>
+<td>15.16</td>
+<td>18.98</td>
+<td>79.87</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>28,561,900</td>
+<td style="color:#ef4444">-0.29%</td>
+</tr>
+<tr>
+<td class="rank">54</td>
+<td>111021</td>
+<td style="text-align:left;font-weight:500">奥锐转债</td>
+<td>136.816</td>
+<td class="premium positive">71.39%</td>
+<td class="dual-low red">208.21</td>
+<td style="text-align:left;color:#94a3b8">奥锐特</td>
+<td>20.14</td>
+<td>25.23</td>
+<td>79.83</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>4,489,000</td>
+<td style="color:#22c55e">+2.02%</td>
+</tr>
+<tr>
+<td class="rank">55</td>
+<td>113692</td>
+<td style="text-align:left;font-weight:500">保隆转债</td>
+<td style="color:#f59e0b">127.241</td>
+<td class="premium positive">81.62%</td>
+<td class="dual-low red">208.86</td>
+<td style="text-align:left;color:#94a3b8">保隆科技</td>
+<td>28.10</td>
+<td>40.11</td>
+<td>70.06</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>2,879,000</td>
+<td style="color:#22c55e">+0.29%</td>
+</tr>
+<tr>
+<td class="rank">56</td>
+<td>118011</td>
+<td style="text-align:left;font-weight:500">银微转债</td>
+<td>201.132</td>
+<td class="premium positive">7.82%</td>
+<td class="dual-low red">208.95</td>
+<td style="text-align:left;color:#94a3b8">银河微电</td>
+<td>59.60</td>
+<td>31.95</td>
+<td>186.54</td>
+<td><span class="rating rating-A">A+sti</span></td>
+<td>90,478,900</td>
+<td style="color:#ef4444">-11.20%</td>
+</tr>
+<tr>
+<td class="rank">57</td>
+<td>111000</td>
+<td style="text-align:left;font-weight:500">起帆转债</td>
+<td>156.640</td>
+<td class="premium positive">52.55%</td>
+<td class="dual-low red">209.19</td>
+<td style="text-align:left;color:#94a3b8">起帆电缆</td>
+<td>21.08</td>
+<td>20.53</td>
+<td>102.68</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>28,380,700</td>
+<td style="color:#22c55e">+2.23%</td>
+</tr>
+<tr>
+<td class="rank">58</td>
+<td>113697</td>
+<td style="text-align:left;font-weight:500">应流转债</td>
+<td>198.811</td>
+<td class="premium positive">10.40%</td>
+<td class="dual-low red">209.21</td>
+<td style="text-align:left;color:#94a3b8">应流股份</td>
+<td>54.87</td>
+<td>30.47</td>
+<td>180.08</td>
+<td><span class="rating rating-AA">AA+</span></td>
+<td>71,550,900</td>
+<td style="color:#22c55e">+2.41%</td>
+</tr>
+<tr>
+<td class="rank">59</td>
+<td>123253</td>
+<td style="text-align:left;font-weight:500">永贵转债</td>
+<td>139.330</td>
+<td class="premium positive">70.34%</td>
+<td class="dual-low red">209.67</td>
+<td style="text-align:left;color:#94a3b8">永贵电器</td>
+<td>14.96</td>
+<td>18.29</td>
+<td>81.79</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>6,333,700</td>
+<td style="color:#22c55e">+2.37%</td>
+</tr>
+<tr>
+<td class="rank">60</td>
+<td>110086</td>
+<td style="text-align:left;font-weight:500">精工转债</td>
+<td style="color:#f59e0b">121.321</td>
+<td class="premium positive">88.39%</td>
+<td class="dual-low red">209.71</td>
+<td style="text-align:left;color:#94a3b8">精工钢构</td>
+<td>3.22</td>
+<td>5.00</td>
+<td>64.40</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>4,007,400</td>
+<td style="color:#ef4444">-0.29%</td>
+</tr>
+<tr>
+<td class="rank">61</td>
+<td>113647</td>
+<td style="text-align:left;font-weight:500">禾丰转债</td>
+<td style="color:#f59e0b">119.872</td>
+<td class="premium positive">90.82%</td>
+<td class="dual-low red">210.69</td>
+<td style="text-align:left;color:#94a3b8">禾丰股份</td>
+<td>6.42</td>
+<td>10.22</td>
+<td>62.82</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>2,401,400</td>
+<td style="color:#22c55e">+0.43%</td>
+</tr>
+<tr>
+<td class="rank">62</td>
+<td>123160</td>
+<td style="text-align:left;font-weight:500">泰福转债</td>
+<td>162.416</td>
+<td class="premium positive">48.98%</td>
+<td class="dual-low red">211.40</td>
+<td style="text-align:left;color:#94a3b8">泰福泵业</td>
+<td>25.51</td>
+<td>23.40</td>
+<td>109.02</td>
+<td><span class="rating rating-A">A</span></td>
+<td>6,194,200</td>
+<td style="color:#ef4444">-0.36%</td>
+</tr>
+<tr>
+<td class="rank">63</td>
+<td>123091</td>
+<td style="text-align:left;font-weight:500">长海转债</td>
+<td>175.998</td>
+<td class="premium positive">35.98%</td>
+<td class="dual-low red">211.98</td>
+<td style="text-align:left;color:#94a3b8">长海股份</td>
+<td>21.02</td>
+<td>16.24</td>
+<td>129.43</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>27,741,600</td>
+<td style="color:#ef4444">-1.68%</td>
+</tr>
+<tr>
+<td class="rank">64</td>
+<td>113704</td>
+<td style="text-align:left;font-weight:500">春风转债</td>
+<td>159.677</td>
+<td class="premium positive">53.21%</td>
+<td class="dual-low red">212.89</td>
+<td style="text-align:left;color:#94a3b8">春风动力</td>
+<td>251.91</td>
+<td>241.70</td>
+<td>104.22</td>
+<td><span class="rating rating-AA">AA+</span></td>
+<td>58,812,600</td>
+<td style="color:#ef4444">-6.07%</td>
+</tr>
+<tr>
+<td class="rank">65</td>
+<td>123257</td>
+<td style="text-align:left;font-weight:500">安克转债</td>
+<td>153.306</td>
+<td class="premium positive">59.70%</td>
+<td class="dual-low red">213.01</td>
+<td style="text-align:left;color:#94a3b8">安克创新</td>
+<td>107.46</td>
+<td>111.94</td>
+<td>96.00</td>
+<td><span class="rating rating-AA">AA+</span></td>
+<td>2,215,100</td>
+<td style="color:#ef4444">-0.02%</td>
+</tr>
+<tr>
+<td class="rank">66</td>
+<td>111004</td>
+<td style="text-align:left;font-weight:500">明新转债</td>
+<td style="color:#f59e0b">125.671</td>
+<td class="premium positive">87.49%</td>
+<td class="dual-low red">213.16</td>
+<td style="text-align:left;color:#94a3b8">明新旭腾</td>
+<td>16.63</td>
+<td>24.81</td>
+<td>67.03</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>5,885,500</td>
+<td style="color:#22c55e">+1.21%</td>
+</tr>
+<tr>
+<td class="rank">67</td>
+<td>123209</td>
+<td style="text-align:left;font-weight:500">聚隆转债</td>
+<td>174.322</td>
+<td class="premium positive">39.02%</td>
+<td class="dual-low red">213.34</td>
+<td style="text-align:left;color:#94a3b8">南京聚隆</td>
+<td>22.91</td>
+<td>18.27</td>
+<td>125.40</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>3,323,700</td>
+<td style="color:#22c55e">+0.77%</td>
+</tr>
+<tr>
+<td class="rank">68</td>
+<td>110090</td>
+<td style="text-align:left;font-weight:500">爱迪转债</td>
+<td>133.968</td>
+<td class="premium positive">81.92%</td>
+<td class="dual-low red">215.89</td>
+<td style="text-align:left;color:#94a3b8">爱柯迪</td>
+<td>13.94</td>
+<td>18.93</td>
+<td>73.64</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>1,734,000</td>
+<td style="color:#22c55e">+0.75%</td>
+</tr>
+<tr>
+<td class="rank">69</td>
+<td>113698</td>
+<td style="text-align:left;font-weight:500">凯众转债</td>
+<td>138.277</td>
+<td class="premium positive">77.74%</td>
+<td class="dual-low red">216.02</td>
+<td style="text-align:left;color:#94a3b8">凯众股份</td>
+<td>9.88</td>
+<td>12.70</td>
+<td>77.80</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>1,473,200</td>
+<td style="color:#22c55e">+0.93%</td>
+</tr>
+<tr>
+<td class="rank">70</td>
+<td>123225</td>
+<td style="text-align:left;font-weight:500">翔丰转债</td>
+<td>144.011</td>
+<td class="premium positive">72.47%</td>
+<td class="dual-low red">216.48</td>
+<td style="text-align:left;color:#94a3b8">翔丰华</td>
+<td>28.08</td>
+<td>33.63</td>
+<td>83.50</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>4,017,800</td>
+<td style="color:#ef4444">-1.17%</td>
+</tr>
+<tr>
+<td class="rank">71</td>
+<td>111015</td>
+<td style="text-align:left;font-weight:500">东亚转债</td>
+<td style="color:#f59e0b">125.889</td>
+<td class="premium positive">91.29%</td>
+<td class="dual-low red">217.18</td>
+<td style="text-align:left;color:#94a3b8">东亚药业</td>
+<td>16.42</td>
+<td>24.95</td>
+<td>65.81</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>4,522,300</td>
+<td style="color:#22c55e">+1.81%</td>
+</tr>
+<tr>
+<td class="rank">72</td>
+<td>118015</td>
+<td style="text-align:left;font-weight:500">芯海转债</td>
+<td>135.198</td>
+<td class="premium positive">82.39%</td>
+<td class="dual-low red">217.59</td>
+<td style="text-align:left;color:#94a3b8">芯海科技</td>
+<td>41.51</td>
+<td>56.00</td>
+<td>74.12</td>
+<td><span class="rating rating-A">A+sti</span></td>
+<td>3,849,300</td>
+<td style="color:#ef4444">-0.62%</td>
+</tr>
+<tr>
+<td class="rank">73</td>
+<td>113648</td>
+<td style="text-align:left;font-weight:500">巨星转债</td>
+<td style="color:#f59e0b">121.900</td>
+<td class="premium positive">95.97%</td>
+<td class="dual-low red">217.87</td>
+<td style="text-align:left;color:#94a3b8">巨星农牧</td>
+<td>15.70</td>
+<td>25.24</td>
+<td>62.20</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>2,929,300</td>
+<td style="color:#22c55e">+0.15%</td>
+</tr>
+<tr>
+<td class="rank">74</td>
+<td>111002</td>
+<td style="text-align:left;font-weight:500">特纸转债</td>
+<td>143.584</td>
+<td class="premium positive">76.38%</td>
+<td class="dual-low red">219.96</td>
+<td style="text-align:left;color:#94a3b8">五洲特纸</td>
+<td>15.06</td>
+<td>18.50</td>
+<td>81.41</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>2,635,800</td>
+<td style="color:#22c55e">+0.03%</td>
+</tr>
+<tr>
+<td class="rank">75</td>
+<td>118052</td>
+<td style="text-align:left;font-weight:500">浩瀚转债</td>
+<td>137.670</td>
+<td class="premium positive">82.51%</td>
+<td class="dual-low red">220.18</td>
+<td style="text-align:left;color:#94a3b8">浩瀚深度</td>
+<td>18.39</td>
+<td>24.38</td>
+<td>75.43</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>3,303,200</td>
+<td style="color:#22c55e">+1.68%</td>
+</tr>
+<tr>
+<td class="rank">76</td>
+<td>113037</td>
+<td style="text-align:left;font-weight:500">紫银转债</td>
+<td style="color:#22c55e;font-weight:600">109.895</td>
+<td class="premium positive">110.48%</td>
+<td class="dual-low red">220.38</td>
+<td style="text-align:left;color:#94a3b8">紫金银行</td>
+<td>2.48</td>
+<td>4.75</td>
+<td>52.21</td>
+<td><span class="rating rating-AA">AA+</span></td>
+<td>8,211,900</td>
+<td style="color:#22c55e">+0.00%</td>
+</tr>
+<tr>
+<td class="rank">77</td>
+<td>110087</td>
+<td style="text-align:left;font-weight:500">天业转债</td>
+<td style="color:#f59e0b">120.539</td>
+<td class="premium positive">100.41%</td>
+<td class="dual-low red">220.95</td>
+<td style="text-align:left;color:#94a3b8">新疆天业</td>
+<td>4.15</td>
+<td>6.90</td>
+<td>60.14</td>
+<td><span class="rating rating-AA">AA+</span></td>
+<td>6,279,800</td>
+<td style="color:#ef4444">-0.91%</td>
+</tr>
+<tr>
+<td class="rank">78</td>
+<td>113703</td>
+<td style="text-align:left;font-weight:500">翔26转债</td>
+<td>136.257</td>
+<td class="premium positive">85.91%</td>
+<td class="dual-low red">222.17</td>
+<td style="text-align:left;color:#94a3b8">华翔股份</td>
+<td>16.08</td>
+<td>21.94</td>
+<td>73.29</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>21,250,600</td>
+<td style="color:#ef4444">-2.76%</td>
+</tr>
+<tr>
+<td class="rank">79</td>
+<td>118065</td>
+<td style="text-align:left;font-weight:500">艾为转债</td>
+<td>151.198</td>
+<td class="premium positive">71.28%</td>
+<td class="dual-low red">222.48</td>
+<td style="text-align:left;color:#94a3b8">艾为电子</td>
+<td>70.47</td>
+<td>79.83</td>
+<td>88.28</td>
+<td><span class="rating rating-AA">AA+sti</span></td>
+<td>7,534,200</td>
+<td style="color:#ef4444">-2.61%</td>
+</tr>
+<tr>
+<td class="rank">80</td>
+<td>123243</td>
+<td style="text-align:left;font-weight:500">严牌转债</td>
+<td>205.088</td>
+<td class="premium positive">18.31%</td>
+<td class="dual-low red">223.40</td>
+<td style="text-align:left;color:#94a3b8">严牌股份</td>
+<td>13.14</td>
+<td>7.58</td>
+<td>173.35</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>8,609,900</td>
+<td style="color:#22c55e">+0.78%</td>
+</tr>
+<tr>
+<td class="rank">81</td>
+<td>123133</td>
+<td style="text-align:left;font-weight:500">佩蒂转债</td>
+<td>130.088</td>
+<td class="premium positive">93.38%</td>
+<td class="dual-low red">223.47</td>
+<td style="text-align:left;color:#94a3b8">佩蒂股份</td>
+<td>13.40</td>
+<td>19.92</td>
+<td>67.27</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>2,011,400</td>
+<td style="color:#22c55e">+0.21%</td>
+</tr>
+<tr>
+<td class="rank">82</td>
+<td>123247</td>
+<td style="text-align:left;font-weight:500">万凯转债</td>
+<td>200.321</td>
+<td class="premium positive">23.45%</td>
+<td class="dual-low red">223.77</td>
+<td style="text-align:left;color:#94a3b8">万凯新材</td>
+<td>18.58</td>
+<td>11.45</td>
+<td>162.27</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>18,016,400</td>
+<td style="color:#ef4444">-6.39%</td>
+</tr>
+<tr>
+<td class="rank">83</td>
+<td>111017</td>
+<td style="text-align:left;font-weight:500">蓝天转债</td>
+<td style="color:#f59e0b">126.550</td>
+<td class="premium positive">99.68%</td>
+<td class="dual-low red">226.23</td>
+<td style="text-align:left;color:#94a3b8">蓝天燃气</td>
+<td>6.42</td>
+<td>10.13</td>
+<td>63.38</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>8,576,200</td>
+<td style="color:#22c55e">+1.41%</td>
+</tr>
+<tr>
+<td class="rank">84</td>
+<td>123112</td>
+<td style="text-align:left;font-weight:500">万讯转债</td>
+<td>131.062</td>
+<td class="premium positive">95.84%</td>
+<td class="dual-low red">226.90</td>
+<td style="text-align:left;color:#94a3b8">万讯自控</td>
+<td>6.11</td>
+<td>9.13</td>
+<td>66.92</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>950,100</td>
+<td style="color:#22c55e">+0.38%</td>
+</tr>
+<tr>
+<td class="rank">85</td>
+<td>123263</td>
+<td style="text-align:left;font-weight:500">鼎捷转债</td>
+<td>144.268</td>
+<td class="premium positive">82.65%</td>
+<td class="dual-low red">226.92</td>
+<td style="text-align:left;color:#94a3b8">鼎捷数智</td>
+<td>34.39</td>
+<td>43.54</td>
+<td>78.98</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>14,625,700</td>
+<td style="color:#22c55e">+1.74%</td>
+</tr>
+<tr>
+<td class="rank">86</td>
+<td>123138</td>
+<td style="text-align:left;font-weight:500">丝路转债</td>
+<td style="color:#f59e0b">125.160</td>
+<td class="premium positive">102.09%</td>
+<td class="dual-low red">227.25</td>
+<td style="text-align:left;color:#94a3b8">丝路视觉</td>
+<td>16.53</td>
+<td>26.69</td>
+<td>61.93</td>
+<td><span class="rating rating-A">A-</span></td>
+<td>1,233,600</td>
+<td style="color:#22c55e">+0.63%</td>
+</tr>
+<tr>
+<td class="rank">87</td>
+<td>123272</td>
+<td style="text-align:left;font-weight:500">中汽转债</td>
+<td>152.040</td>
+<td class="premium positive">75.81%</td>
+<td class="dual-low red">227.85</td>
+<td style="text-align:left;color:#94a3b8">中汽股份</td>
+<td>5.18</td>
+<td>5.99</td>
+<td>86.48</td>
+<td><span class="rating rating-AA">AA+</span></td>
+<td>19,707,000</td>
+<td style="color:#ef4444">-5.88%</td>
+</tr>
+<tr>
+<td class="rank">88</td>
+<td>123173</td>
+<td style="text-align:left;font-weight:500">恒锋转债</td>
+<td>132.139</td>
+<td class="premium positive">96.15%</td>
+<td class="dual-low red">228.29</td>
+<td style="text-align:left;color:#94a3b8">恒锋信息</td>
+<td>9.33</td>
+<td>13.85</td>
+<td>67.36</td>
+<td><span class="rating rating-B">BBB+sti</span></td>
+<td>2,251,100</td>
+<td style="color:#22c55e">+1.73%</td>
+</tr>
+<tr>
+<td class="rank">89</td>
+<td>123114</td>
+<td style="text-align:left;font-weight:500">三角转债</td>
+<td>136.313</td>
+<td class="premium positive">93.12%</td>
+<td class="dual-low red">229.43</td>
+<td style="text-align:left;color:#94a3b8">三角防务</td>
+<td>22.46</td>
+<td>31.82</td>
+<td>70.58</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>19,214,000</td>
+<td style="color:#22c55e">+2.96%</td>
+</tr>
+<tr>
+<td class="rank">90</td>
+<td>118068</td>
+<td style="text-align:left;font-weight:500">迪威转债</td>
+<td>134.600</td>
+<td class="premium positive">94.97%</td>
+<td class="dual-low red">229.57</td>
+<td style="text-align:left;color:#94a3b8">迪威尔</td>
+<td>22.43</td>
+<td>32.49</td>
+<td>69.04</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>11,532,900</td>
+<td style="color:#ef4444">-3.44%</td>
+</tr>
+<tr>
+<td class="rank">91</td>
+<td>113632</td>
+<td style="text-align:left;font-weight:500">鹤21转债</td>
+<td style="color:#f59e0b">116.894</td>
+<td class="premium positive">113.02%</td>
+<td class="dual-low red">229.91</td>
+<td style="text-align:left;color:#94a3b8">仙鹤股份</td>
+<td>21.45</td>
+<td>39.09</td>
+<td>54.87</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>19,226,700</td>
+<td style="color:#ef4444">-5.92%</td>
+</tr>
+<tr>
+<td class="rank">92</td>
+<td>123165</td>
+<td style="text-align:left;font-weight:500">回天转债</td>
+<td>145.555</td>
+<td class="premium positive">86.77%</td>
+<td class="dual-low red">232.32</td>
+<td style="text-align:left;color:#94a3b8">回天新材</td>
+<td>15.75</td>
+<td>20.21</td>
+<td>77.93</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>11,501,000</td>
+<td style="color:#ef4444">-4.55%</td>
+</tr>
+<tr>
+<td class="rank">93</td>
+<td>113048</td>
+<td style="text-align:left;font-weight:500">晶科转债</td>
+<td style="color:#f59e0b">123.073</td>
+<td class="premium positive">109.78%</td>
+<td class="dual-low red">232.85</td>
+<td style="text-align:left;color:#94a3b8">晶科科技</td>
+<td>3.96</td>
+<td>6.75</td>
+<td>58.67</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>8,301,200</td>
+<td style="color:#22c55e">+1.48%</td>
+</tr>
+<tr>
+<td class="rank">94</td>
+<td>113043</td>
+<td style="text-align:left;font-weight:500">财通转债</td>
+<td>131.049</td>
+<td class="premium positive">102.19%</td>
+<td class="dual-low red">233.24</td>
+<td style="text-align:left;color:#94a3b8">财通证券</td>
+<td>8.64</td>
+<td>13.33</td>
+<td>64.82</td>
+<td><span class="rating rating-AAA">AAA</span></td>
+<td>8,115,100</td>
+<td style="color:#22c55e">+0.39%</td>
+</tr>
+<tr>
+<td class="rank">95</td>
+<td>123088</td>
+<td style="text-align:left;font-weight:500">威唐转债</td>
+<td style="color:#f59e0b">116.922</td>
+<td class="premium positive">116.62%</td>
+<td class="dual-low red">233.54</td>
+<td style="text-align:left;color:#94a3b8">威唐工业</td>
+<td>11.20</td>
+<td>20.75</td>
+<td>53.98</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>1,772,500</td>
+<td style="color:#22c55e">+0.22%</td>
+</tr>
+<tr>
+<td class="rank">96</td>
+<td>118067</td>
+<td style="text-align:left;font-weight:500">上26转债</td>
+<td>132.875</td>
+<td class="premium positive">101.57%</td>
+<td class="dual-low red">234.44</td>
+<td style="text-align:left;color:#94a3b8">上声电子</td>
+<td>21.49</td>
+<td>32.60</td>
+<td>65.92</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>1,072,900</td>
+<td style="color:#22c55e">+1.07%</td>
+</tr>
+<tr>
+<td class="rank">97</td>
+<td>110084</td>
+<td style="text-align:left;font-weight:500">贵燃转债</td>
+<td style="color:#f59e0b">126.771</td>
+<td class="premium positive">107.95%</td>
+<td class="dual-low red">234.72</td>
+<td style="text-align:left;color:#94a3b8">贵州燃气</td>
+<td>6.20</td>
+<td>10.17</td>
+<td>60.96</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>2,013,600</td>
+<td style="color:#ef4444">-0.08%</td>
+</tr>
+<tr>
+<td class="rank">98</td>
+<td>123168</td>
+<td style="text-align:left;font-weight:500">惠云转债</td>
+<td style="color:#f59e0b">125.934</td>
+<td class="premium positive">109.89%</td>
+<td class="dual-low red">235.82</td>
+<td style="text-align:left;color:#94a3b8">惠云钛业</td>
+<td>6.48</td>
+<td>10.80</td>
+<td>60.00</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>1,079,600</td>
+<td style="color:#22c55e">+0.56%</td>
+</tr>
+<tr>
+<td class="rank">99</td>
+<td>118039</td>
+<td style="text-align:left;font-weight:500">煜邦转债</td>
+<td>135.844</td>
+<td class="premium positive">100.40%</td>
+<td class="dual-low red">236.24</td>
+<td style="text-align:left;color:#94a3b8">煜邦电力</td>
+<td>6.86</td>
+<td>10.12</td>
+<td>67.79</td>
+<td><span class="rating rating-A">A</span></td>
+<td>2,734,400</td>
+<td style="color:#22c55e">+0.65%</td>
+</tr>
+<tr>
+<td class="rank">100</td>
+<td>123183</td>
+<td style="text-align:left;font-weight:500">海顺转债</td>
+<td>135.767</td>
+<td class="premium positive">102.04%</td>
+<td class="dual-low red">237.81</td>
+<td style="text-align:left;color:#94a3b8">海顺新材</td>
+<td>12.23</td>
+<td>18.20</td>
+<td>67.20</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>3,008,300</td>
+<td style="color:#ef4444">-0.16%</td>
+</tr>
+<tr>
+<td class="rank">101</td>
+<td>118066</td>
+<td style="text-align:left;font-weight:500">统联转债</td>
+<td>133.460</td>
+<td class="premium positive">105.27%</td>
+<td class="dual-low red">238.73</td>
+<td style="text-align:left;color:#94a3b8">统联精密</td>
+<td>36.54</td>
+<td>56.20</td>
+<td>65.02</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>2,997,700</td>
+<td style="color:#22c55e">+0.96%</td>
+</tr>
+<tr>
+<td class="rank">102</td>
+<td>113631</td>
+<td style="text-align:left;font-weight:500">皖天转债</td>
+<td>133.420</td>
+<td class="premium positive">105.77%</td>
+<td class="dual-low red">239.19</td>
+<td style="text-align:left;color:#94a3b8">皖天然气</td>
+<td>7.21</td>
+<td>11.12</td>
+<td>64.84</td>
+<td><span class="rating rating-AA">AA+</span></td>
+<td>2,263,400</td>
+<td style="color:#22c55e">+0.15%</td>
+</tr>
+<tr>
+<td class="rank">103</td>
+<td>123264</td>
+<td style="text-align:left;font-weight:500">双乐转债</td>
+<td style="color:#f59e0b">123.764</td>
+<td class="premium positive">117.22%</td>
+<td class="dual-low red">240.98</td>
+<td style="text-align:left;color:#94a3b8">双乐股份</td>
+<td>20.91</td>
+<td>36.70</td>
+<td>56.98</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>1,316,000</td>
+<td style="color:#22c55e">+0.12%</td>
+</tr>
+<tr>
+<td class="rank">104</td>
+<td>123216</td>
+<td style="text-align:left;font-weight:500">科顺转债</td>
+<td style="color:#f59e0b">125.194</td>
+<td class="premium positive">116.24%</td>
+<td class="dual-low red">241.43</td>
+<td style="text-align:left;color:#94a3b8">科顺股份</td>
+<td>5.94</td>
+<td>10.26</td>
+<td>57.89</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>7,642,300</td>
+<td style="color:#22c55e">+0.54%</td>
+</tr>
+<tr>
+<td class="rank">105</td>
+<td>123260</td>
+<td style="text-align:left;font-weight:500">卓镁转债</td>
+<td>147.769</td>
+<td class="premium positive">93.79%</td>
+<td class="dual-low red">241.56</td>
+<td style="text-align:left;color:#94a3b8">星源卓镁</td>
+<td>39.88</td>
+<td>52.30</td>
+<td>76.25</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>12,500,400</td>
+<td style="color:#22c55e">+0.52%</td>
+</tr>
+<tr>
+<td class="rank">106</td>
+<td>123150</td>
+<td style="text-align:left;font-weight:500">九强转债</td>
+<td>133.592</td>
+<td class="premium positive">108.80%</td>
+<td class="dual-low red">242.39</td>
+<td style="text-align:left;color:#94a3b8">九强生物</td>
+<td>11.28</td>
+<td>17.63</td>
+<td>63.98</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>2,042,100</td>
+<td style="color:#22c55e">+0.72%</td>
+</tr>
+<tr>
+<td class="rank">107</td>
+<td>123262</td>
+<td style="text-align:left;font-weight:500">神宇转债</td>
+<td>139.214</td>
+<td class="premium positive">103.29%</td>
+<td class="dual-low red">242.50</td>
+<td style="text-align:left;color:#94a3b8">神宇股份</td>
+<td>26.92</td>
+<td>39.31</td>
+<td>68.48</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>2,250,200</td>
+<td style="color:#22c55e">+0.09%</td>
+</tr>
+<tr>
+<td class="rank">108</td>
+<td>113671</td>
+<td style="text-align:left;font-weight:500">武进转债</td>
+<td style="color:#f59e0b">125.997</td>
+<td class="premium positive">116.76%</td>
+<td class="dual-low red">242.76</td>
+<td style="text-align:left;color:#94a3b8">武进不锈</td>
+<td>4.97</td>
+<td>8.55</td>
+<td>58.13</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>2,005,200</td>
+<td style="color:#22c55e">+0.86%</td>
+</tr>
+<tr>
+<td class="rank">109</td>
+<td>123172</td>
+<td style="text-align:left;font-weight:500">漱玉转债</td>
+<td style="color:#f59e0b">129.365</td>
+<td class="premium positive">115.30%</td>
+<td class="dual-low red">244.67</td>
+<td style="text-align:left;color:#94a3b8">漱玉平民</td>
+<td>12.78</td>
+<td>21.27</td>
+<td>60.08</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>4,310,100</td>
+<td style="color:#22c55e">+0.99%</td>
+</tr>
+<tr>
+<td class="rank">110</td>
+<td>113695</td>
+<td style="text-align:left;font-weight:500">华辰转债</td>
+<td>144.427</td>
+<td class="premium positive">101.92%</td>
+<td class="dual-low red">246.35</td>
+<td style="text-align:left;color:#94a3b8">江苏华辰</td>
+<td>16.83</td>
+<td>23.53</td>
+<td>71.53</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>4,071,600</td>
+<td style="color:#22c55e">+1.52%</td>
+</tr>
+<tr>
+<td class="rank">111</td>
+<td>123199</td>
+<td style="text-align:left;font-weight:500">山河转债</td>
+<td>138.196</td>
+<td class="premium positive">109.47%</td>
+<td class="dual-low red">247.67</td>
+<td style="text-align:left;color:#94a3b8">山河药辅</td>
+<td>12.04</td>
+<td>18.25</td>
+<td>65.97</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>1,050,700</td>
+<td style="color:#22c55e">+0.43%</td>
+</tr>
+<tr>
+<td class="rank">112</td>
+<td>113699</td>
+<td style="text-align:left;font-weight:500">金25转债</td>
+<td>176.875</td>
+<td class="premium positive">70.82%</td>
+<td class="dual-low red">247.69</td>
+<td style="text-align:left;color:#94a3b8">金诚信</td>
+<td>65.71</td>
+<td>63.46</td>
+<td>103.55</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>8,600,900</td>
+<td style="color:#ef4444">-0.21%</td>
+</tr>
+<tr>
+<td class="rank">113</td>
+<td>113674</td>
+<td style="text-align:left;font-weight:500">华设转债</td>
+<td style="color:#f59e0b">129.935</td>
+<td class="premium positive">118.03%</td>
+<td class="dual-low red">247.97</td>
+<td style="text-align:left;color:#94a3b8">华设集团</td>
+<td>5.28</td>
+<td>8.86</td>
+<td>59.59</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>2,077,800</td>
+<td style="color:#22c55e">+0.26%</td>
+</tr>
+<tr>
+<td class="rank">114</td>
+<td>118040</td>
+<td style="text-align:left;font-weight:500">宏微转债</td>
+<td style="color:#f59e0b">124.850</td>
+<td class="premium positive">123.21%</td>
+<td class="dual-low red">248.06</td>
+<td style="text-align:left;color:#94a3b8">宏微科技</td>
+<td>34.93</td>
+<td>62.45</td>
+<td>55.93</td>
+<td><span class="rating rating-A">A</span></td>
+<td>30,299,800</td>
+<td style="color:#ef4444">-3.78%</td>
+</tr>
+<tr>
+<td class="rank">115</td>
+<td>111024</td>
+<td style="text-align:left;font-weight:500">澳弘转债</td>
+<td>161.030</td>
+<td class="premium positive">88.50%</td>
+<td class="dual-low red">249.53</td>
+<td style="text-align:left;color:#94a3b8">澳弘电子</td>
+<td>29.08</td>
+<td>34.04</td>
+<td>85.43</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>2,141,000</td>
+<td style="color:#ef4444">-1.82%</td>
+</tr>
+<tr>
+<td class="rank">116</td>
+<td>111009</td>
+<td style="text-align:left;font-weight:500">盛泰转债</td>
+<td style="color:#f59e0b">122.640</td>
+<td class="premium positive">127.73%</td>
+<td class="dual-low red">250.37</td>
+<td style="text-align:left;color:#94a3b8">盛泰集团</td>
+<td>5.87</td>
+<td>10.90</td>
+<td>53.85</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>1,706,500</td>
+<td style="color:#22c55e">+0.76%</td>
+</tr>
+<tr>
+<td class="rank">117</td>
+<td>113665</td>
+<td style="text-align:left;font-weight:500">汇通转债</td>
+<td style="color:#f59e0b">121.764</td>
+<td class="premium positive">129.84%</td>
+<td class="dual-low red">251.60</td>
+<td style="text-align:left;color:#94a3b8">汇通集团</td>
+<td>4.36</td>
+<td>8.23</td>
+<td>52.98</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>2,562,300</td>
+<td style="color:#22c55e">+1.85%</td>
+</tr>
+<tr>
+<td class="rank">118</td>
+<td>118007</td>
+<td style="text-align:left;font-weight:500">山石转债</td>
+<td>135.327</td>
+<td class="premium positive">116.47%</td>
+<td class="dual-low red">251.80</td>
+<td style="text-align:left;color:#94a3b8">山石网科</td>
+<td>15.41</td>
+<td>24.65</td>
+<td>62.52</td>
+<td><span class="rating rating-A">A-</span></td>
+<td>1,604,200</td>
+<td style="color:#ef4444">-0.23%</td>
+</tr>
+<tr>
+<td class="rank">119</td>
+<td>113700</td>
+<td style="text-align:left;font-weight:500">海天转债</td>
+<td style="color:#f59e0b">128.551</td>
+<td class="premium positive">125.41%</td>
+<td class="dual-low red">253.96</td>
+<td style="text-align:left;color:#94a3b8">海天股份</td>
+<td>7.14</td>
+<td>12.52</td>
+<td>57.03</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>1,508,900</td>
+<td style="color:#22c55e">+1.58%</td>
+</tr>
+<tr>
+<td class="rank">120</td>
+<td>123229</td>
+<td style="text-align:left;font-weight:500">艾录转债</td>
+<td style="color:#f59e0b">128.321</td>
+<td class="premium positive">126.91%</td>
+<td class="dual-low red">255.23</td>
+<td style="text-align:left;color:#94a3b8">上海艾录</td>
+<td>5.74</td>
+<td>10.15</td>
+<td>56.55</td>
+<td><span class="rating rating-A">A</span></td>
+<td>378,500</td>
+<td style="color:#22c55e">+0.60%</td>
+</tr>
+<tr>
+<td class="rank">121</td>
+<td>110073</td>
+<td style="text-align:left;font-weight:500">国投转债</td>
+<td style="color:#22c55e;font-weight:600">106.883</td>
+<td class="premium positive">150.76%</td>
+<td class="dual-low red">257.64</td>
+<td style="text-align:left;color:#94a3b8">国投资本</td>
+<td>6.50</td>
+<td>15.25</td>
+<td>42.62</td>
+<td><span class="rating rating-AAA">AAA</span></td>
+<td>15,141,300</td>
+<td style="color:#22c55e">+0.01%</td>
+</tr>
+<tr>
+<td class="rank">122</td>
+<td>113616</td>
+<td style="text-align:left;font-weight:500">韦尔转债</td>
+<td style="color:#f59e0b">114.772</td>
+<td class="premium positive">143.85%</td>
+<td class="dual-low red">258.62</td>
+<td style="text-align:left;color:#94a3b8">豪威集团</td>
+<td>104.88</td>
+<td>222.83</td>
+<td>47.07</td>
+<td><span class="rating rating-AA">AA+</span></td>
+<td>5,581,100</td>
+<td style="color:#ef4444">-0.37%</td>
+</tr>
+<tr>
+<td class="rank">123</td>
+<td>111003</td>
+<td style="text-align:left;font-weight:500">聚合转债</td>
+<td>131.802</td>
+<td class="premium positive">127.12%</td>
+<td class="dual-low red">258.92</td>
+<td style="text-align:left;color:#94a3b8">聚合顺</td>
+<td>8.49</td>
+<td>14.63</td>
+<td>58.03</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>1,012,200</td>
+<td style="color:#ef4444">-0.03%</td>
+</tr>
+<tr>
+<td class="rank">124</td>
+<td>113701</td>
+<td style="text-align:left;font-weight:500">祥和转债</td>
+<td>154.457</td>
+<td class="premium positive">104.79%</td>
+<td class="dual-low red">259.25</td>
+<td style="text-align:left;color:#94a3b8">祥和实业</td>
+<td>10.25</td>
+<td>13.59</td>
+<td>75.42</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>16,024,300</td>
+<td style="color:#ef4444">-4.20%</td>
+</tr>
+<tr>
+<td class="rank">125</td>
+<td>123251</td>
+<td style="text-align:left;font-weight:500">华医转债</td>
+<td>260.991</td>
+<td class="premium positive">1.17%</td>
+<td class="dual-low red">262.16</td>
+<td style="text-align:left;color:#94a3b8">华康洁净</td>
+<td>57.99</td>
+<td>22.48</td>
+<td>257.96</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>38,961,800</td>
+<td style="color:#22c55e">+0.73%</td>
+</tr>
+<tr>
+<td class="rank">126</td>
+<td>123271</td>
+<td style="text-align:left;font-weight:500">通合转债</td>
+<td>178.960</td>
+<td class="premium positive">83.61%</td>
+<td class="dual-low red">262.57</td>
+<td style="text-align:left;color:#94a3b8">通合科技</td>
+<td>32.34</td>
+<td>33.18</td>
+<td>97.47</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>11,956,800</td>
+<td style="color:#22c55e">+0.62%</td>
+</tr>
+<tr>
+<td class="rank">127</td>
+<td>123222</td>
+<td style="text-align:left;font-weight:500">博俊转债</td>
+<td>150.051</td>
+<td class="premium positive">112.73%</td>
+<td class="dual-low red">262.78</td>
+<td style="text-align:left;color:#94a3b8">博俊科技</td>
+<td>17.19</td>
+<td>24.37</td>
+<td>70.54</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>1,854,800</td>
+<td style="color:#22c55e">+0.22%</td>
+</tr>
+<tr>
+<td class="rank">128</td>
+<td>111022</td>
+<td style="text-align:left;font-weight:500">锡振转债</td>
+<td>158.323</td>
+<td class="premium positive">105.40%</td>
+<td class="dual-low red">263.72</td>
+<td style="text-align:left;color:#94a3b8">无锡振华</td>
+<td>24.65</td>
+<td>31.98</td>
+<td>77.08</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>10,528,800</td>
+<td style="color:#ef4444">-3.85%</td>
+</tr>
+<tr>
+<td class="rank">129</td>
+<td>113624</td>
+<td style="text-align:left;font-weight:500">正川转债</td>
+<td>130.888</td>
+<td class="premium positive">133.07%</td>
+<td class="dual-low red">263.96</td>
+<td style="text-align:left;color:#94a3b8">正川股份</td>
+<td>26.22</td>
+<td>46.69</td>
+<td>56.16</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>36,663,400</td>
+<td style="color:#ef4444">-5.75%</td>
+</tr>
+<tr>
+<td class="rank">130</td>
+<td>113679</td>
+<td style="text-align:left;font-weight:500">芯能转债</td>
+<td style="color:#f59e0b">124.123</td>
+<td class="premium positive">141.25%</td>
+<td class="dual-low red">265.37</td>
+<td style="text-align:left;color:#94a3b8">芯能科技</td>
+<td>6.74</td>
+<td>13.10</td>
+<td>51.45</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>1,603,400</td>
+<td style="color:#22c55e">+0.52%</td>
+</tr>
+<tr>
+<td class="rank">131</td>
+<td>110077</td>
+<td style="text-align:left;font-weight:500">洪城转债</td>
+<td>205.329</td>
+<td class="premium positive">61.95%</td>
+<td class="dual-low red">267.28</td>
+<td style="text-align:left;color:#94a3b8">洪城环境</td>
+<td>9.04</td>
+<td>7.13</td>
+<td>126.79</td>
+<td><span class="rating rating-AA">AA+</span></td>
+<td>3,561,200</td>
+<td style="color:#22c55e">+0.21%</td>
+</tr>
+<tr>
+<td class="rank">132</td>
+<td>118063</td>
+<td style="text-align:left;font-weight:500">金05转债</td>
+<td>172.920</td>
+<td class="premium positive">96.67%</td>
+<td class="dual-low red">269.59</td>
+<td style="text-align:left;color:#94a3b8">金盘科技</td>
+<td>78.50</td>
+<td>89.28</td>
+<td>87.93</td>
+<td><span class="rating rating-AA">AA+sti</span></td>
+<td>4,170,200</td>
+<td style="color:#ef4444">-1.87%</td>
+</tr>
+<tr>
+<td class="rank">133</td>
+<td>110076</td>
+<td style="text-align:left;font-weight:500">华海转债</td>
+<td style="color:#f59e0b">121.002</td>
+<td class="premium positive">150.23%</td>
+<td class="dual-low red">271.23</td>
+<td style="text-align:left;color:#94a3b8">华海药业</td>
+<td>16.76</td>
+<td>34.66</td>
+<td>48.36</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>11,965,000</td>
+<td style="color:#22c55e">+1.59%</td>
+</tr>
+<tr>
+<td class="rank">134</td>
+<td>123187</td>
+<td style="text-align:left;font-weight:500">超达转债</td>
+<td>195.701</td>
+<td class="premium positive">75.73%</td>
+<td class="dual-low red">271.43</td>
+<td style="text-align:left;color:#94a3b8">超达装备</td>
+<td>36.75</td>
+<td>33.00</td>
+<td>111.36</td>
+<td><span class="rating rating-A">A</span></td>
+<td>4,625,300</td>
+<td style="color:#ef4444">-0.29%</td>
+</tr>
+<tr>
+<td class="rank">135</td>
+<td>118022</td>
+<td style="text-align:left;font-weight:500">锂科转债</td>
+<td style="color:#f59e0b">119.968</td>
+<td class="premium positive">152.09%</td>
+<td class="dual-low red">272.06</td>
+<td style="text-align:left;color:#94a3b8">五矿新能</td>
+<td>7.50</td>
+<td>15.76</td>
+<td>47.59</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>2,701,500</td>
+<td style="color:#22c55e">+0.19%</td>
+</tr>
+<tr>
+<td class="rank">136</td>
+<td>123259</td>
+<td style="text-align:left;font-weight:500">锦浪转02</td>
+<td>155.808</td>
+<td class="premium positive">116.84%</td>
+<td class="dual-low red">272.65</td>
+<td style="text-align:left;color:#94a3b8">锦浪科技</td>
+<td>64.54</td>
+<td>89.82</td>
+<td>71.85</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>7,089,700</td>
+<td style="color:#ef4444">-2.39%</td>
+</tr>
+<tr>
+<td class="rank">137</td>
+<td>113638</td>
+<td style="text-align:left;font-weight:500">台21转债</td>
+<td style="color:#f59e0b">124.469</td>
+<td class="premium positive">150.57%</td>
+<td class="dual-low red">275.04</td>
+<td style="text-align:left;color:#94a3b8">台华新材</td>
+<td>8.38</td>
+<td>16.87</td>
+<td>49.67</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>2,163,200</td>
+<td style="color:#22c55e">+0.35%</td>
+</tr>
+<tr>
+<td class="rank">138</td>
+<td>113650</td>
+<td style="text-align:left;font-weight:500">博22转债</td>
+<td style="color:#f59e0b">123.580</td>
+<td class="premium positive">153.84%</td>
+<td class="dual-low red">277.42</td>
+<td style="text-align:left;color:#94a3b8">苏博特</td>
+<td>11.66</td>
+<td>23.95</td>
+<td>48.68</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>1,649,500</td>
+<td style="color:#22c55e">+0.22%</td>
+</tr>
+<tr>
+<td class="rank">139</td>
+<td>113049</td>
+<td style="text-align:left;font-weight:500">长汽转债</td>
+<td style="color:#22c55e;font-weight:600">107.701</td>
+<td class="premium positive">170.95%</td>
+<td class="dual-low red">278.65</td>
+<td style="text-align:left;color:#94a3b8">长城汽车</td>
+<td>15.26</td>
+<td>38.39</td>
+<td>39.75</td>
+<td><span class="rating rating-AAA">AAA</span></td>
+<td>3,500,000</td>
+<td style="color:#ef4444">-0.06%</td>
+</tr>
+<tr>
+<td class="rank">140</td>
+<td>113682</td>
+<td style="text-align:left;font-weight:500">益丰转债</td>
+<td style="color:#f59e0b">127.302</td>
+<td class="premium positive">151.89%</td>
+<td class="dual-low red">279.19</td>
+<td style="text-align:left;color:#94a3b8">益丰药房</td>
+<td>20.14</td>
+<td>39.85</td>
+<td>50.54</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>2,837,900</td>
+<td style="color:#ef4444">-0.01%</td>
+</tr>
+<tr>
+<td class="rank">141</td>
+<td>113066</td>
+<td style="text-align:left;font-weight:500">平煤转债</td>
+<td>148.462</td>
+<td class="premium positive">130.92%</td>
+<td class="dual-low red">279.38</td>
+<td style="text-align:left;color:#94a3b8">平煤股份</td>
+<td>7.58</td>
+<td>11.79</td>
+<td>64.29</td>
+<td><span class="rating rating-AAA">AAA</span></td>
+<td>7,882,200</td>
+<td style="color:#22c55e">+0.92%</td>
+</tr>
+<tr>
+<td class="rank">142</td>
+<td>113678</td>
+<td style="text-align:left;font-weight:500">中贝转债</td>
+<td>146.865</td>
+<td class="premium positive">132.60%</td>
+<td class="dual-low red">279.47</td>
+<td style="text-align:left;color:#94a3b8">中贝通信</td>
+<td>20.71</td>
+<td>32.80</td>
+<td>63.14</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>27,142,700</td>
+<td style="color:#22c55e">+2.79%</td>
+</tr>
+<tr>
+<td class="rank">143</td>
+<td>113058</td>
+<td style="text-align:left;font-weight:500">友发转债</td>
+<td>132.080</td>
+<td class="premium positive">147.55%</td>
+<td class="dual-low red">279.63</td>
+<td style="text-align:left;color:#94a3b8">友发集团</td>
+<td>5.01</td>
+<td>9.39</td>
+<td>53.35</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>5,251,600</td>
+<td style="color:#22c55e">+0.93%</td>
+</tr>
+<tr>
+<td class="rank">144</td>
+<td>113658</td>
+<td style="text-align:left;font-weight:500">密卫转债</td>
+<td>136.042</td>
+<td class="premium positive">143.70%</td>
+<td class="dual-low red">279.74</td>
+<td style="text-align:left;color:#94a3b8">密尔克卫</td>
+<td>75.11</td>
+<td>134.55</td>
+<td>55.82</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>19,152,600</td>
+<td style="color:#ef4444">-1.68%</td>
+</tr>
+<tr>
+<td class="rank">145</td>
+<td>123158</td>
+<td style="text-align:left;font-weight:500">宙邦转债</td>
+<td>242.643</td>
+<td class="premium positive">39.49%</td>
+<td class="dual-low red">282.13</td>
+<td style="text-align:left;color:#94a3b8">新宙邦</td>
+<td>74.40</td>
+<td>42.77</td>
+<td>173.95</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>23,042,400</td>
+<td style="color:#ef4444">-8.73%</td>
+</tr>
+<tr>
+<td class="rank">146</td>
+<td>123261</td>
+<td style="text-align:left;font-weight:500">普联转债</td>
+<td>145.997</td>
+<td class="premium positive">136.34%</td>
+<td class="dual-low red">282.34</td>
+<td style="text-align:left;color:#94a3b8">普联软件</td>
+<td>11.28</td>
+<td>18.26</td>
+<td>61.77</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>2,340,700</td>
+<td style="color:#22c55e">+2.45%</td>
+</tr>
+<tr>
+<td class="rank">147</td>
+<td>110074</td>
+<td style="text-align:left;font-weight:500">精达转债</td>
+<td>267.004</td>
+<td class="premium positive">16.35%</td>
+<td class="dual-low red">283.35</td>
+<td style="text-align:left;color:#94a3b8">精达股份</td>
+<td>8.72</td>
+<td>3.80</td>
+<td>229.47</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>12,289,000</td>
+<td style="color:#22c55e">+0.77%</td>
+</tr>
+<tr>
+<td class="rank">148</td>
+<td>118059</td>
+<td style="text-align:left;font-weight:500">颀中转债</td>
+<td>239.512</td>
+<td class="premium positive">46.11%</td>
+<td class="dual-low red">285.62</td>
+<td style="text-align:left;color:#94a3b8">颀中科技</td>
+<td>22.54</td>
+<td>13.75</td>
+<td>163.93</td>
+<td><span class="rating rating-AA">AA+sti</span></td>
+<td>47,571,500</td>
+<td style="color:#ef4444">-3.54%</td>
+</tr>
+<tr>
+<td class="rank">149</td>
+<td>113693</td>
+<td style="text-align:left;font-weight:500">志邦转债</td>
+<td style="color:#f59e0b">120.463</td>
+<td class="premium positive">165.94%</td>
+<td class="dual-low red">286.40</td>
+<td style="text-align:left;color:#94a3b8">志邦家居</td>
+<td>5.49</td>
+<td>12.12</td>
+<td>45.30</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>1,006,200</td>
+<td style="color:#22c55e">+1.32%</td>
+</tr>
+<tr>
+<td class="rank">150</td>
+<td>123090</td>
+<td style="text-align:left;font-weight:500">三诺转债</td>
+<td style="color:#f59e0b">112.738</td>
+<td class="premium positive">174.28%</td>
+<td class="dual-low red">287.02</td>
+<td style="text-align:left;color:#94a3b8">三诺生物</td>
+<td>14.53</td>
+<td>35.35</td>
+<td>41.10</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>1,096,700</td>
+<td style="color:#22c55e">+0.04%</td>
+</tr>
+<tr>
+<td class="rank">151</td>
+<td>118061</td>
+<td style="text-align:left;font-weight:500">茂莱转债</td>
+<td>246.800</td>
+<td class="premium positive">42.09%</td>
+<td class="dual-low red">288.89</td>
+<td style="text-align:left;color:#94a3b8">茂莱光学</td>
+<td>632.99</td>
+<td>364.43</td>
+<td>173.69</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>64,156,400</td>
+<td style="color:#ef4444">-0.10%</td>
+</tr>
+<tr>
+<td class="rank">152</td>
+<td>111018</td>
+<td style="text-align:left;font-weight:500">华康转债</td>
+<td style="color:#f59e0b">124.067</td>
+<td class="premium positive">167.24%</td>
+<td class="dual-low red">291.31</td>
+<td style="text-align:left;color:#94a3b8">华康股份</td>
+<td>10.52</td>
+<td>22.66</td>
+<td>46.43</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>2,009,300</td>
+<td style="color:#22c55e">+0.73%</td>
+</tr>
+<tr>
+<td class="rank">153</td>
+<td>123269</td>
+<td style="text-align:left;font-weight:500">金杨转债</td>
+<td>166.912</td>
+<td class="premium positive">125.96%</td>
+<td class="dual-low red">292.87</td>
+<td style="text-align:left;color:#94a3b8">金杨精密</td>
+<td>29.40</td>
+<td>39.80</td>
+<td>73.87</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>5,493,800</td>
+<td style="color:#22c55e">+0.81%</td>
+</tr>
+<tr>
+<td class="rank">154</td>
+<td>123180</td>
+<td style="text-align:left;font-weight:500">浙矿转债</td>
+<td style="color:#f59e0b">126.588</td>
+<td class="premium positive">169.00%</td>
+<td class="dual-low red">295.59</td>
+<td style="text-align:left;color:#94a3b8">浙矿股份</td>
+<td>22.96</td>
+<td>48.79</td>
+<td>47.06</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>1,292,200</td>
+<td style="color:#22c55e">+0.82%</td>
+</tr>
+<tr>
+<td class="rank">155</td>
+<td>111014</td>
+<td style="text-align:left;font-weight:500">李子转债</td>
+<td style="color:#f59e0b">120.631</td>
+<td class="premium positive">175.34%</td>
+<td class="dual-low red">295.97</td>
+<td style="text-align:left;color:#94a3b8">李子园</td>
+<td>8.53</td>
+<td>19.47</td>
+<td>43.81</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>776,500</td>
+<td style="color:#22c55e">+0.34%</td>
+</tr>
+<tr>
+<td class="rank">156</td>
+<td>123080</td>
+<td style="text-align:left;font-weight:500">海波转债</td>
+<td style="color:#f59e0b">128.861</td>
+<td class="premium positive">170.26%</td>
+<td class="dual-low red">299.12</td>
+<td style="text-align:left;color:#94a3b8">海波重科</td>
+<td>9.97</td>
+<td>20.91</td>
+<td>47.68</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>3,815,200</td>
+<td style="color:#22c55e">+1.89%</td>
+</tr>
+<tr>
+<td class="rank">157</td>
+<td>113652</td>
+<td style="text-align:left;font-weight:500">伟22转债</td>
+<td>130.840</td>
+<td class="premium positive">168.80%</td>
+<td class="dual-low red">299.64</td>
+<td style="text-align:left;color:#94a3b8">伟明环保</td>
+<td>15.99</td>
+<td>32.85</td>
+<td>48.68</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>5,139,700</td>
+<td style="color:#22c55e">+0.67%</td>
+</tr>
+<tr>
+<td class="rank">158</td>
+<td>123220</td>
+<td style="text-align:left;font-weight:500">易瑞转债</td>
+<td style="color:#f59e0b">130.000</td>
+<td class="premium positive">170.29%</td>
+<td class="dual-low red">300.29</td>
+<td style="text-align:left;color:#94a3b8">易瑞生物</td>
+<td>6.19</td>
+<td>12.87</td>
+<td>48.10</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>1,470,400</td>
+<td style="color:#22c55e">+0.46%</td>
+</tr>
+<tr>
+<td class="rank">159</td>
+<td>123237</td>
+<td style="text-align:left;font-weight:500">佳禾转债</td>
+<td>133.735</td>
+<td class="premium positive">166.61%</td>
+<td class="dual-low red">300.35</td>
+<td style="text-align:left;color:#94a3b8">佳禾智能</td>
+<td>10.91</td>
+<td>21.75</td>
+<td>50.16</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>1,605,500</td>
+<td style="color:#22c55e">+0.98%</td>
+</tr>
+<tr>
+<td class="rank">160</td>
+<td>113702</td>
+<td style="text-align:left;font-weight:500">斯达转债</td>
+<td>219.000</td>
+<td class="premium positive">81.49%</td>
+<td class="dual-low red">300.49</td>
+<td style="text-align:left;color:#94a3b8">斯达半导</td>
+<td>127.06</td>
+<td>105.30</td>
+<td>120.66</td>
+<td><span class="rating rating-AA">AA+sti</span></td>
+<td>23,055,500</td>
+<td style="color:#ef4444">-2.45%</td>
+</tr>
+<tr>
+<td class="rank">161</td>
+<td>118062</td>
+<td style="text-align:left;font-weight:500">天准转债</td>
+<td>256.982</td>
+<td class="premium positive">44.78%</td>
+<td class="dual-low red">301.76</td>
+<td style="text-align:left;color:#94a3b8">天准科技</td>
+<td>98.92</td>
+<td>55.73</td>
+<td>177.50</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>31,794,300</td>
+<td style="color:#ef4444">-1.98%</td>
+</tr>
+<tr>
+<td class="rank">162</td>
+<td>123207</td>
+<td style="text-align:left;font-weight:500">冠中转债</td>
+<td>235.297</td>
+<td class="premium positive">67.30%</td>
+<td class="dual-low red">302.60</td>
+<td style="text-align:left;color:#94a3b8">冠中生态</td>
+<td>23.29</td>
+<td>16.56</td>
+<td>140.64</td>
+<td><span class="rating rating-A">A-</span></td>
+<td>10,726,000</td>
+<td style="color:#ef4444">-3.25%</td>
+</tr>
+<tr>
+<td class="rank">163</td>
+<td>113696</td>
+<td style="text-align:left;font-weight:500">伯25转债</td>
+<td>133.100</td>
+<td class="premium positive">171.27%</td>
+<td class="dual-low red">304.37</td>
+<td style="text-align:left;color:#94a3b8">伯特利</td>
+<td>25.72</td>
+<td>52.42</td>
+<td>49.07</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>4,641,300</td>
+<td style="color:#22c55e">+0.31%</td>
+</tr>
+<tr>
+<td class="rank">164</td>
+<td>123223</td>
+<td style="text-align:left;font-weight:500">九典转02</td>
+<td>130.752</td>
+<td class="premium positive">173.91%</td>
+<td class="dual-low red">304.66</td>
+<td style="text-align:left;color:#94a3b8">九典制药</td>
+<td>10.43</td>
+<td>21.85</td>
+<td>47.73</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>633,500</td>
+<td style="color:#22c55e">+0.66%</td>
+</tr>
+<tr>
+<td class="rank">165</td>
+<td>113640</td>
+<td style="text-align:left;font-weight:500">苏利转债</td>
+<td style="color:#f59e0b">129.545</td>
+<td class="premium positive">177.44%</td>
+<td class="dual-low red">306.99</td>
+<td style="text-align:left;color:#94a3b8">苏利股份</td>
+<td>9.39</td>
+<td>20.11</td>
+<td>46.69</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>4,984,500</td>
+<td style="color:#22c55e">+1.13%</td>
+</tr>
+<tr>
+<td class="rank">166</td>
+<td>118020</td>
+<td style="text-align:left;font-weight:500">芳源转债</td>
+<td style="color:#f59e0b">117.889</td>
+<td class="premium positive">191.51%</td>
+<td class="dual-low red">309.40</td>
+<td style="text-align:left;color:#94a3b8">芳源股份</td>
+<td>7.53</td>
+<td>18.62</td>
+<td>40.44</td>
+<td><span class="rating rating-B">BBB</span></td>
+<td>1,931,800</td>
+<td style="color:#22c55e">+1.77%</td>
+</tr>
+<tr>
+<td class="rank">167</td>
+<td>118044</td>
+<td style="text-align:left;font-weight:500">赛特转债</td>
+<td>173.294</td>
+<td class="premium positive">136.38%</td>
+<td class="dual-low red">309.67</td>
+<td style="text-align:left;color:#94a3b8">赛特新材</td>
+<td>25.96</td>
+<td>35.41</td>
+<td>73.31</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>6,852,800</td>
+<td style="color:#22c55e">+1.36%</td>
+</tr>
+<tr>
+<td class="rank">168</td>
+<td>123235</td>
+<td style="text-align:left;font-weight:500">亿田转债</td>
+<td>151.530</td>
+<td class="premium positive">158.76%</td>
+<td class="dual-low red">310.29</td>
+<td style="text-align:left;color:#94a3b8">亿田智能</td>
+<td>22.30</td>
+<td>38.08</td>
+<td>58.56</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>88,328,500</td>
+<td style="color:#22c55e">+5.60%</td>
+</tr>
+<tr>
+<td class="rank">169</td>
+<td>123265</td>
+<td style="text-align:left;font-weight:500">耐普转02</td>
+<td>131.720</td>
+<td class="premium positive">179.43%</td>
+<td class="dual-low red">311.15</td>
+<td style="text-align:left;color:#94a3b8">耐普矿机</td>
+<td>18.12</td>
+<td>38.44</td>
+<td>47.14</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>1,871,300</td>
+<td style="color:#22c55e">+1.26%</td>
+</tr>
+<tr>
+<td class="rank">170</td>
+<td>118037</td>
+<td style="text-align:left;font-weight:500">上声转债</td>
+<td style="color:#f59e0b">127.886</td>
+<td class="premium positive">184.75%</td>
+<td class="dual-low red">312.64</td>
+<td style="text-align:left;color:#94a3b8">上声电子</td>
+<td>21.49</td>
+<td>47.85</td>
+<td>44.91</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>919,200</td>
+<td style="color:#22c55e">+0.36%</td>
+</tr>
+<tr>
+<td class="rank">171</td>
+<td>113643</td>
+<td style="text-align:left;font-weight:500">风语转债</td>
+<td>143.637</td>
+<td class="premium positive">171.00%</td>
+<td class="dual-low red">314.64</td>
+<td style="text-align:left;color:#94a3b8">风语筑</td>
+<td>11.74</td>
+<td>22.15</td>
+<td>53.00</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>7,244,200</td>
+<td style="color:#22c55e">+1.35%</td>
+</tr>
+<tr>
+<td class="rank">172</td>
+<td>123175</td>
+<td style="text-align:left;font-weight:500">百畅转债</td>
+<td style="color:#22c55e;font-weight:600">107.498</td>
+<td class="premium positive">210.33%</td>
+<td class="dual-low red">317.83</td>
+<td style="text-align:left;color:#94a3b8">百川畅银</td>
+<td>9.81</td>
+<td>28.32</td>
+<td>34.64</td>
+<td><span class="rating rating-B">BBB+</span></td>
+<td>3,523,700</td>
+<td style="color:#22c55e">+2.65%</td>
+</tr>
+<tr>
+<td class="rank">173</td>
+<td>118036</td>
+<td style="text-align:left;font-weight:500">力合转债</td>
+<td>139.249</td>
+<td class="premium positive">179.78%</td>
+<td class="dual-low red">319.03</td>
+<td style="text-align:left;color:#94a3b8">力合微</td>
+<td>21.79</td>
+<td>43.78</td>
+<td>49.77</td>
+<td><span class="rating rating-AA">AA-sti</span></td>
+<td>2,872,200</td>
+<td style="color:#ef4444">-0.58%</td>
+</tr>
+<tr>
+<td class="rank">174</td>
+<td>113667</td>
+<td style="text-align:left;font-weight:500">春23转债</td>
+<td>290.157</td>
+<td class="premium positive">28.90%</td>
+<td class="dual-low red">319.06</td>
+<td style="text-align:left;color:#94a3b8">春秋电子</td>
+<td>23.41</td>
+<td>10.40</td>
+<td>225.10</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>21,102,900</td>
+<td style="color:#22c55e">+0.66%</td>
+</tr>
+<tr>
+<td class="rank">175</td>
+<td>118016</td>
+<td style="text-align:left;font-weight:500">京源转债</td>
+<td>164.856</td>
+<td class="premium positive">154.59%</td>
+<td class="dual-low red">319.45</td>
+<td style="text-align:left;color:#94a3b8">京源环保</td>
+<td>9.02</td>
+<td>13.93</td>
+<td>64.75</td>
+<td><span class="rating rating-A">A</span></td>
+<td>12,401,600</td>
+<td style="color:#ef4444">-1.79%</td>
+</tr>
+<tr>
+<td class="rank">176</td>
+<td>123213</td>
+<td style="text-align:left;font-weight:500">天源转债</td>
+<td>269.970</td>
+<td class="premium positive">53.21%</td>
+<td class="dual-low red">323.18</td>
+<td style="text-align:left;color:#94a3b8">武汉天源</td>
+<td>18.15</td>
+<td>10.30</td>
+<td>176.21</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>9,099,400</td>
+<td style="color:#ef4444">-1.47%</td>
+</tr>
+<tr>
+<td class="rank">177</td>
+<td>118013</td>
+<td style="text-align:left;font-weight:500">道通转债</td>
+<td>179.868</td>
+<td class="premium positive">147.01%</td>
+<td class="dual-low red">326.88</td>
+<td style="text-align:left;color:#94a3b8">道通科技</td>
+<td>25.29</td>
+<td>34.73</td>
+<td>72.82</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>9,110,200</td>
+<td style="color:#22c55e">+2.31%</td>
+</tr>
+<tr>
+<td class="rank">178</td>
+<td>123195</td>
+<td style="text-align:left;font-weight:500">蓝晓转02</td>
+<td>199.610</td>
+<td class="premium positive">128.52%</td>
+<td class="dual-low red">328.13</td>
+<td style="text-align:left;color:#94a3b8">蓝晓科技</td>
+<td>81.00</td>
+<td>92.73</td>
+<td>87.35</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>138,192,700</td>
+<td style="color:#22c55e">+5.96%</td>
+</tr>
+<tr>
+<td class="rank">179</td>
+<td>118051</td>
+<td style="text-align:left;font-weight:500">皓元转债</td>
+<td>293.612</td>
+<td class="premium positive">35.13%</td>
+<td class="dual-low red">328.74</td>
+<td style="text-align:left;color:#94a3b8">皓元医药</td>
+<td>88.50</td>
+<td>40.73</td>
+<td>217.28</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>44,428,300</td>
+<td style="color:#22c55e">+3.28%</td>
+</tr>
+<tr>
+<td class="rank">180</td>
+<td>123266</td>
+<td style="text-align:left;font-weight:500">博士转债</td>
+<td>136.005</td>
+<td class="premium positive">195.62%</td>
+<td class="dual-low red">331.62</td>
+<td style="text-align:left;color:#94a3b8">博士眼镜</td>
+<td>14.00</td>
+<td>30.43</td>
+<td>46.01</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>681,700</td>
+<td style="color:#22c55e">+0.30%</td>
+</tr>
+<tr>
+<td class="rank">181</td>
+<td>118060</td>
+<td style="text-align:left;font-weight:500">瑞可转债</td>
+<td>227.996</td>
+<td class="premium positive">103.87%</td>
+<td class="dual-low red">331.87</td>
+<td style="text-align:left;color:#94a3b8">瑞可达</td>
+<td>82.59</td>
+<td>73.85</td>
+<td>111.83</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>19,251,300</td>
+<td style="color:#ef4444">-2.95%</td>
+</tr>
+<tr>
+<td class="rank">182</td>
+<td>123151</td>
+<td style="text-align:left;font-weight:500">康医转债</td>
+<td style="color:#f59e0b">117.985</td>
+<td class="premium positive">215.00%</td>
+<td class="dual-low red">332.99</td>
+<td style="text-align:left;color:#94a3b8">康泰医学</td>
+<td>10.57</td>
+<td>28.22</td>
+<td>37.46</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>2,046,100</td>
+<td style="color:#22c55e">+0.15%</td>
+</tr>
+<tr>
+<td class="rank">183</td>
+<td>118069</td>
+<td style="text-align:left;font-weight:500">爱科转债</td>
+<td>188.760</td>
+<td class="premium positive">145.46%</td>
+<td class="dual-low red">334.22</td>
+<td style="text-align:left;color:#94a3b8">爱科科技</td>
+<td>21.94</td>
+<td>28.53</td>
+<td>76.90</td>
+<td><span class="rating rating-AA">AA-sti</span></td>
+<td>1,574,100</td>
+<td style="color:#22c55e">+20.00%</td>
+</tr>
+<tr>
+<td class="rank">184</td>
+<td>123157</td>
+<td style="text-align:left;font-weight:500">科蓝转债</td>
+<td style="color:#f59e0b">128.273</td>
+<td class="premium positive">207.62%</td>
+<td class="dual-low red">335.89</td>
+<td style="text-align:left;color:#94a3b8">科蓝软件</td>
+<td>6.68</td>
+<td>16.02</td>
+<td>41.70</td>
+<td><span class="rating rating-A">A-sti</span></td>
+<td>1,585,400</td>
+<td style="color:#22c55e">+1.70%</td>
+</tr>
+<tr>
+<td class="rank">185</td>
+<td>110095</td>
+<td style="text-align:left;font-weight:500">双良转债</td>
+<td style="color:#f59e0b">120.967</td>
+<td class="premium positive">218.98%</td>
+<td class="dual-low red">339.95</td>
+<td style="text-align:left;color:#94a3b8">双良节能</td>
+<td>4.60</td>
+<td>12.13</td>
+<td>37.92</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>27,073,500</td>
+<td style="color:#22c55e">+3.04%</td>
+</tr>
+<tr>
+<td class="rank">186</td>
+<td>113636</td>
+<td style="text-align:left;font-weight:500">甬金转债</td>
+<td style="color:#f59e0b">129.848</td>
+<td class="premium positive">213.66%</td>
+<td class="dual-low red">343.51</td>
+<td style="text-align:left;color:#94a3b8">甬金股份</td>
+<td>21.97</td>
+<td>53.07</td>
+<td>41.40</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>4,384,600</td>
+<td style="color:#22c55e">+0.32%</td>
+</tr>
+<tr>
+<td class="rank">187</td>
+<td>123065</td>
+<td style="text-align:left;font-weight:500">宝莱转债</td>
+<td style="color:#f59e0b">121.479</td>
+<td class="premium positive">223.57%</td>
+<td class="dual-low red">345.05</td>
+<td style="text-align:left;color:#94a3b8">宝莱特</td>
+<td>15.22</td>
+<td>40.54</td>
+<td>37.54</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>1,397,700</td>
+<td style="color:#ef4444">-0.07%</td>
+</tr>
+<tr>
+<td class="rank">188</td>
+<td>123144</td>
+<td style="text-align:left;font-weight:500">裕兴转债</td>
+<td style="color:#f59e0b">119.637</td>
+<td class="premium positive">228.89%</td>
+<td class="dual-low red">348.53</td>
+<td style="text-align:left;color:#94a3b8">裕兴股份</td>
+<td>5.18</td>
+<td>14.24</td>
+<td>36.38</td>
+<td><span class="rating rating-A">A</span></td>
+<td>1,776,900</td>
+<td style="color:#22c55e">+0.51%</td>
+</tr>
+<tr>
+<td class="rank">189</td>
+<td>123122</td>
+<td style="text-align:left;font-weight:500">富瀚转债</td>
+<td style="color:#f59e0b">129.732</td>
+<td class="premium positive">229.15%</td>
+<td class="dual-low red">358.88</td>
+<td style="text-align:left;color:#94a3b8">富瀚微</td>
+<td>69.78</td>
+<td>177.04</td>
+<td>39.41</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>4,174,000</td>
+<td style="color:#ef4444">-1.07%</td>
+</tr>
+<tr>
+<td class="rank">190</td>
+<td>123196</td>
+<td style="text-align:left;font-weight:500">正元转02</td>
+<td style="color:#f59e0b">122.874</td>
+<td class="premium positive">236.37%</td>
+<td class="dual-low red">359.24</td>
+<td style="text-align:left;color:#94a3b8">正元智慧</td>
+<td>12.00</td>
+<td>32.85</td>
+<td>36.53</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>863,700</td>
+<td style="color:#22c55e">+0.50%</td>
+</tr>
+<tr>
+<td class="rank">191</td>
+<td>118050</td>
+<td style="text-align:left;font-weight:500">航宇转债</td>
+<td>290.894</td>
+<td class="premium positive">70.71%</td>
+<td class="dual-low red">361.60</td>
+<td style="text-align:left;color:#94a3b8">航宇科技</td>
+<td>55.62</td>
+<td>32.64</td>
+<td>170.40</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>79,340,400</td>
+<td style="color:#22c55e">+2.46%</td>
+</tr>
+<tr>
+<td class="rank">192</td>
+<td>123104</td>
+<td style="text-align:left;font-weight:500">卫宁转债</td>
+<td>132.105</td>
+<td class="premium positive">229.98%</td>
+<td class="dual-low red">362.08</td>
+<td style="text-align:left;color:#94a3b8">卫宁健康</td>
+<td>7.11</td>
+<td>17.76</td>
+<td>40.03</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>9,150,800</td>
+<td style="color:#22c55e">+1.78%</td>
+</tr>
+<tr>
+<td class="rank">193</td>
+<td>113670</td>
+<td style="text-align:left;font-weight:500">金23转债</td>
+<td style="color:#f59e0b">123.028</td>
+<td class="premium positive">239.25%</td>
+<td class="dual-low red">362.28</td>
+<td style="text-align:left;color:#94a3b8">金牌家居</td>
+<td>14.35</td>
+<td>39.57</td>
+<td>36.26</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>1,349,100</td>
+<td style="color:#22c55e">+0.51%</td>
+</tr>
+<tr>
+<td class="rank">194</td>
+<td>113660</td>
+<td style="text-align:left;font-weight:500">寿22转债</td>
+<td style="color:#f59e0b">123.280</td>
+<td class="premium positive">239.20%</td>
+<td class="dual-low red">362.48</td>
+<td style="text-align:left;color:#94a3b8">寿仙谷</td>
+<td>13.84</td>
+<td>38.08</td>
+<td>36.34</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>535,700</td>
+<td style="color:#22c55e">+0.38%</td>
+</tr>
+<tr>
+<td class="rank">195</td>
+<td>123224</td>
+<td style="text-align:left;font-weight:500">宇邦转债</td>
+<td>132.365</td>
+<td class="premium positive">233.28%</td>
+<td class="dual-low red">365.64</td>
+<td style="text-align:left;color:#94a3b8">宇邦新材</td>
+<td>21.01</td>
+<td>52.90</td>
+<td>39.72</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>1,806,800</td>
+<td style="color:#22c55e">+0.91%</td>
+</tr>
+<tr>
+<td class="rank">196</td>
+<td>123154</td>
+<td style="text-align:left;font-weight:500">火星转债</td>
+<td style="color:#f59e0b">123.573</td>
+<td class="premium positive">242.77%</td>
+<td class="dual-low red">366.34</td>
+<td style="text-align:left;color:#94a3b8">火星人</td>
+<td>12.47</td>
+<td>34.59</td>
+<td>36.05</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>1,763,100</td>
+<td style="color:#22c55e">+0.22%</td>
+</tr>
+<tr>
+<td class="rank">197</td>
+<td>113673</td>
+<td style="text-align:left;font-weight:500">岱美转债</td>
+<td>192.317</td>
+<td class="premium positive">174.59%</td>
+<td class="dual-low red">366.91</td>
+<td style="text-align:left;color:#94a3b8">岱美股份</td>
+<td>11.01</td>
+<td>15.72</td>
+<td>70.04</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>18,550,000</td>
+<td style="color:#ef4444">-2.74%</td>
+</tr>
+<tr>
+<td class="rank">198</td>
+<td>123215</td>
+<td style="text-align:left;font-weight:500">铭利转债</td>
+<td style="color:#f59e0b">124.458</td>
+<td class="premium positive">244.84%</td>
+<td class="dual-low red">369.30</td>
+<td style="text-align:left;color:#94a3b8">铭利达</td>
+<td>13.65</td>
+<td>37.82</td>
+<td>36.09</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>2,842,600</td>
+<td style="color:#22c55e">+0.99%</td>
+</tr>
+<tr>
+<td class="rank">199</td>
+<td>111012</td>
+<td style="text-align:left;font-weight:500">福新转债</td>
+<td>325.792</td>
+<td class="premium positive">51.65%</td>
+<td class="dual-low red">377.44</td>
+<td style="text-align:left;color:#94a3b8">福莱新材</td>
+<td>30.12</td>
+<td>14.02</td>
+<td>214.84</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>23,890,900</td>
+<td style="color:#ef4444">-4.15%</td>
+</tr>
+<tr>
+<td class="rank">200</td>
+<td>113597</td>
+<td style="text-align:left;font-weight:500">佳力转债</td>
+<td style="color:#f59e0b">117.831</td>
+<td class="premium positive">264.23%</td>
+<td class="dual-low red">382.06</td>
+<td style="text-align:left;color:#94a3b8">佳力图</td>
+<td>7.57</td>
+<td>23.40</td>
+<td>32.35</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>11,111,700</td>
+<td style="color:#22c55e">+0.04%</td>
+</tr>
+<tr>
+<td class="rank">201</td>
+<td>118034</td>
+<td style="text-align:left;font-weight:500">晶能转债</td>
+<td style="color:#f59e0b">117.800</td>
+<td class="premium positive">267.53%</td>
+<td class="dual-low red">385.33</td>
+<td style="text-align:left;color:#94a3b8">晶科能源</td>
+<td>4.42</td>
+<td>13.79</td>
+<td>32.05</td>
+<td><span class="rating rating-AA">AA+sti</span></td>
+<td>9,317,300</td>
+<td style="color:#22c55e">+0.60%</td>
+</tr>
+<tr>
+<td class="rank">202</td>
+<td>113666</td>
+<td style="text-align:left;font-weight:500">爱玛转债</td>
+<td style="color:#f59e0b">121.834</td>
+<td class="premium positive">268.57%</td>
+<td class="dual-low red">390.40</td>
+<td style="text-align:left;color:#94a3b8">爱玛科技</td>
+<td>20.26</td>
+<td>61.29</td>
+<td>33.06</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>1,905,600</td>
+<td style="color:#22c55e">+0.43%</td>
+</tr>
+<tr>
+<td class="rank">203</td>
+<td>123268</td>
+<td style="text-align:left;font-weight:500">本川转债</td>
+<td>235.822</td>
+<td class="premium positive">154.87%</td>
+<td class="dual-low red">390.69</td>
+<td style="text-align:left;color:#94a3b8">本川智能</td>
+<td>70.21</td>
+<td>75.88</td>
+<td>92.53</td>
+<td><span class="rating rating-AA">AA-sti</span></td>
+<td>18,567,300</td>
+<td style="color:#22c55e">+0.78%</td>
+</tr>
+<tr>
+<td class="rank">204</td>
+<td>118056</td>
+<td style="text-align:left;font-weight:500">路维转债</td>
+<td>357.500</td>
+<td class="premium positive">35.15%</td>
+<td class="dual-low red">392.65</td>
+<td style="text-align:left;color:#94a3b8">路维光电</td>
+<td>86.50</td>
+<td>32.70</td>
+<td>264.53</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>16,085,600</td>
+<td style="color:#ef4444">-5.30%</td>
+</tr>
+<tr>
+<td class="rank">205</td>
+<td>123258</td>
+<td style="text-align:left;font-weight:500">胜蓝转02</td>
+<td>358.850</td>
+<td class="premium positive">34.60%</td>
+<td class="dual-low red">393.45</td>
+<td style="text-align:left;color:#94a3b8">胜蓝股份</td>
+<td>145.46</td>
+<td>54.56</td>
+<td>266.61</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>15,384,200</td>
+<td style="color:#ef4444">-0.73%</td>
+</tr>
+<tr>
+<td class="rank">206</td>
+<td>113677</td>
+<td style="text-align:left;font-weight:500">华懋转债</td>
+<td>359.711</td>
+<td class="premium positive">34.71%</td>
+<td class="dual-low red">394.42</td>
+<td style="text-align:left;color:#94a3b8">华懋科技</td>
+<td>91.27</td>
+<td>34.18</td>
+<td>267.03</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>12,034,600</td>
+<td style="color:#ef4444">-6.83%</td>
+</tr>
+<tr>
+<td class="rank">207</td>
+<td>110085</td>
+<td style="text-align:left;font-weight:500">通22转债</td>
+<td style="color:#f59e0b">114.691</td>
+<td class="premium positive">294.39%</td>
+<td class="dual-low red">409.08</td>
+<td style="text-align:left;color:#94a3b8">通威股份</td>
+<td>11.42</td>
+<td>39.27</td>
+<td>29.08</td>
+<td><span class="rating rating-AAA">AAA</span></td>
+<td>8,634,300</td>
+<td style="color:#ef4444">-0.13%</td>
+</tr>
+<tr>
+<td class="rank">208</td>
+<td>113633</td>
+<td style="text-align:left;font-weight:500">科沃转债</td>
+<td style="color:#f59e0b">119.717</td>
+<td class="premium positive">309.32%</td>
+<td class="dual-low red">429.04</td>
+<td style="text-align:left;color:#94a3b8">科沃斯</td>
+<td>52.19</td>
+<td>178.44</td>
+<td>29.25</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>1,427,400</td>
+<td style="color:#ef4444">-0.30%</td>
+</tr>
+<tr>
+<td class="rank">209</td>
+<td>118010</td>
+<td style="text-align:left;font-weight:500">洁特转债</td>
+<td style="color:#f59e0b">122.567</td>
+<td class="premium positive">319.84%</td>
+<td class="dual-low red">442.41</td>
+<td style="text-align:left;color:#94a3b8">洁特生物</td>
+<td>14.08</td>
+<td>48.23</td>
+<td>29.19</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>981,200</td>
+<td style="color:#22c55e">+0.93%</td>
+</tr>
+<tr>
+<td class="rank">210</td>
+<td>113634</td>
+<td style="text-align:left;font-weight:500">珀莱转债</td>
+<td style="color:#f59e0b">124.509</td>
+<td class="premium positive">321.37%</td>
+<td class="dual-low red">445.88</td>
+<td style="text-align:left;color:#94a3b8">珀莱雅</td>
+<td>57.91</td>
+<td>195.98</td>
+<td>29.55</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>1,649,700</td>
+<td style="color:#22c55e">+0.41%</td>
+</tr>
+<tr>
+<td class="rank">211</td>
+<td>113656</td>
+<td style="text-align:left;font-weight:500">嘉诚转债</td>
+<td style="color:#f59e0b">118.569</td>
+<td class="premium positive">345.21%</td>
+<td class="dual-low red">463.78</td>
+<td style="text-align:left;color:#94a3b8">嘉诚国际</td>
+<td>6.12</td>
+<td>22.98</td>
+<td>26.63</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>2,247,800</td>
+<td style="color:#22c55e">+0.59%</td>
+</tr>
+<tr>
+<td class="rank">212</td>
+<td>123124</td>
+<td style="text-align:left;font-weight:500">晶瑞转2</td>
+<td>148.499</td>
+<td class="premium positive">317.14%</td>
+<td class="dual-low red">465.64</td>
+<td style="text-align:left;color:#94a3b8">晶瑞电材</td>
+<td>17.91</td>
+<td>50.31</td>
+<td>35.60</td>
+<td><span class="rating rating-A">A+sti</span></td>
+<td>14,695,200</td>
+<td style="color:#ef4444">-4.08%</td>
+</tr>
+<tr>
+<td class="rank">213</td>
+<td>123131</td>
+<td style="text-align:left;font-weight:500">奥飞转债</td>
+<td>279.486</td>
+<td class="premium positive">193.06%</td>
+<td class="dual-low red">472.55</td>
+<td style="text-align:left;color:#94a3b8">奥飞数据</td>
+<td>21.00</td>
+<td>22.02</td>
+<td>95.37</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>42,758,300</td>
+<td style="color:#22c55e">+3.39%</td>
+</tr>
+<tr>
+<td class="rank">214</td>
+<td>123250</td>
+<td style="text-align:left;font-weight:500">嘉益转债</td>
+<td style="color:#f59e0b">124.146</td>
+<td class="premium positive">352.34%</td>
+<td class="dual-low red">476.49</td>
+<td style="text-align:left;color:#94a3b8">嘉益股份</td>
+<td>31.85</td>
+<td>116.05</td>
+<td>27.45</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>537,200</td>
+<td style="color:#22c55e">+0.13%</td>
+</tr>
+<tr>
+<td class="rank">215</td>
+<td>118042</td>
+<td style="text-align:left;font-weight:500">奥维转债</td>
+<td style="color:#f59e0b">128.485</td>
+<td class="premium positive">359.44%</td>
+<td class="dual-low red">487.93</td>
+<td style="text-align:left;color:#94a3b8">奥特维</td>
+<td>50.59</td>
+<td>180.90</td>
+<td>27.97</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>3,218,600</td>
+<td style="color:#22c55e">+1.23%</td>
+</tr>
+<tr>
+<td class="rank">216</td>
+<td>123267</td>
+<td style="text-align:left;font-weight:500">珂玛转债</td>
+<td>357.800</td>
+<td class="premium positive">131.99%</td>
+<td class="dual-low red">489.79</td>
+<td style="text-align:left;color:#94a3b8">珂玛科技</td>
+<td>150.48</td>
+<td>97.57</td>
+<td>154.23</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>32,897,200</td>
+<td style="color:#ef4444">-0.60%</td>
+</tr>
+<tr>
+<td class="rank">217</td>
+<td>113627</td>
+<td style="text-align:left;font-weight:500">太平转债</td>
+<td style="color:#f59e0b">119.496</td>
+<td class="premium positive">370.50%</td>
+<td class="dual-low red">490.00</td>
+<td style="text-align:left;color:#94a3b8">太平鸟</td>
+<td>12.78</td>
+<td>50.32</td>
+<td>25.40</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>1,541,300</td>
+<td style="color:#22c55e">+0.99%</td>
+</tr>
+<tr>
+<td class="rank">218</td>
+<td>113655</td>
+<td style="text-align:left;font-weight:500">欧22转债</td>
+<td style="color:#f59e0b">120.742</td>
+<td class="premium positive">371.18%</td>
+<td class="dual-low red">491.92</td>
+<td style="text-align:left;color:#94a3b8">欧派家居</td>
+<td>32.15</td>
+<td>125.46</td>
+<td>25.63</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>5,172,600</td>
+<td style="color:#22c55e">+0.49%</td>
+</tr>
+<tr>
+<td class="rank">219</td>
+<td>123245</td>
+<td style="text-align:left;font-weight:500">集智转债</td>
+<td>463.888</td>
+<td class="premium positive">36.81%</td>
+<td class="dual-low red">500.70</td>
+<td style="text-align:left;color:#94a3b8">集智股份</td>
+<td>79.82</td>
+<td>23.54</td>
+<td>339.08</td>
+<td><span class="rating rating-A">A</span></td>
+<td>46,262,400</td>
+<td style="color:#22c55e">+9.67%</td>
+</tr>
+<tr>
+<td class="rank">220</td>
+<td>123193</td>
+<td style="text-align:left;font-weight:500">海能转债</td>
+<td style="color:#f59e0b">124.410</td>
+<td class="premium positive">378.07%</td>
+<td class="dual-low red">502.48</td>
+<td style="text-align:left;color:#94a3b8">海能实业</td>
+<td>8.71</td>
+<td>33.47</td>
+<td>26.02</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>1,286,300</td>
+<td style="color:#22c55e">+0.26%</td>
+</tr>
+<tr>
+<td class="rank">221</td>
+<td>123179</td>
+<td style="text-align:left;font-weight:500">立高转债</td>
+<td style="color:#f59e0b">121.781</td>
+<td class="premium positive">382.65%</td>
+<td class="dual-low red">504.43</td>
+<td style="text-align:left;color:#94a3b8">立高食品</td>
+<td>24.48</td>
+<td>97.02</td>
+<td>25.23</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>1,341,300</td>
+<td style="color:#22c55e">+0.24%</td>
+</tr>
+<tr>
+<td class="rank">222</td>
+<td>123176</td>
+<td style="text-align:left;font-weight:500">精测转2</td>
+<td>500.916</td>
+<td class="premium positive">9.30%</td>
+<td class="dual-low red">510.22</td>
+<td style="text-align:left;color:#94a3b8">精测电子</td>
+<td>297.10</td>
+<td>64.83</td>
+<td>458.28</td>
+<td><span class="rating rating-AA">AA-sti</span></td>
+<td>0</td>
+<td style="color:#22c55e">+0.00%</td>
+</tr>
+<tr>
+<td class="rank">223</td>
+<td>123071</td>
+<td style="text-align:left;font-weight:500">天能转债</td>
+<td style="color:#f59e0b">115.614</td>
+<td class="premium positive">395.31%</td>
+<td class="dual-low red">510.92</td>
+<td style="text-align:left;color:#94a3b8">天能重工</td>
+<td>4.68</td>
+<td>20.05</td>
+<td>23.34</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>1,814,000</td>
+<td style="color:#22c55e">+0.08%</td>
+</tr>
+<tr>
+<td class="rank">224</td>
+<td>118058</td>
+<td style="text-align:left;font-weight:500">微导转债</td>
+<td>508.529</td>
+<td class="premium positive">18.26%</td>
+<td class="dual-low red">526.79</td>
+<td style="text-align:left;color:#94a3b8">微导纳米</td>
+<td>144.35</td>
+<td>33.57</td>
+<td>430.00</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>31,996,800</td>
+<td style="color:#ef4444">-6.52%</td>
+</tr>
+<tr>
+<td class="rank">225</td>
+<td>123255</td>
+<td style="text-align:left;font-weight:500">鼎龙转债</td>
+<td>471.510</td>
+<td class="premium positive">56.99%</td>
+<td class="dual-low red">528.50</td>
+<td style="text-align:left;color:#94a3b8">鼎龙股份</td>
+<td>86.14</td>
+<td>28.68</td>
+<td>300.35</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>32,550,400</td>
+<td style="color:#ef4444">-11.09%</td>
+</tr>
+<tr>
+<td class="rank">226</td>
+<td>110081</td>
+<td style="text-align:left;font-weight:500">闻泰转债</td>
+<td style="color:#22c55e;font-weight:600">109.884</td>
+<td class="premium positive">421.73%</td>
+<td class="dual-low red">531.61</td>
+<td style="text-align:left;color:#94a3b8">*ST闻泰</td>
+<td>20.36</td>
+<td>96.67</td>
+<td>21.06</td>
+<td><span class="rating rating-B">BBB+</span></td>
+<td>144,645,900</td>
+<td style="color:#22c55e">+3.79%</td>
+</tr>
+<tr>
+<td class="rank">227</td>
+<td>118005</td>
+<td style="text-align:left;font-weight:500">天奈转债</td>
+<td style="color:#f59e0b">123.776</td>
+<td class="premium positive">410.62%</td>
+<td class="dual-low red">534.40</td>
+<td style="text-align:left;color:#94a3b8">天奈科技</td>
+<td>37.25</td>
+<td>153.67</td>
+<td>24.24</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>1,262,400</td>
+<td style="color:#ef4444">-0.23%</td>
+</tr>
+<tr>
+<td class="rank">228</td>
+<td>118064</td>
+<td style="text-align:left;font-weight:500">联瑞转债</td>
+<td>478.468</td>
+<td class="premium positive">59.91%</td>
+<td class="dual-low red">538.38</td>
+<td style="text-align:left;color:#94a3b8">联瑞新材</td>
+<td>190.15</td>
+<td>63.55</td>
+<td>299.21</td>
+<td><span class="rating rating-AA">AAsti</span></td>
+<td>20,402,600</td>
+<td style="color:#ef4444">-1.26%</td>
+</tr>
+<tr>
+<td class="rank">229</td>
+<td>118030</td>
+<td style="text-align:left;font-weight:500">睿创转债</td>
+<td>513.245</td>
+<td class="premium positive">32.30%</td>
+<td class="dual-low red">545.54</td>
+<td style="text-align:left;color:#94a3b8">睿创微纳</td>
+<td>155.52</td>
+<td>40.09</td>
+<td>387.93</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>17,922,900</td>
+<td style="color:#ef4444">-4.66%</td>
+</tr>
+<tr>
+<td class="rank">230</td>
+<td>113059</td>
+<td style="text-align:left;font-weight:500">福莱转债</td>
+<td style="color:#f59e0b">119.342</td>
+<td class="premium positive">436.19%</td>
+<td class="dual-low red">555.53</td>
+<td style="text-align:left;color:#94a3b8">福莱特</td>
+<td>9.78</td>
+<td>43.94</td>
+<td>22.26</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>4,704,100</td>
+<td style="color:#ef4444">-0.13%</td>
+</tr>
+<tr>
+<td class="rank">231</td>
+<td>113605</td>
+<td style="text-align:left;font-weight:500">大参转债</td>
+<td style="color:#f59e0b">118.039</td>
+<td class="premium positive">460.45%</td>
+<td class="dual-low red">578.49</td>
+<td style="text-align:left;color:#94a3b8">大参林</td>
+<td>17.66</td>
+<td>83.85</td>
+<td>21.06</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>4,512,800</td>
+<td style="color:#22c55e">+0.41%</td>
+</tr>
+<tr>
+<td class="rank">232</td>
+<td>118032</td>
+<td style="text-align:left;font-weight:500">建龙转债</td>
+<td style="color:#f59e0b">123.318</td>
+<td class="premium positive">490.89%</td>
+<td class="dual-low red">614.21</td>
+<td style="text-align:left;color:#94a3b8">建龙微纳</td>
+<td>25.67</td>
+<td>123.00</td>
+<td>20.87</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>1,203,000</td>
+<td style="color:#22c55e">+0.01%</td>
+</tr>
+<tr>
+<td class="rank">233</td>
+<td>123270</td>
+<td style="text-align:left;font-weight:500">盛德转债</td>
+<td>296.265</td>
+<td class="premium positive">330.76%</td>
+<td class="dual-low red">627.02</td>
+<td style="text-align:left;color:#94a3b8">盛德鑫泰</td>
+<td>36.92</td>
+<td>53.68</td>
+<td>68.78</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>83,273,900</td>
+<td style="color:#22c55e">+12.18%</td>
+</tr>
+<tr>
+<td class="rank">234</td>
+<td>123113</td>
+<td style="text-align:left;font-weight:500">仙乐转债</td>
+<td style="color:#f59e0b">114.640</td>
+<td class="premium positive">512.60%</td>
+<td class="dual-low red">627.24</td>
+<td style="text-align:left;color:#94a3b8">仙乐健康</td>
+<td>16.09</td>
+<td>85.98</td>
+<td>18.71</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>1,556,400</td>
+<td style="color:#ef4444">-0.02%</td>
+</tr>
+<tr>
+<td class="rank">235</td>
+<td>123064</td>
+<td style="text-align:left;font-weight:500">万孚转债</td>
+<td style="color:#f59e0b">111.371</td>
+<td class="premium positive">516.13%</td>
+<td class="dual-low red">627.50</td>
+<td style="text-align:left;color:#94a3b8">万孚生物</td>
+<td>16.91</td>
+<td>93.55</td>
+<td>18.08</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>2,210,000</td>
+<td style="color:#22c55e">+0.17%</td>
+</tr>
+<tr>
+<td class="rank">236</td>
+<td>123273</td>
+<td style="text-align:left;font-weight:500">三江转债</td>
+<td>347.513</td>
+<td class="premium positive">305.06%</td>
+<td class="dual-low red">652.57</td>
+<td style="text-align:left;color:#94a3b8">金三江</td>
+<td>12.38</td>
+<td>14.43</td>
+<td>85.79</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>99,192,000</td>
+<td style="color:#22c55e">+14.13%</td>
+</tr>
+<tr>
+<td class="rank">237</td>
+<td>123117</td>
+<td style="text-align:left;font-weight:500">健帆转债</td>
+<td style="color:#f59e0b">114.314</td>
+<td class="premium positive">543.68%</td>
+<td class="dual-low red">657.99</td>
+<td style="text-align:left;color:#94a3b8">健帆生物</td>
+<td>16.09</td>
+<td>90.60</td>
+<td>17.76</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>2,352,400</td>
+<td style="color:#22c55e">+0.01%</td>
+</tr>
+<tr>
+<td class="rank">238</td>
+<td>123192</td>
+<td style="text-align:left;font-weight:500">科思转债</td>
+<td style="color:#f59e0b">125.220</td>
+<td class="premium positive">533.63%</td>
+<td class="dual-low red">658.85</td>
+<td style="text-align:left;color:#94a3b8">科思股份</td>
+<td>10.48</td>
+<td>53.03</td>
+<td>19.76</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>940,500</td>
+<td style="color:#22c55e">+0.45%</td>
+</tr>
+<tr>
+<td class="rank">239</td>
+<td>113661</td>
+<td style="text-align:left;font-weight:500">福22转债</td>
+<td>138.154</td>
+<td class="premium positive">523.85%</td>
+<td class="dual-low red">662.00</td>
+<td style="text-align:left;color:#94a3b8">福斯特</td>
+<td>14.41</td>
+<td>65.07</td>
+<td>22.15</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>5,720,200</td>
+<td style="color:#ef4444">-0.25%</td>
+</tr>
+<tr>
+<td class="rank">240</td>
+<td>118027</td>
+<td style="text-align:left;font-weight:500">宏图转债</td>
+<td style="color:#22c55e;font-weight:600">91.701</td>
+<td class="premium positive">586.87%</td>
+<td class="dual-low red">678.57</td>
+<td style="text-align:left;color:#94a3b8">*ST航图</td>
+<td>11.87</td>
+<td>88.91</td>
+<td>13.35</td>
+<td><span class="rating rating-B">B-</span></td>
+<td>41,179,900</td>
+<td style="color:#22c55e">+3.03%</td>
+</tr>
+<tr>
+<td class="rank">241</td>
+<td>118031</td>
+<td style="text-align:left;font-weight:500">天23转债</td>
+<td style="color:#f59e0b">122.551</td>
+<td class="premium positive">557.47%</td>
+<td class="dual-low red">680.02</td>
+<td style="text-align:left;color:#94a3b8">天合光能</td>
+<td>12.99</td>
+<td>69.69</td>
+<td>18.64</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>8,819,400</td>
+<td style="color:#22c55e">+0.28%</td>
+</tr>
+<tr>
+<td class="rank">242</td>
+<td>113615</td>
+<td style="text-align:left;font-weight:500">金诚转债</td>
+<td>687.890</td>
+<td class="premium positive">33.26%</td>
+<td class="dual-low red">721.15</td>
+<td style="text-align:left;color:#94a3b8">金诚信</td>
+<td>65.71</td>
+<td>12.73</td>
+<td>516.18</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>5,076,000</td>
+<td style="color:#22c55e">+2.73%</td>
+</tr>
+<tr>
+<td class="rank">243</td>
+<td>123118</td>
+<td style="text-align:left;font-weight:500">惠城转债</td>
+<td>695.531</td>
+<td class="premium positive">109.66%</td>
+<td class="dual-low red">805.19</td>
+<td style="text-align:left;color:#94a3b8">惠城环保</td>
+<td>56.76</td>
+<td>17.11</td>
+<td>331.74</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>7,840,100</td>
+<td style="color:#22c55e">+0.61%</td>
+</tr>
+<tr>
+<td class="rank">244</td>
+<td>113053</td>
+<td style="text-align:left;font-weight:500">隆22转债</td>
+<td style="color:#f59e0b">121.802</td>
+<td class="premium positive">731.29%</td>
+<td class="dual-low red">853.09</td>
+<td style="text-align:left;color:#94a3b8">隆基绿能</td>
+<td>12.11</td>
+<td>82.65</td>
+<td>14.65</td>
+<td><span class="rating rating-AAA">AAA</span></td>
+<td>6,881,600</td>
+<td style="color:#ef4444">-0.15%</td>
+</tr>
+<tr>
+<td class="rank">245</td>
+<td>123072</td>
+<td style="text-align:left;font-weight:500">乐歌转债</td>
+<td style="color:#f59e0b">121.395</td>
+<td class="premium positive">817.11%</td>
+<td class="dual-low red">938.50</td>
+<td style="text-align:left;color:#94a3b8">乐歌股份</td>
+<td>9.68</td>
+<td>73.13</td>
+<td>13.24</td>
+<td><span class="rating rating-A">A+</span></td>
+<td>878,700</td>
+<td style="color:#ef4444">-0.06%</td>
+</tr>
+<tr>
+<td class="rank">246</td>
+<td>113625</td>
+<td style="text-align:left;font-weight:500">江山转债</td>
+<td style="color:#f59e0b">115.596</td>
+<td class="premium positive">944.11%</td>
+<td class="dual-low red">1059.71</td>
+<td style="text-align:left;color:#94a3b8">江山欧派</td>
+<td>10.80</td>
+<td>97.55</td>
+<td>11.07</td>
+<td><span class="rating rating-A">A</span></td>
+<td>1,766,800</td>
+<td style="color:#22c55e">+0.32%</td>
+</tr>
+<tr>
+<td class="rank">247</td>
+<td>123241</td>
+<td style="text-align:left;font-weight:500">欧通转债</td>
+<td>1093.979</td>
+<td class="premium positive">75.27%</td>
+<td class="dual-low red">1169.25</td>
+<td style="text-align:left;color:#94a3b8">欧陆通</td>
+<td>280.00</td>
+<td>44.86</td>
+<td>624.16</td>
+<td><span class="rating rating-AA">AA-</span></td>
+<td>8,724,000</td>
+<td style="color:#ef4444">-2.60%</td>
+</tr>
+<tr>
+<td class="rank">248</td>
+<td>123119</td>
+<td style="text-align:left;font-weight:500">康泰转2</td>
+<td style="color:#f59e0b">123.392</td>
+<td class="premium positive">1418.99%</td>
+<td class="dual-low red">1542.38</td>
+<td style="text-align:left;color:#94a3b8">康泰生物</td>
+<td>11.83</td>
+<td>145.63</td>
+<td>8.12</td>
+<td><span class="rating rating-AA">AA</span></td>
+<td>4,637,300</td>
+<td style="color:#22c55e">+0.56%</td>
+</tr>
+<tr>
+<td class="rank">249</td>
+<td>123099</td>
+<td style="text-align:left;font-weight:500">普利转退</td>
+<td style="color:#22c55e;font-weight:600">79.001</td>
+<td class="premium positive">4002.67%</td>
+<td class="dual-low red">4081.67</td>
+<td style="text-align:left;color:#94a3b8">普利退</td>
+<td>0.89</td>
+<td>46.22</td>
+<td>1.93</td>
+<td><span class="rating rating-B">B+</span></td>
+<td>0</td>
+<td style="color:#22c55e">+0.00%</td>
+</tr>
 </tbody>
 </table>
 
 <div class="footer">
-  <p>棱镜投资 © 2026 | 数据来源：腾讯财经 + 东方财富 | 仅供参考，不构成投资建议</p>
-  <p>更新时间：2026-07-08 14:20:11</p>
+  <p>棱镜投资 · 可转债双低排名 | 数据仅供参考，不构成投资建议</p>
+  <p>每日14:00自动更新 | 数据来源：腾讯财经实时行情 + 东方财富转股价</p>
 </div>
 </div>
+
+<script>
+let sortDirection = {};
+function sortTable(colIndex) {
+  const table = document.querySelector('table');
+  const tbody = table.querySelector('tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
+  
+  sortDirection[colIndex] = !sortDirection[colIndex];
+  const dir = sortDirection[colIndex] ? 1 : -1;
+  
+  rows.sort((a, b) => {
+    const aText = a.cells[colIndex].textContent.replace(/[%,]/g, '').trim();
+    const bText = b.cells[colIndex].textContent.replace(/[%,]/g, '').trim();
+    const aNum = parseFloat(aText);
+    const bNum = parseFloat(bText);
+    if (!isNaN(aNum) && !isNaN(bNum)) {
+      return (aNum - bNum) * dir;
+    }
+    return aText.localeCompare(bText) * dir;
+  });
+  
+  rows.forEach(row => tbody.appendChild(row));
+  
+  // Update rank numbers after sorting
+  if (colIndex !== 0) {
+    rows.forEach((row, i) => {
+      row.cells[0].textContent = i + 1;
+    });
+  }
+}
+</script>
 </body>
 </html>
