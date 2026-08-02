@@ -5,63 +5,60 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>可转债双低排名 - 棱镜投资</title>
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f23; color: #e0e0e0; padding: 20px; }
-.container { max-width: 1200px; margin: 0 auto; }
-h1 { text-align: center; color: #00d4ff; margin-bottom: 8px; font-size: 1.8em; }
-.subtitle { text-align: center; color: #888; margin-bottom: 20px; font-size: 0.9em; }
-.stats { display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; justify-content: center; }
-.stat-card { background: #1a1a3e; border: 1px solid #333; border-radius: 10px; padding: 12px 20px; text-align: center; min-width: 120px; }
-.stat-card .num { font-size: 1.6em; font-weight: bold; color: #00d4ff; }
-.stat-card .label { font-size: 0.75em; color: #888; margin-top: 4px; }
-table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.85em; }
-thead th { background: #1a1a3e; color: #00d4ff; padding: 10px 8px; position: sticky; top: 0; border-bottom: 2px solid #00d4ff; cursor: pointer; white-space: nowrap; }
-thead th:hover { background: #252560; }
-tbody tr { border-bottom: 1px solid #222; transition: background 0.2s; }
-tbody tr:hover { background: #1a1a3e; }
-td { padding: 8px; text-align: center; white-space: nowrap; }
-.rank { color: #888; font-weight: bold; }
-.top10 { background: rgba(0,212,255,0.05); }
-.bond-name { color: #fff; font-weight: 500; }
-.positive { color: #ff4444; }
-.negative { color: #00cc66; }
-.rating { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 0.8em; font-weight: bold; }
-.rating-AAA { background: #1a472a; color: #4ade80; }
-.rating-AA-plus { background: #1a3a47; color: #38bdf8; }
-.rating-AA { background: #2d2a1a; color: #fbbf24; }
-.rating-AA-minus { background: #3d2a1a; color: #fb923c; }
-.rating-A-plus { background: #3d1a1a; color: #f87171; }
-.rating-A { background: #3d1a1a; color: #ef4444; }
-.rating-below { background: #2a1a1a; color: #dc2626; }
-.footer { text-align: center; margin-top: 20px; padding: 15px; color: #555; font-size: 0.75em; border-top: 1px solid #222; }
-.dual-low-badge { display: inline-block; padding: 3px 8px; border-radius: 6px; font-weight: bold; font-size: 0.9em; }
-.dl-great { background: rgba(0,204,102,0.15); color: #00cc66; }
-.dl-good { background: rgba(0,212,255,0.15); color: #00d4ff; }
-.dl-normal { background: rgba(255,255,255,0.05); color: #aaa; }
-.dl-high { background: rgba(255,68,68,0.15); color: #ff4444; }
-@media (max-width: 768px) { body { padding: 10px; } table { font-size: 0.75em; } .stats { gap: 6px; } .stat-card { min-width: 80px; padding: 8px 12px; } .stat-card .num { font-size: 1.2em; } }
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0f0f23;color:#e0e0e0;padding:20px}
+.container{max-width:1200px;margin:0 auto}
+h1{text-align:center;color:#00d4ff;margin-bottom:8px;font-size:1.8em}
+.subtitle{text-align:center;color:#888;margin-bottom:20px;font-size:.9em}
+.stats{display:flex;gap:12px;margin-bottom:20px;flex-wrap:wrap;justify-content:center}
+.stat-card{background:#1a1a3e;border:1px solid #333;border-radius:10px;padding:12px 20px;text-align:center;min-width:120px}
+.stat-card .num{font-size:1.6em;font-weight:bold;color:#00d4ff}
+.stat-card .label{font-size:.75em;color:#888;margin-top:4px}
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:.85em}
+thead th{background:#1a1a3e;color:#00d4ff;padding:10px 8px;position:sticky;top:0;border-bottom:2px solid #00d4ff;cursor:pointer;white-space:nowrap}
+thead th:hover{background:#252560}
+tbody tr{border-bottom:1px solid #222;transition:background .2s}
+tbody tr:hover{background:#1a1a3e}
+td{padding:8px;text-align:center;white-space:nowrap}
+.rank{color:#888;font-weight:bold}
+.top10{background:rgba(0,212,255,.05)}
+.bond-name{color:#fff;font-weight:500}
+.positive{color:#ff4444}
+.negative{color:#00cc66}
+.rating{display:inline-block;padding:2px 6px;border-radius:4px;font-size:.8em;font-weight:bold}
+.rating-AAA{background:#1a472a;color:#4ade80}
+.rating-AA-plus{background:#1a3a47;color:#38bdf8}
+.rating-AA{background:#2d2a1a;color:#fbbf24}
+.rating-AA-minus{background:#3d2a1a;color:#fb923c}
+.rating-A-plus{background:#3d1a1a;color:#f87171}
+.rating-A{background:#3d1a1a;color:#ef4444}
+.rating-below{background:#2a1a1a;color:#dc2626}
+.footer{text-align:center;margin-top:20px;padding:15px;color:#555;font-size:.75em;border-top:1px solid #222}
+.dual-low-badge{display:inline-block;padding:3px 8px;border-radius:6px;font-weight:bold;font-size:.9em}
+.dl-great{background:rgba(0,204,102,.15);color:#00cc66}
+.dl-good{background:rgba(0,212,255,.15);color:#00d4ff}
+.dl-normal{background:rgba(255,255,255,.05);color:#aaa}
+.dl-high{background:rgba(255,68,68,.15);color:#ff4444}
+@media(max-width:768px){body{padding:10px}table{font-size:.75em}.stats{gap:6px}.stat-card{min-width:80px;padding:8px 12px}.stat-card .num{font-size:1.2em}}
 </style>
 </head>
 <body>
 <div class="container">
 <h1>🔮 可转债双低排名</h1>
-<div class="subtitle">更新时间: 2026-08-01 14:00 | 数据来源: 腾讯财经/东方财富 | 棱镜投资</div>
-
+<div class="subtitle">更新时间: 2026-08-02 14:14 | 数据来源: 腾讯财经/东方财富 | 棱镜投资</div>
 <div class="stats">
 <div class="stat-card"><div class="num">307</div><div class="label">在市转债</div></div>
 <div class="stat-card"><div class="num" style="color:#00cc66">0</div><div class="label">双低&lt;120</div></div>
 <div class="stat-card"><div class="num">11</div><div class="label">价格&lt;110</div></div>
 <div class="stat-card"><div class="num" style="color:#ff4444">268</div><div class="label">溢价率&gt;50%</div></div>
 </div>
-
 <table id="mainTable">
-<thead>
-<tr>
+<thead><tr>
 <th onclick="sortTable(0)">#</th>
 <th onclick="sortTable(1)">转债</th>
 <th onclick="sortTable(2)">正股</th>
 <th onclick="sortTable(3)">评级</th>
-<th onclick="sortTable(4)" class="sorted">双低值</th>
+<th onclick="sortTable(4)">双低值</th>
 <th onclick="sortTable(5)">转债价</th>
 <th onclick="sortTable(6)">涨跌%</th>
 <th onclick="sortTable(7)">转股价值</th>
@@ -69,8 +66,7 @@ td { padding: 8px; text-align: center; white-space: nowrap; }
 <th onclick="sortTable(9)">正股价</th>
 <th onclick="sortTable(10)">转股价</th>
 <th onclick="sortTable(11)">成交额(万)</th>
-</tr>
-</thead>
+</tr></thead>
 <tbody>
 <tr class="top10">
 <td class="rank">1</td>
@@ -4370,39 +4366,23 @@ td { padding: 8px; text-align: center; white-space: nowrap; }
 <td>46.22</td>
 <td>0.00</td>
 </tr>
-</tbody>
-</table>
-
+</tbody></table>
 <div class="footer">
 <p>⚠️ 数据仅供参考，不构成投资建议。投资有风险，入市需谨慎。</p>
 <p>棱镜投资 © 2026 | Powered by 腾讯财经 & 东方财富</p>
-</div>
-</div>
-
+</div></div>
 <script>
-var sortDirections = {};
-function sortTable(colIdx) {
-    var table = document.getElementById("mainTable");
-    var tbody = table.querySelector("tbody");
-    var rows = Array.from(tbody.querySelectorAll("tr"));
-    var dir = sortDirections[colIdx] = !sortDirections[colIdx];
-    
-    rows.sort(function(a, b) {
-        var aVal = a.cells[colIdx].textContent.trim();
-        var bVal = b.cells[colIdx].textContent.trim();
-        var aNum = parseFloat(aVal.replace(/[^0-9.\-+]/g, ''));
-        var bNum = parseFloat(bVal.replace(/[^0-9.\-+]/g, ''));
-        if (!isNaN(aNum) && !isNaN(bNum)) {
-            return dir ? aNum - bNum : bNum - aNum;
-        }
-        return dir ? aVal.localeCompare(bVal, 'zh') : bVal.localeCompare(aVal, 'zh');
-    });
-    
-    rows.forEach(function(row) { tbody.appendChild(row); });
-    
-    // 重新编号
-    rows.forEach(function(row, idx) { row.cells[0].textContent = idx + 1; });
+var sd={};
+function sortTable(ci){
+var t=document.getElementById("mainTable"),tb=t.querySelector("tbody"),rs=Array.from(tb.querySelectorAll("tr"));
+var d=sd[ci]=!sd[ci];
+rs.sort(function(a,b){
+var av=a.cells[ci].textContent.trim(),bv=b.cells[ci].textContent.trim();
+var an=parseFloat(av.replace(/[^0-9.\-+]/g,'')),bn=parseFloat(bv.replace(/[^0-9.\-+]/g,''));
+if(!isNaN(an)&&!isNaN(bn))return d?an-bn:bn-an;
+return d?av.localeCompare(bv,'zh'):bv.localeCompare(av,'zh');
+});
+rs.forEach(function(r){tb.appendChild(r)});
+rs.forEach(function(r,i){r.cells[0].textContent=i+1});
 }
-</script>
-</body>
-</html>
+</script></body></html>
